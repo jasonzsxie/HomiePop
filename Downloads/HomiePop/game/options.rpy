@@ -21,7 +21,7 @@ define config.name = _("HomiePop")
 define gui.show_name = True
 
 
-## The version of the game.
+## The version of the game. prob not gonna change
 
 define config.version = "1.0"
 
