@@ -4,11 +4,23 @@
 # name of the character.
 
 define e = Character("Eileen")
+define mc = Character("[mcName]")
+
+
+
+    
+
 
 
 # The game starts here.
 
 label start:
+   
+    $ mcName = renpy.input("What is your name?", length=32)
+    $ mcName = mcName.strip()
+
+    if mcName == "":
+        $ mcName = "Insert Name Here"
 
     # Show a background. This uses a placeholder by default, but you can
     # add a file (named either "bg room.png" or "bg room.jpg") to the
@@ -19,8 +31,10 @@ label start:
     # This shows a character sprite. A placeholder is used, but you can
     # replace it by adding a file named "eileen happy.png" to the images
     # directory.
-
+    
     show troll
+
+    mc "My name is [mcName]!"
 
     # These display lines of dialogue.
 
