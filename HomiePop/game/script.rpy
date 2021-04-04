@@ -5,6 +5,18 @@
 
 #define e = Character("Eileen") define a character
 define mc = Character("[mcName]")
+define d = Character("Dylan")
+define e = Character("Ethan")
+define ja = Character("Jacob")
+define jo = Character("Josh")
+define kel = Character("Kelvin")
+define kev = Character("Kevin")
+define kr = Character("Kristella")
+define ma = Character("Maryanne")
+define mi = Character("Micaiah")
+define r = Character("Regina")
+define t = Character("Tiffany")
+
 
 
 # The game starts here.
@@ -15,21 +27,30 @@ label start:
     $ mcName = mcName.strip() #gets rid of unnecessary white space
 
     if mcName == "":
-        $ mcName = "Insert Name Here" #insert better name here
+        $ mcName = "Marcus" #defaults name
 
-    # Show a background. This uses a placeholder by default, but you can
-    # add a file (named either "bg room.png" or "bg room.jpg") to the
-    # images directory to show it.
+    # Background should be ceiling of room, blue light, morning
 
-    scene bg room
+    scene bg bedroom
+    with fade
 
-    # This shows a character sprite. A placeholder is used, but you can
-    # replace it by adding a file named "eileen happy.png" to the images
-    # directory.
+    "{i}How many times does this make it now?{/i}"
+    "{i}...It doesn't matter.{/i}" 
+    "{i}Every school is the same.{/i}"
+    "{i}Ever since Mom decided to start searching for a better job...{/i}"
+    "{i}I guess I should start getting ready.{/i}"
+
+    scene bg school entrance
+    with fade
+    pause
+
+    "???" "Hey! Are you in any clubs?"
+
+    
     
     show troll
 
-    mc "My name is [mcName]!"
+    
 
     # These display lines of dialogue.
 
