@@ -16,12 +16,14 @@ label chapterOneDay1to4:
     mc "{i}Ever since Mom decided to start searching for a better job...{/i}"
     mc "{i}I guess I should start getting ready.{/i}"
 
+    window hide
     scene bg school entrance
     with fade
     pause
     scene bg school hallway
     pause
     show dylan holding flier
+    window show
 
     "???" "Hey! Are you in any clubs?"
 
@@ -38,7 +40,7 @@ label chapterOneDay1to4:
     label club_option_one:
         mc "Yes, I am."
         show dylan flier confused
-        "???" "Really? I haven't seen you around here before"
+        "???" "Really? I haven't seen you around here before."
         "???" "Wait, you're a new student, aren't you?"
         show dylan handing flier
         "???" "You should join the e-Gaming club!"
@@ -56,7 +58,7 @@ label chapterOneDay1to4:
         show dylan angry #slight problem, we don't have an image for this
         "???" "HEY!!! I KNOW YOU HEAR ME!!!"
         scene bg school hallway
-        "You continue looking forward and scurry away"
+        "You continue looking forward and scurry away."
         "???" "COME TO THE E-GAMING CLUB!!!"
         jump club_end
 
@@ -69,7 +71,7 @@ label chapterOneDay1to4:
     "Teacher" "Good morning!"
     "Teacher" "Class, we have a new student."
     "Teacher" "Why don't you introduce yourself?"
-    mc "{i}Even after counless times, I still don't know what to say...{/i}"
+    mc "{i}Even after countless times, I still don't know what to say...{/i}"
     mc "Hello, I'm [mc]."
 
     "..."
@@ -85,18 +87,18 @@ label chapterOneDay1to4:
     scene bg classroom desk #facing desks
     show kelvin happy
     kel "Hi, I'm Kelvin. Nice to meet you, [mc]!"
-    mc "Hello"
+    mc "Hello."
     kel "If you ever need help don't be afraid to ask."
     mc "Okay..."
 
     scene bg classroom whiteboard
-    "Teacher" "We'll be continuing from our last lesson on combinations and permutations"
-    "The teacher turns around and begins writing numbers on the whiteboard behind him" #gender not known yet
-    "The lesson is long-winded, and the teacher's voice is mundane"
+    "Teacher" "We'll be continuing from our last lesson on combinations and permutations."
+    "The teacher turns around and begins writing numbers on the whiteboard behind him." #gender not known yet
+    "The lesson is long-winded, and the teacher's voice is mundane."
 
     scene bg desk side view
     show kelvin on phone
-    kel "{size=-8}...dammit, my rank dropped again{/size}"
+    kel "{size=-8}...dammit, my rank dropped again.{/size}"
     mc "Rank?"
     mc "{i}What is he talking about? {/i}"
     show kelvin abashed
@@ -122,7 +124,7 @@ label chapterOneDay1to4:
     mc "I see... Anyways, I'm only Diamond, and I've been playing for a long time."
     show kelvin happy
     kel "Still, diamond is pretty impressive!"
-    "The two continue to discuss the game until the bell rings"
+    "The two continue to discuss the game until the bell rings."
 
     show teacher neutral
     "Teacher" "Boys, you can come back in now. Next time, please try not to disrupt the lesson."
@@ -133,7 +135,7 @@ label chapterOneDay1to4:
     scene bg classroom whiteboard
     "The rest of the classes pass by in a blur, and students are exiting the classroom."
     show kelvin happy
-    kel "Hey [mc]! Hope your first day was alright"
+    kel "Hey [mc]! Hope your first day was alright."
     kel "Oh, I forgot to mention - every student needs to join a club."
     kel "Are there any clubs that you have in mind?"
     mc "Not really...now that I think about it, there was somebody trying to get me to join their club pretty desperately."
@@ -144,7 +146,7 @@ label chapterOneDay1to4:
     kel "It's basically a social club rather than a game-focused club."
     mc "Oh..."
     kel "I'm assuming you're not interested? Oh well, there are tons of established clubs here."
-    kel "For example, I'm in the tennis club"
+    kel "For example, I'm in the tennis club."
     show kelvin handing paper
     kel "Here's a full list of clubs if you want to take a look."
     hide kelvin handing paper
@@ -156,7 +158,7 @@ label chapterOneDay1to4:
     mc "{i}My only hobby is LL I guess...{/i}"
     mc "{i}It's a shame that the students here don't seem to know much about the game.{/i}"
     with hpunch
-    mc "{i}!!!{/i}"
+    mc "{size=+10}{i}!!!{/i}{/size}"
     mc "Hey Kelvin, about that club deadline. When is it?"
     show kelvin thinking
     kel "Hm? I think is was by the end of the week. Today is Thursday so that means..."
@@ -244,7 +246,7 @@ label chapterOneDay1to4:
 
     scene bg cafeteria
     mc "{i}Wow. There are a ton of people here.{/i}"
-    mc "{i}Good. That means there are a lot of people to ask{/i}"
+    mc "{i}Good. That means there are a lot of people to ask.{/i}"
     mc "{i}Who should I ask first?{/i}"
     window hide
     scene bg cafeteria one
@@ -270,7 +272,8 @@ label chapterOneDay1to4:
     "???" "Oh hey, I'm Dylan"
     show dylan happy
     d "Wait, I know you!"
-    d "Are you perhaps here...to talk about the e-Gaming club?!?" with vpunch #i dont think we have dylan pog
+    d "Are you perhaps here..." with vpunch
+    extend "to talk about the e-Gaming club?!?"  #i dont think we have dylan pog
     mc "Uh, about that ..."
     show dylan sad #dejected just change name of file doesn't really matter
     d "Oh..."
@@ -310,9 +313,9 @@ label chapterOneDay1to4:
     mc "{i}Kelvin's pretty incredible...{/i}"
     mc "{i}I found it pretty hard to even approach people, but he's already gone and found enough people for me.{/i}"
     mc "{i}Without him, I don't know what I would have done...{/i}"
-    kel "If you need to reach me, here's my number"
-    mc "Oh thanks, here's mine as well"
-    mc "{i}No way I'm telling him my mom and sister are the only ones on my contacts list{/i}"
+    kel "If you need to reach me, here's my number."
+    mc "Oh thanks, here's mine as well."
+    mc "{i}No way I'm telling him my mom and sister are the only ones on my contacts list.{/i}"
     show kelvin smile
     kel "Anyways, I need to get going to tennis practice now."
     kel "See you at the meeting, [mc]."
@@ -328,11 +331,15 @@ label chapterOneDay1to4:
     pause
 
     scene club room
-    with Fade
+    with fade
     pause
     window show
-    mc "{i}So this is the clubroom{/i}"
-
+    mc "{i}So this is the clubroom.{/i}"
+    show kelvin neutral
+    kel "Oh, [mc], you're already here."
+    kel "Sorry to have kept you waiting."
+    kel "Well, let me introduce you to everyone."
+    
 
 
 
