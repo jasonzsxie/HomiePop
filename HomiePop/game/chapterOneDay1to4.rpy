@@ -1,12 +1,14 @@
 ﻿
 
 label chapterOneDay1to4:
+    window hide
     scene day one
     pause
     # Background should be ceiling of room, blue light, morning
 
     scene bg bedroom
     with fade
+    window show
 
     mc "{i}How many times does this make it now?{/i}"
     mc "{i}...It doesn't matter.{/i}" 
@@ -18,6 +20,7 @@ label chapterOneDay1to4:
     with fade
     pause
     scene bg school hallway
+    pause
     show dylan holding flier
 
     "???" "Hey! Are you in any clubs?"
@@ -190,8 +193,148 @@ label chapterOneDay1to4:
     mc "{i}I hope we can find members tomorrow.{/i}"
 
     scene day two
-    with Fade(.5, 3, .5)
+    window hide
+    with Fade(.5, 1, .5)
     pause
+
+    scene bg school entrance
+    with fade
+    pause
+    window show
+    show kelvin smile
+    kel "Hey. You ready?"
+    mc "Sure."
+    kel "We're going to make it happen. You believe, right?"
+    mc "Yeah..."
+    kel "C'mon, let's go."
+    mc "{i}Okay, calm down. You can do this...{/i}"
+
+    scene bg classroom desk
+    mc "{i}Alright, I'll ask the first person I see. {/i}"
+    "..."
+    show regina back
+    mc "{i}Ok, Ok - Let's go over it one more time.{/i}"
+    mc "{i}...{/i}"
+    mc "{i}\"Hi, I'm [mc].\"{/i}"
+    mc "{i}\"Would you like to join my club?\"{/i}"
+    mc "{i}\"What is it? Oh, it's a LL club. LL is a game about...\"{/i}"
+    show regina angry
+    "Random Girl" "Hey! Were you staring at me?"
+    mc "No! Of course not! I mean.."
+    mc "I didn't mean to! - ehr - I was thinking to myself..."
+    show regina neutral
+    "Random Girl" "Hmph, okay."
+    "Random Girl" "What were you thinking about?"
+    mc "Nothing! Well, I mean, um, actually-"
+    show regina smile
+    "Random Girl" "It's ok, you don't have to tell me."
+    "Random Girl" "Are you sure there wasn't something you wanted to say to me?"
+    mc "Yea, I guess not..."
+    "Random Girl" "I'll see you, then."
+    mc "Bye..."
+    mc "{i}Shoot! I messed up.{/i}"
+    mc "{i}But it wasn't that bad, right?{/i}"
+
+    scene bg classroom whiteboard
+    "Teacher" "Alright, get your textbooks out."
+    mc "{i}I guess I'll have to wait until lunch for my next shot.{/i}"
+
+    scene bg black screen
+    "..."
+
+    scene bg cafeteria
+    mc "{i}Wow. There are a ton of people here.{/i}"
+    mc "{i}Good. That means there are a lot of people to ask{/i}"
+    mc "{i}Who should I ask first?{/i}"
+    window hide
+    scene bg cafeteria one
+    show random person one
+    pause
+    scene bg cafeteria two
+    show random person two
+    pause
+    scene bg cafeteria three
+    show random person three
+    pause
+    scene bg cafeteria four
+    show dylan neutral far
+    pause
+
+    window show
+    mc "{i}Oh? I recognize him.{/i}"
+    mc "{i}I'll start there.{/i}"
+    
+    scene bg cafeteria
+    show dylan neutral
+    mc "Hi ... I'm [mc]-"
+    "???" "Oh hey, I'm Dylan"
+    show dylan happy
+    d "Wait, I know you!"
+    d "Are you perhaps here...to talk about the e-Gaming club?!?" with vpunch #i dont think we have dylan pog
+    mc "Uh, about that ..."
+    show dylan sad #dejected just change name of file doesn't really matter
+    d "Oh..."
+    mc "Sorry, I actually wanted to talk to you about a club I'm starting."
+    mc "I need members for a competitive LL club."
+    mc "You're in the e-Gaming club, right?"
+    mc "So I was wondering if you knew anyone who would be interested..."
+    show dylan thinking
+    d "Hmm... Not really, sorry."
+    d "In fact, we barely found our last member for the e-Gaming club."
+    show dylan smile # or happy idk
+    d "Good luck finding your members, though."
+    mc "That's too bad..."
+    mc "Thanks anyways! I'll see you around, Dylan."
+    d "Bye [mc]."
+
+    scene bg classroom desk
+    mc "{i}I asked a couple more people, but nobody was really interested...{/i}"
+    mc "{i}Approaching people is a lot harder than I thought.{/i}"
+    mc "{i}But I think I'm making progress!{/i}"
+    mc "{i}I can talk to Dylan and Kelvin without sounding completely incoherent.{/i}"
+    show kelvin happy
+    kel "Hey, did you manage to find anyone that was willing to join?"
+    mc "Ah..."
+    mc "I didn't manage to find anyone interested in joining..."
+    mc "Sorry about that, even after asking for your help with something like this..."
+    kel "Oh, don't worry about it! I already got 4 members!"
+    with hpunch
+    mc "{size=+10}WHAT??!?!{/size}" 
+    mc "THANK YOU, KELVIN! YOU'RE SERIOUSLY THE BEST!"
+    show kelvin smile scratching head
+    kel "Haha, no worries! I have many connections with people around here~"
+    kel "I'll introduce everyone to you tomorrow!"
+    show kelvin happy
+    kel "Also, I've already submitted a club registration to the principal."
+    kel "We'll be using room F-143."
+    mc "{i}Kelvin's pretty incredible...{/i}"
+    mc "{i}I found it pretty hard to even approach people, but he's already gone and found enough people for me.{/i}"
+    mc "{i}Without him, I don't know what I would have done...{/i}"
+    kel "If you need to reach me, here's my number"
+    mc "Oh thanks, here's mine as well"
+    mc "{i}No way I'm telling him my mom and sister are the only ones on my contacts list{/i}"
+    show kelvin smile
+    kel "Anyways, I need to get going to tennis practice now."
+    kel "See you at the meeting, [mc]."
+    mc "Bye, Kelvin."
+
+    scene bg neighborhood street
+    mc "{i}I can't believe that Kelvin actually managed to recruit enough members for our club.{/i}"
+    mc "{i}I wonder what everyone will be like...{/i}"
+
+    scene day three
+    window hide
+    with Fade(.5, 1, .5)
+    pause
+
+    scene club room
+    with Fade
+    pause
+    window show
+    mc "{i}So this is the clubroom{/i}"
+
+
+
 
     # This ends the game.
 
