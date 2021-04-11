@@ -206,3 +206,10 @@ init python:
 ## by a slash.
 
 # define build.itch_project = "renpytom/test-project"
+
+# None default transformations (display more than 3 character on screen at once)
+transform centerleft:
+    xalign 0.35 yalign 0.0
+
+transform centerright:
+    xalign 0.65 yalign 0.0
