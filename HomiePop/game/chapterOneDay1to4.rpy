@@ -464,7 +464,7 @@
     pause(.25)
     mc "{i}Who should I talk to first?{/i}"
     while girlsTalkedTo <= 3: 
-    
+        scene bg clubroom
         menu:
             "Tiffany" if whoFirst != "Tiffany" and whoSecond != "Tiffany" and whoThird != "Tiffany":
                 jump tiffany 
@@ -552,7 +552,7 @@
                 "So, why did you join the club?":
                     jump tiffany_question_two_option_one
 
-                "What's your relationship with Kelvin":
+                "What's your relationship with Kelvin?":
                     jump tiffany_question_two_option_two
 
                 "What club were you in before this?":
@@ -617,19 +617,429 @@
                 jump end_of_talking
 
         label maryanne:
+            $ girlsTalkedTo += 1
+            if girlsTalkedTo == 1:
+                $ whoFirst = "Maryanne"
+            elif girlsTalkedTo == 2:
+                $ whoSecond = "Maryanne"
+            elif girlsTalkedTo == 3:
+                $ whoThird = "Maryanne"
+            show maryanne patty eyes #idk wtf this is
+            pause(.25)
+            ma "Hey [mc]... It's been a while."
+            mc "Huh? What are you talking about?"
+            show maryanne shocked
+            pause(.25)
+            ma "{cps=*3}{size=-10}{i}Oh ... d-does he not remember me?{/i}{/size}{/cps}"
+            mc "Sorry, what was that? I couldn't hear you."
+            show maryanne embarrassed smile
+            ma "Oh nothing! I was just thinking out loud."
+            mc "Oh, I see. Anyways..."
+            menu:
+                "What do you think about games?":
+                    jump maryanne_question_option_one
+
+                "How did you meet Kelvin?":
+                    jump maryanne_question_option_two
+
+                "Why did you decide to join this club?":
+                    jump maryanne_question_option_three
+
+            label maryanne_question_option_one:
+                mc "What do you think about games?"
+                show maryanne giggle
+                pause(.25)
+                ma "Well, I like games of course! I wouldn't be here if I didn't right, silly?"
+                mc "U-uh, I guess so..."
+                show maryanne slight smile #head tilted
+                pause(.25)
+                ma "What about you? How did you get into games?"
+                mc "Hmm...actually, I've pretty much always enjoyed games. I vividly remember the first time I used a computer."
+                mc "I was probably four or five, and I've been in love ever since."
+                show maryanne aggressive glare
+                pause(.25)
+                ma "Oh...me too. I feel like we always remember the important parts of our childhood, don't you?"
+                mc "Oh yeah, for sure. I thi- wait, why d-do you look so angry?"
+                show maryanne fake smile
+                pause(.25)
+                ma "Oh, it's nothing. Don't worry about it."
+                mc "Oh, alright. If you say so."
+                show maryanne aggressive glare
+                pause(.25)
+                ma "..."
+                mc "{i}I should probably go...{/i}"
+                mc "Well, see you later, Maryanne..."
+                ma "..."
+                mc "{i}What did I do?!?{/i}"
+                jump maryanne_question_end
+
+            label maryanne_question_option_two:
+                mc "How did you meet Kelvin?"
+                show maryanne smile
+                pause(.25)
+                ma "Well, we were both in the competitive math club our freshman year. He's a good friend, isn't he?"
+                mc "Yeah, he really is! I just met him, but I feel like we've known each other forever..."
+                show maryanne excited #idk about frothing at the mouth my dude
+                pause(.25)
+                ma "It sure feels like we have!" with vpunch
+                mc "W-wha? What are you talking about??"
+                show maryanne embarrassed smile
+                pause(.25)
+                ma "Oh, sorry... I just meant that I've known Kelvin for a long time. We're pretty close..."
+                mc "I knew it!"
+                show maryanne blushing #and laughing as well i guess?
+                pause(.25)
+                ma "No, not in that way! I already like somebody else..."
+                mc "Hehe, I was just kidding."
+                show maryanne pout
+                pause(.25)
+                ma "Not funny."
+                mc "Heh, alright, I'll see you later, Maryanne."
+                show maryanne smile
+                pause(.25)
+                ma "Bye, [mc]."
+                mc "{i}I wonder who she's into...{/i}"
+                jump maryanne_question_end
+
+            label maryanne_question_option_three:
+                mc "Why did you decide to join this club?"
+                show maryanne neutral
+                pause(.25)
+                ma "Well, the club I was planning on joining disbanded due to leadership issues."
+                mc "Ah, that's unfortunate, but I hope you'll enjoy this club."
+                show maryanne smile
+                pause(.25)
+                ma "Of course I will, {cps=*3}{size=-10}{i}you're in it...{/i}{/size}{/cps}"
+                mc "What did you say?"
+                show maryanne shy smile
+                pause(.25)
+                ma "Oh, I was just thinking out loud."
+                mc "{i}I guess she just has a habit of thinking out loud.{/i}"
+                mc "Okay, I'll see you later."
+                ma "Later, [mc]."
+                jump maryanne_question_end
+            
+            label maryanne_question_end:
+                jump end_of_talking      
 
         label regina:
+            $ girlsTalkedTo += 1
+            if girlsTalkedTo == 1:
+                $ whoFirst = "Regina"
+            elif girlsTalkedTo == 2:
+                $ whoSecond = "Regina"
+            elif girlsTalkedTo == 3:
+                $ whoThird = "Regina"
+            show regina arms crossed #or powerstance idk
+            pause(.25)
+            mc "..."
+            r "Hey, why are you looking at me like that?"
+            mc "Uh, I was trying to think of something to say."
+            r "Then spit it out. I don't have all day for this."
+            mc "{i}Why is she so aggressive towards me? How do I start a conversation with her?{/i}"
+            menu:
+                "What'd you even come here for?":
+                    jump regina_question_one_option_one
+
+                "Are you always this rude?":
+                    jump regina_question_one_option_two
+
+                "What did I do to anger you?":
+                    jump regina_question_one_option_three
+
+            label regina_question_one_option_one:
+                mc "What'd you even come here for?"
+                show regina angry
+                pause(.25)
+                r "Wow. What's that supposed to mean?"
+                mc "{i}... I may have made a mistake.{/i}"
+                r "I'm here becuae I want to be, duh. Any more stupid questions?"
+                mc "N-no..."
+                jump regina_question_one_end
+
+            label regina_question_one_option_two:
+                mc "Are you always this rude?"
+                show regina stern
+                pause(.25)
+                r "I'm always like this."
+                r "What, did you think you were special?"
+                mc "I mean, of course not, that's not wh-"
+                r "Good, because you're not."
+                mc "... Understood."
+                jump regina_question_one_end
+
+            label regina_question_one_option_three:
+                mc "What did I do to anger you?"
+                r "Hmph, this is how I normally talk to people."
+                mc "I see... But can you be a little nic-"
+                r "No."
+                mc "..."
+                jump regina_question_one_end
+
+            label regina_question_one_end:
+                mc "Anyways..."
+            
+            menu:
+                "How do you know Kelvin?":
+                    jump regina_question_two_option_one
+
+                "Do you enjoy playing games?":
+                    jump regina_question_two_option_two
+
+                "Um... how well do you get along with others?":
+                    jump regina_question_two_option_three
+
+            label regina_question_two_option_one:
+                mc "How do you know Kelvin?"
+                r "Oh that guy, I had a class with him last year and we sat next to each other."
+                mc "{i}How did Kelvin put up with this girl for a year? He's amazing as usual.{/i}"
+                mc "I see... What was he like?"
+                show regina arms crossed looking away
+                pause(.25)
+                r "Hmph, aren't you in one of his classes? You can expreience him for yourself."
+                mc "Understood..."
+                mc "{i}She's kinda scary...{/i}"
+                jump regina_question_two_end
+
+            label regina_question_two_option_two:
+                mc "Do you enjoy playing games?"
+                show regina glare
+                pause(.25)
+                r "Of course I do. If I didn't, why would I be here? You're dense."
+                mc "Err s-sorry... this was just a genuine question."
+                r "Hmph. Games allow me to relax and take my mind off of bigger issues."
+                mc "I can understand that. Everyone goe-"
+                show regina angry
+                pause(.25)
+                r "Did I ask? I don't need your help."
+                mc "N-no, o-of course n-not..."
+                mc "{i}Geez{/i}"
+                jump regina_question_two_end
+
+            label regina_question_two_option_three:
+                mc "Um... how well do you get along with others?"
+                show regina angry
+                pause(.25)
+                r "What are you trying to imply?"
+                r "I don't have any problems with other people."
+                r "It's not my fault that you're a big baby."
+                mc "..."
+                mc "Please don't hurt me..."
+                show regina evil smile
+                pause(.25)
+                r "Don't annoy me any more, and I'll consider it."
+                mc "{i}I better take this opportunity to get out...{/i}"
+                jump regina_question_two_end
+
+            label regina_question_two_end:
+                jump end_of_talking
 
         label kristella:
+            $ girlsTalkedTo += 1
+            if girlsTalkedTo == 1:
+                $ whoFirst = "Kristella"
+            elif girlsTalkedTo == 2:
+                $ whoSecond = "Kristella"
+            elif girlsTalkedTo == 3:
+                $ whoThird = "Kristella"
+            show kristella smile
+            pause(.25)
+            kr "Hey, [mc]! How's everything going?"
+            mc "Hi, Kristella..."
+            show kristella concerned
+            pause(.25)
+            kr "Hey, you look uncomfortable. What's wrong, [mc]?"
+            menu:
+                "Nothing":
+                    jump kristella_question_one_option_one
+
+                "I ate something weird":
+                    jump kristella_question_one_option_two
+
+                "You":
+                    jump kristella_question_one_option_three
+
+            label kristella_question_one_option_one:
+                mc "Oh, wha-uhm, ehr... it's nothing!!"
+                kr "Hmm... Are you sure?"
+                kr "If you tell me what's wrong, I can help you out~"
+                mc "No! I'm fine! There's nothing wrong!"
+                show kristella laughing
+                pause(.25)
+                kr "Okay, fine. I'll trust you, hehe."
+                mc "Good"
+                mc "{i}Phew. That was stressful.{/i}"
+                jump kristella_question_one_end
+
+            label kristella_question_one_option_two:
+                mc "Uh, I think I ate something weird..."
+                kr "Oh no! Are you alright?"
+                mc "Yeah, don't worry about me."
+                kr "I'm not convinced..."
+                show kristella lightbulb #have an idea, idk 
+                pause(.25)
+                kr "Hold on, I can help!"
+                show kristella stern
+                pause(.25)
+                kr "Lie down, and don't move."
+                mc "Okay, fine."
+                scene bg clubroom
+                pause(.5)
+                "Five minutes later, Kristella scurries back into the room."
+                show kristella panting
+                pause(.25)
+                kr "{cps=30}Haa... hold on, let me catch my breath.{/cps}"
+                kr "..."
+                show kristella handing pepto
+                pause(.25)
+                kr "Here, take this. I got it from the nurse."
+                show kristella smile
+                pause(.25)
+                kr "It should make you feel better..."
+                mc "..."
+                mc "{i}It might be placebo, but I already feel better...{/i}"
+                mc "Wow, Kristella. Thank you so much."
+                show kristella giggle
+                pause(.25)
+                kr "Don't mention it, MC~"
+                jump kristella_question_one_end
+
+            label kristella_question_one_option_three:
+                mc "It's you..."
+                kr "Oh, sorry... I know I can be a bit much at ti-"
+                mc "No, no! That's not what I meant."
+                mc "I'm just- um- not used to this..."
+                show kristella confused
+                pause(.25)
+                kr "Huh? What do you mean?"
+                mc "Ah... you know, erm, talking to um... popu-"
+                show kristella smile
+                pause(.25)
+                kr "[mc], don't worry about that!"
+                kr "Let's act like old friends~"
+                mc "{i}That sounds a bit strange...{/i}"
+                mc "Um, okay..."
+                jump kristella_question_one_end
+            
+            label kristella_question_one_end:
+                mc "{i}Okay, what should I say...{/i}"
+
+            menu:
+                "Why did you decide to join this club?":
+                    jump kristella_question_two_option_one
+
+                "Kelvin's lucky to know you...":
+                    jump kristella_question_two_option_two   
+
+            label kristella_question_two_option_one:
+                mc "Why did you decide to join this club?"
+                show kristella laughing
+                pause(.25)             
+                kr "Well... I don't really know~"
+                kr "It was kind of an impulsive decision."
+                kr "But I'm glad I did. I think we'll have lots of fun!"
+                mc "Um... er, yeah, I h-hope so..."
+                mc "I'm uh- glad you're here."
+                show kristella giggle
+                pause(.25)
+                kr "Thanks~ I'm glad you're here as well."
+                jump kristella_question_two_end
+
+            label kristella_question_two_option_two:
+                mc "Kelvin's lucky to know you..."
+                show kristella smile
+                pause(.25)
+                kr "Oh, I think you misunderstand."
+                kr "I met Kelvin for the first time yesterday."
+                mc "{i}K-kelvin randomly approached her?{/i}"
+                mc "Wow... how did Kelvin convince you to join the club?"
+                kr "Actually, I noticed him in the hallway with his head down."
+                kr "He looked dismayed, so I asked him what happened, and he told me that he needed members for a club."
+                kr "I wanted to help, so here I am."
+                mc "That's very nice of you. Thank you."
+                show kristella laughing
+                pause(.25)
+                kr "Hehe~ No problem."
+                jump kristella_question_two_end
+
+            label kristella_question_two_end:
+                jump end_of_talking
 
         label end_of_talking:
             if girlsTalkedTo == 4:
+                scene bg clubroom
                 mc "{i}That should be everyone...{/i}"
             else:
+                scene bg clubroom
                 mc "{i}Who should I talk to next?{/i}"
 
-    mc "{i}Just in time, too.{/i}"            
-            
+    mc "{i}Just in time, too.{/i}" 
+    mc "Um... L-listen up, everyone..."   
+    show kelvin neutral        
+    show tiffany shy at left
+    show maryanne slight smile at centerleft
+    show regina power stance at centerright
+    show kristella happy at right 
+    pause(.5) 
+    mc "That's all the time we have for today, so I'll see y'all tomorrow."
+    mc "Thank you for coming."
+    hide tiffany shy at left
+    hide maryanne slight smile at centerleft
+    hide regina power stance at centerright
+    hide kristella happy at right
+    pause(.25)
+    kel "Later [mc]."
+    hide kelvin neutral
+    pause(.5)
+    show tiffany embarrassed
+    pause(.25)
+    t "T-thank you, [mc]."
+    hide tiffany embarrassed
+    pause(.5)
+    show maryanne slight smile
+    pause(.25)
+    ma "Goodbye, [mc]."
+    hide maryanne slight smile
+    pause(.5)
+    show regina pout
+    pause(.25)
+    r "Hmph. Bye."
+    hide regina pout
+    pause(.5)
+    show kristella laugh
+    pause(.25)
+    kr "It was fun! See you around, [mc]~"
+    hide kristella laugh
+    pause
+
+    scene bg neighborhood street
+    with fade
+    pause(.5)
+    mc "{i}Meeting everyone was pretty cool...{/i}"
+    mc "{i}It went better than expected.{/i}"
+    mc "{i}I'm excited for tomorrow's meeting.{/i}"
+    mc "{i}Kelvin and I can teach everyone about LL, and we can continue to get to know each other better...{/i}"
+
+    scene day four
+    window hide
+    with Fade(.5, 1, .5)
+    pause
+
+    scene bg clubroom
+    with fade
+    pause(.5)
+    show tiffany neutral at left
+    show maryanne neutral at centerleft
+    show regina neutral at centerright
+    show kristella neutral at right
+    pause(.25)
+    window show
+    mc "Hello, everyo-"
+    
+
+
+
+
         
 
          
