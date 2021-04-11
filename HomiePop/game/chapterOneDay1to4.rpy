@@ -1087,10 +1087,10 @@
     r "Me!"
     mc "Okay, go ahead."
     r "If the principal doesn't want to recognize us, we will force him to!"
-    r "Heres the plan:" pause
-    extend "we storm into his office" pause
-    extend "slam the desk" pause
-    extend "and demand that he changes his mind!"
+    r "Heres the plan:" 
+    r "we storm into his office" 
+    r "slam the desk" 
+    r "and demand that he changes his mind!"
     r "And if that doesn't do it, then we'll have to..."
     show regina evil laugh
     pause(.25)
