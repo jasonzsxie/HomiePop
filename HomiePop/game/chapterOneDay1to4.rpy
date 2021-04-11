@@ -1,6 +1,8 @@
-﻿
-
-label chapterOneDay1to4:
+﻿label chapterOneDay1to4:
+    $ whoFirst = ""
+    $ whoSecond = ""
+    $ whoThird  = ""
+    $ girlsTalkedTo = 0
     window hide
     scene day one
     pause
@@ -102,7 +104,7 @@ label chapterOneDay1to4:
     pause(.25)
     kel "Hi, I'm Kelvin. Nice to meet you, [mc]!"
     mc "Hello."
-    kel "If you ever need help don't be afraid to ask."
+    kel "If you ever need help, don't be afraid to ask."
     mc "Okay..."
 
     scene bg classroom whiteboard
@@ -322,8 +324,8 @@ label chapterOneDay1to4:
     show dylan happy
     pause(.25)
     d "Wait, I know you!"
-    d "Are you perhaps here..." with vpunch
-    extend "to talk about the e-Gaming club?!?"  #i dont think we have dylan pog
+    d "Are you perhaps here..." 
+    extend "to talk about the e-Gaming club?!?"  with vpunch    #i dont think we have dylan pog
     mc "Uh, about that ..."
     show dylan sad #dejected just change name of file doesn't really matter
     pause(.25)
@@ -399,6 +401,7 @@ label chapterOneDay1to4:
     kel "Oh, [mc], you're already here."
     kel "Sorry to have kept you waiting."
     kel "Well, let me introduce you to everyone."
+    hide kelvin neutral
     show tiffany shy at left
     show maryanne neutral at centerleft
     show regina power stance at centerright
@@ -406,7 +409,12 @@ label chapterOneDay1to4:
     pause(.25)
     "..."
     with hpunch
-    mc "{size+=8}{i}WHAT? THEY'RE ALL GIRLS?!?!?{/i}{/size}"
+    mc "{i}{size=+8}WHAT? THEY'RE ALL GIRLS?!?!?{/size}{/i}"
+    hide tiffany shy at left
+    hide maryanne neutral at centerleft
+    hide regina power stance at centerright
+    hide kristella happy at right 
+    pause(.5)
     show tiffany shy
     pause(.25)
     "Girl 1" "H-Hi, m-my name is T-tiffany."
@@ -432,12 +440,17 @@ label chapterOneDay1to4:
     pause(.25)
     mc "Nice to meet y'all."
     mc "{i}Wow. Everyone is so different...{/i}"
+    hide tiffany shy at left
+    hide maryanne neutral at centerleft
+    hide regina power stance at centerright
+    hide kristella happy at right 
+    pause(.5)
     show kelvin smile
     pause(.25)
     kel "Great! Now that everyone knows one another, we can start with the meeting."
     kel "[mc], what did you have planned?"
     mc "-Me?"
-    kel "It's you club after all!"
+    kel "It's your club after all!"
     mc "Uh... I - um - didn't really plan anything."
     mc "{i}What should we do?{/i}"
     show kristella neutral
@@ -450,30 +463,173 @@ label chapterOneDay1to4:
     hide kelvin neutral
     pause(.25)
     mc "{i}Who should I talk to first?{/i}"
-    menu:
-        "Tiffany":
-            jump tiffany
+    while girlsTalkedTo <= 3: 
+    
+        menu:
+            "Tiffany" if whoFirst != "Tiffany" and whoSecond != "Tiffany" and whoThird != "Tiffany":
+                jump tiffany 
 
-        "Maryanne":
-            jump maryanne
+            "Maryanne" if whoFirst != "Maryanne" and whoSecond != "Maryanne" and whoThird != "Maryanne":
+                jump maryanne 
 
-        "Regina":
-            jump regina
+            "Regina" if whoFirst != "Regina" and whoSecond != "Regina" and whoThird != "Regina":
+                jump regina 
 
-        "Kristella":
-            jump kristella  
+            "Kristella" if whoFirst != "Kristella" and whoSecond != "Kristella" and whoThird != "Kristella":
+                jump kristella 
 
-    label tiffany:
-        show tiffany looking away
-        pause(.25)
-        t "..."   
-        mc "..."
-        t "..."
-        "..."
-        mc "{i}I guess I should say something{/i}"
-        mc "Hey, Tiffany."
-        show tiffany shy
-        t "H-hey [mc]."
+        label tiffany:
+            $ girlsTalkedTo += 1
+            if girlsTalkedTo == 1:
+                $ whoFirst = "Tiffany"
+            elif girlsTalkedTo == 2:
+                $ whoSecond = "Tiffany"
+            elif girlsTalkedTo == 3:
+                $ whoThird = "Tiffany"
+            show tiffany looking away
+            pause(.25)
+            t "..."   
+            mc "..."
+            t "..."
+            "..."
+            mc "{i}I guess I should say something{/i}"
+            mc "Hey, Tiffany."
+            show tiffany shy
+            pause(.25)
+            t "H-hey [mc]."
+            mc "{i}She seems uncomfortable. What should I say?{/i}"
+
+            menu:
+                "Tiffany, you don't need to be nervous...":
+                    jump tiffany_question_one_option_one
+
+                "Is there something wrong?":
+                    jump tiffany_question_one_option_two
+
+                "Your stutter is super cute.":
+                    jump tiffany_question_one_option_three
+
+            label tiffany_question_one_option_one:
+                mc "Tiffany, you don't need to be nervous..."
+                show tiffany embarrassed #prob same thing as shy
+                pause(.25)
+                t "S-sorry... I c-can't help it."
+                t "I'll try h-harder..."
+                mc "Haha, don't worry about it."
+                show tiffany shy smile
+                pause(.25)
+                t "Okay..."
+                jump tiffany_question_one_ending
+
+            label tiffany_question_one_option_two:
+                mc "Is there something wrong?"
+                show tiffany shy
+                pause(.25)
+                t "A-ah, I'm sorry... I'm still a b-bit nervous."
+                mc "O-oh, am I scaring you? Sorry..."
+                show tiffany shy smile
+                pause(.25)
+                t "It's alright"
+                jump tiffany_question_one_ending
+
+            label tiffany_question_one_option_three:
+                mc "Your stutter is super cute."
+                show tiffany blush
+                pause(.25)
+                t "W-wha...? Really?"
+                mc "Yeah, seriously."
+                show tiffany shy smile
+                pause(.25)
+                t "T-thanks..."
+                jump tiffany_question_one_ending
+
+            label tiffany_question_one_ending:
+                show tiffany shy
+                mc "{i}Cute smile...{/i}"
+
+            mc "{i}Shoot, what now?{/i}"
+            menu:
+                "So, why did you join the club?":
+                    jump tiffany_question_two_option_one
+
+                "What's your relationship with Kelvin":
+                    jump tiffany_question_two_option_two
+
+                "What club were you in before this?":
+                    jump tiffany_question_two_option_three
+
+            label tiffany_question_two_option_one:
+                mc "So, why did you join the club?"
+                show tiffany embarrassed
+                pause(.25)
+                t "Um... I wanted to meet new people, I guess."
+                mc "{i}New faces. I'm familiar with that...{/i}"
+                mc "What for?"
+                t "Hm... I - k-kinda wanted to -um, get out a bit more..."
+                mc "That's great, Tiffany."
+                mc "{i}Maybe I should learn from her...{/i}"
+                show tiffany shy smile
+                pause(.25)
+                t "Y-you think so, [mc]? Thanks..."
+                jump tiffany_question_two_ending
+
+            label tiffany_question_two_option_two:
+                mc "What's your relationship with Kelvin?"
+                show tiffany smile
+                pause(.25)
+                t "Oh! We knew each other as children but never really talked until high school."
+                mc "{i}How does Kelvin have so many connections?{/i}"
+                mc "Oh, that's nice. Are you two... close?"
+                show tiffany panic
+                pause(.25)
+                t "N-no! Of course n-n-... Oh. I m-mean, not in that way."
+                show tiffany shy smile
+                pause(.25)
+                t "I g-guess you could say that we're good friends."
+                mc "{i}D-does she like Kelvin??{/i}"
+                mc "{i}She was probably just embarrassed, right{/i}"
+                mc "Oh. That's nice..."
+                jump tiffany_question_two_ending
+
+            label tiffany_question_two_option_three:
+                mc "What club were you in before this?"
+                show tiffany shy #or looking away
+                pause(.25)
+                t "{size=-3}I was planning on joining the debate club.{/size}"
+                mc "The deabte club!? Are you a good public speaker?"
+                t "N-no, but I wanted to become more c-confident..."
+                mc "Ah. Then why didn't you do it?"
+                show tiffany embarrassed
+                pause(.25)
+                t "Well, I k-kinda chickened out..."
+                t "B-besides, Kelvin asked me to j-join this one."
+                mc "I see. Well, I'm glad you did!"
+                mc "It's nice to have you here."
+                t "..."
+                mc "{i}Oh no, was that too much?{/i}"
+                show tiffany shy smile
+                pause(.25)
+                t "T-thanks... I'm g-glad I did, too."
+                jump tiffany_question_two_ending
+
+            label tiffany_question_two_ending:
+                mc "{i}A little shy but nice...{/i}"
+                jump end_of_talking
+
+        label maryanne:
+
+        label regina:
+
+        label kristella:
+
+        label end_of_talking:
+            if girlsTalkedTo == 4:
+                mc "{i}That should be everyone...{/i}"
+            else:
+                mc "{i}Who should I talk to next?{/i}"
+
+    mc "{i}Just in time, too.{/i}"            
+            
         
 
          
