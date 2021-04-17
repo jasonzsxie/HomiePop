@@ -37,6 +37,11 @@
     show kristella confused right
     pause(.25)
     "All Females" "Kinda...?" 
+    scene bg clubroom
+    show kelvin exasperated
+    pause(.25)
+    mc "You're probably right..."
+    mc "We should get roles decided first."
 
 
 
