@@ -150,6 +150,7 @@
     show kelvin happy
     pause(.25)
     kel "Still, diamond is pretty impressive!"
+    scene bg hallway
     "The two continue to discuss the game until the bell rings."
 
     show teacher neutral
@@ -455,7 +456,7 @@
     mc "{i}What should we do?{/i}"
     show kristella neutral
     pause(.25)
-    kr "Why don't we get to know everyone better"
+    kr "Why don't we get to know everyone better?"
     mc "Sure..."
     hide kristella neutral
     show kelvin neutral
@@ -597,7 +598,7 @@
                 show tiffany shy #or looking away
                 pause(.25)
                 t "{size=-3}I was planning on joining the debate club.{/size}"
-                mc "The deabte club!? Are you a good public speaker?"
+                mc "The debate club!? Are you a good public speaker?"
                 t "N-no, but I wanted to become more c-confident..."
                 mc "Ah. Then why didn't you do it?"
                 show tiffany embarrassed
@@ -631,7 +632,7 @@
             mc "Huh? What are you talking about?"
             show maryanne shocked
             pause(.25)
-            ma "{cps=*3}{size=-10}{i}Oh ... d-does he not remember me?{/i}{/size}{/cps}"
+            ma "{cps=*3}{size=-8}{i}Oh ... d-does he not remember me?{/i}{/size}{/cps}"
             mc "Sorry, what was that? I couldn't hear you."
             show maryanne embarrassed smile
             ma "Oh nothing! I was just thinking out loud."
@@ -710,7 +711,7 @@
                 mc "Ah, that's unfortunate, but I hope you'll enjoy this club."
                 show maryanne smile
                 pause(.25)
-                ma "Of course I will, {cps=*3}{size=-10}{i}you're in it...{/i}{/size}{/cps}"
+                ma "Of course I will, {cps=*3}{size=-8}{i}you're in it...{/i}{/size}{/cps}"
                 mc "What did you say?"
                 show maryanne shy smile
                 pause(.25)
@@ -1043,6 +1044,7 @@
     kel "The principal decided that we don't qualify as an official club."
     pause(.25)
     with hpunch
+    pause(.25)
     kel "Apparently, we aren't different enough from the e-Gaming club."
     show kristella concerned
     pause(.25)
@@ -1088,8 +1090,8 @@
     mc "Okay, go ahead."
     r "If the principal doesn't want to recognize us, we will force him to!"
     r "Heres the plan:" 
-    r "we storm into his office" 
-    r "slam the desk" 
+    r "We storm into his office," 
+    r "slam the desk," 
     r "and demand that he changes his mind!"
     r "And if that doesn't do it, then we'll have to..."
     show regina evil laugh
