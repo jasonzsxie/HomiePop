@@ -1188,6 +1188,4 @@
     
     jump chapterOneDay5
 
-    # This ends the game.
-
     return
