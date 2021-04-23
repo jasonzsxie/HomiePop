@@ -44,7 +44,7 @@
     
     label club_option_one:
         mc "Yes, I am."
-        show dylan flier confused
+        show dylan thinking
         pause(.25)
         "???" "Really? I haven't seen you around here before."
         "???" "Wait, you're a new student, aren't you?"
@@ -55,7 +55,7 @@
 
     label club_option_two:
         mc "No, why?"
-        show dylan flier happy
+        show dylan happy
         pause(.25)
         "???" "Great!"
         show dylan handing flier
@@ -64,7 +64,7 @@
         jump club_end
 
     label club_option_three:
-        show dylan angry #slight problem, we don't have an image for this
+        show dylan flier angry #slight problem, we don't have an image for this
         pause(.25)
         "???" "HEY!!! I KNOW YOU HEAR ME!!!"
         scene bg school hallway
@@ -258,30 +258,31 @@
     pause(.5)
     mc "{i}Alright, I'll ask the first person I see. {/i}"
     "..."
-    show regina back
+    show mic neutral
     pause(.25)
     mc "{i}Ok, Ok - Let's go over it one more time.{/i}"
     mc "{i}...{/i}"
     mc "{i}\"Hi, I'm [mc].\"{/i}"
     mc "{i}\"Would you like to join my club?\"{/i}"
     mc "{i}\"What is it? Oh, it's a LL club. LL is a game about...\"{/i}"
-    show regina angry
+    show mic angry
     pause(.25)
-    "Random Girl" "Hey! Were you staring at me?"
+    "Random Guy" "Hey! Were you staring at me?"
     mc "No! Of course not! I mean.."
     mc "I didn't mean to! - ehr - I was thinking to myself..."
-    show regina neutral
+    show mic neutral
     pause(.25)
-    "Random Girl" "Hmph, okay."
-    "Random Girl" "What were you thinking about?"
+    "Random Guy" "Hmph, okay."
+    "Random Guy" "What were you thinking about?"
     mc "Nothing! Well, I mean, um, actually-"
-    show regina smile
+    show mic smile
     pause(.25)
-    "Random Girl" "It's ok, you don't have to tell me."
-    "Random Girl" "Are you sure there wasn't something you wanted to say to me?"
+    "Random Guy" "It's ok, you don't have to tell me."
+    "Random Guy" "Are you sure there wasn't something you wanted to say to me?"
     mc "Yea, I guess not..."
-    "Random Girl" "I'll see you, then."
+    "Random Guy" "I'll see you, then."
     mc "Bye..."
+    scene bg classroom desk
     mc "{i}Shoot! I messed up.{/i}"
     mc "{i}But it wasn't that bad, right?{/i}"
 
@@ -309,7 +310,7 @@
     show random person three
     pause
     scene bg cafeteria four
-    show dylan neutral far
+    show dylan neutral
     pause
 
     window show
@@ -322,7 +323,7 @@
     pause(.25)
     mc "Hi ... I'm [mc]-"
     "???" "Oh hey, I'm Dylan"
-    show dylan happy
+    show dylan elated
     pause(.25)
     d "Wait, I know you!"
     d "Are you perhaps here..." 
@@ -339,7 +340,7 @@
     pause(.25)
     d "Hmm... Not really, sorry."
     d "In fact, we barely found our last member for the e-Gaming club."
-    show dylan smile # or happy idk
+    show dylan happy # or happy idk
     pause(.25)
     d "Good luck finding your members, though."
     mc "That's too bad..."
@@ -488,7 +489,7 @@
                 $ whoSecond = "Tiffany"
             elif girlsTalkedTo == 3:
                 $ whoThird = "Tiffany"
-            show tiffany looking away
+            show tiffany shy
             pause(.25)
             t "..."   
             mc "..."
@@ -496,7 +497,7 @@
             "..."
             mc "{i}I guess I should say something{/i}"
             mc "Hey, Tiffany."
-            show tiffany shy
+            show tiffany looking away
             pause(.25)
             t "H-hey [mc]."
             mc "{i}She seems uncomfortable. What should I say?{/i}"
@@ -536,7 +537,7 @@
 
             label tiffany_question_one_option_three:
                 mc "Your stutter is super cute."
-                show tiffany blush
+                show tiffany uwu
                 pause(.25)
                 t "W-wha...? Really?"
                 mc "Yeah, seriously."
@@ -582,7 +583,7 @@
                 t "Oh! We knew each other as children but never really talked until high school."
                 mc "{i}How does Kelvin have so many connections?{/i}"
                 mc "Oh, that's nice. Are you two... close?"
-                show tiffany panic
+                show tiffany uwu
                 pause(.25)
                 t "N-no! Of course n-n-... Oh. I m-mean, not in that way."
                 show tiffany shy smile
@@ -1145,7 +1146,7 @@
     show kelvin neutral
     pause(.25)
     kel "Unfortunately, you all will have to play without me."
-    show tiffany whine
+    show tiffany aghast
     pause(.25)
     t "W-whyy??"
     show kelvin slight smile
