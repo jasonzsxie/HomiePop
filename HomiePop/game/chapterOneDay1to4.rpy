@@ -393,7 +393,7 @@
     with Fade(.5, 1, .5)
     pause
 
-    scene club room
+    scene bg clubroom
     with fade
     pause(1)
     window show
@@ -404,7 +404,7 @@
     kel "Sorry to have kept you waiting."
     kel "Well, let me introduce you to everyone."
     hide kelvin neutral
-    show tiffany shy at left
+    show tiffany shy small at left
     show maryanne neutral at centerleft
     show regina power stance at centerright
     show kristella happy at right #could be kristella smile (no clue yet)
@@ -412,7 +412,7 @@
     "..."
     with hpunch
     mc "{i}{size=+8}WHAT? THEY'RE ALL GIRLS?!?!?{/size}{/i}"
-    hide tiffany shy at left
+    hide tiffany shy small at left
     hide maryanne neutral at centerleft
     hide regina power stance at centerright
     hide kristella happy at right 
@@ -421,28 +421,32 @@
     pause(.25)
     "Girl 1" "H-Hi, m-my name is T-tiffany."
     t "S-sorry, I'm just a bit nervous..."
+    hide tiffany shy
     show maryanne smile
     pause(.25)
     "Girl 2" "Hey!"
     ma "It's me - er, I mean, I'm Maryanne."
+    hide maryanne shy
     show regina power stance
     pause(.25)
     "Girl 3" "Hey! I'm Regina."
     show regina pout
     pause(.25)
     r "I'm only here for the club, so don't try anything."
+    hide regina pout
     show kristella happy
     pause(.25)
     "Girl 4" "Heyyy~ I'm Kristella!"
     kr "I hope we get to know each other better."
-    show tiffany shy at left
+    hide kristella happy
+    show tiffany shy small at left
     show maryanne neutral at centerleft
     show regina power stance at centerright
     show kristella happy at right #could be kristella smile (no clue yet)
     pause(.25)
     mc "Nice to meet y'all."
     mc "{i}Wow. Everyone is so different...{/i}"
-    hide tiffany shy at left
+    hide tiffany shy small at left
     hide maryanne neutral at centerleft
     hide regina power stance at centerright
     hide kristella happy at right 
@@ -455,6 +459,7 @@
     kel "It's your club after all!"
     mc "Uh... I - um - didn't really plan anything."
     mc "{i}What should we do?{/i}"
+    hide kelvin smile
     show kristella neutral
     pause(.25)
     kr "Why don't we get to know everyone better?"
@@ -979,14 +984,14 @@
     mc "{i}Just in time, too.{/i}" 
     mc "Um... L-listen up, everyone..."   
     show kelvin neutral        
-    show tiffany shy at left
+    show tiffany shy small at left
     show maryanne slight smile at centerleft
     show regina power stance at centerright
     show kristella happy at right 
     pause(.5) 
     mc "That's all the time we have for today, so I'll see y'all tomorrow."
     mc "Thank you for coming."
-    hide tiffany shy at left
+    hide tiffany shy small at left
     hide maryanne slight smile at centerleft
     hide regina power stance at centerright
     hide kristella happy at right
@@ -1031,7 +1036,7 @@
     scene bg clubroom
     with fade
     pause(.5)
-    show tiffany neutral at left
+    show tiffany neutral small at left
     show maryanne neutral at centerleft
     show regina neutral at centerright
     show kristella neutral at right
@@ -1047,18 +1052,23 @@
     with hpunch
     pause(.25)
     kel "Apparently, we aren't different enough from the e-Gaming club."
+    hide kelvin paper panic
     show kristella concerned
     pause(.25)
     kr "Oh no!"
+    hide kristella concerned
     show tiffany sad
     pause(.25)
     t "W-wow... that's not g-good."
+    hide tiffany sad
     show regina annoyed
     pause(.25)
     r "Ugh. Stupid principal."
+    hide regina annoyed
     show maryanne thinking
     pause(.25)
     ma "Everyone calm down. Think, what can we do?"
+    hide maryanne thinking
     show kelvin neutral
     pause(.25)
     kel "Yeah, Maryanne's right. [mc], what do you think?"
@@ -1071,20 +1081,25 @@
     pause(.25)
     kr "Yes~ we do too!"
     mc "And um- well, I don't think we should let this stop us."
+    hide kristella smile
     show regina determined
     pause(.25)
     r "Hmph. You're right."
     mc "A-although I don't really have any ideas yet..."
+    hide regina determined
     show tiffany shy
     pause(.25)
     t "T-that's alright [mc]."
     mc "If we all work together, I'm sure we'll figure something out."
+    hide tiffany shy
     show maryanne smile
     pause(.25)
     ma "Of course we will."
+    hide maryanne smile
     show kelvin excited
     pause(.25)
     kel "Yeah! Let's all start brainstorming. Any ideas to start us off?"
+    hide kelvin excited
     show regina evil smile
     pause(.25)
     r "Me!"
@@ -1100,22 +1115,28 @@
     r "FORCIBLY REMOVE HIM FROM HIS POSITION!!!" with hpunch
     pause(.5)
     mc "..."
+    hide regina evil laugh
     show kelvin annoyed #replace with better expression 
     pause(.25)
     kel "Um... Thanks for the input, but I think that may be a little too troublesome."
+    hide kelvin annoyed
     show kristella neutral
     pause(.25)
     kr "I agree..."
+    hide kristella neutral
     show regina annoyed
     pause(.25)
     r "Grr... fine. Y'all are a buch of scaredy-cats."
+    hide regina annoyed
     show kelvin neutral
     pause(.25)
     kel "Anyone else?"
+    hide kelvin neutral
     show tiffany embarrassed
     pause(.25)
     t "Um, I c-can't think of anything- s-sorry..."
     mc "It's alright, Tiffany. Maryanne, any ideas?"
+    hide tiffany embarrassed
     show maryanne thinking
     pause(.25)
     ma "Hmm... first, we should establish the conditions for qualifications as an official club."
@@ -1125,35 +1146,44 @@
     ma "1) The proposed club shall have, at minimum, five members who are not already dedicated to a separate organization." 
     ma "2) The proposed club will be centered around an activity that is school-appropriate, as defined by the jurisdiction of the principal."
     ma "3) The proposed club must have unique elements distinguishing it from pre-existing organizations, including, but not limited to, separate focus, competitive prowess, and/or new acti-"
+    hide maryanne reading
     show kristella excited
     pause(.25)
     kr "That's it - competitiveness!"
     kr "We can separate ourselves from the e-Gaming club by entering and winning a competition!"
+    hide kristella excited
     show tiffany aghast
     pause(.25)
     t "C-c...competition???"
+    hide tiffany aghast
     show maryanne smile
     pause(.25)
     ma "Hmm.. that would satisfy the conditions for qualification."
     ma "However, we lack the experience and game knowledge necessary to place highly."
+    hide maryanne smile
     show kelvin neutral
     pause(.25)
     kel "There's still time for you all to get familiar with the game before the tournament-"
     kel "But it'll require a lot of effort."
+    hide kelvin neutral
     show regina smile
     pause(.25)
     r "I'm down. Let's do it!"
+    hide regina smile
     show kelvin neutral
     pause(.25)
     kel "Unfortunately, you all will have to play without me."
+    hide kelvin neutral
     show tiffany aghast
     pause(.25)
     t "W-whyy??"
+    hide tiffany aghast
     show kelvin slight smile
     pause(.25)
     kel "Between tennis tournaments and my other LL team, I won't have time to participate."
     extend "I'm sorry, but there are five of you anyways, the perfect number fo an LL team."
     mc "Yeah... Let's do it guys."
+    hide kelvin slight smile
     show kristella questioning
     pause(.25)
     kr "Okay, then. [mc], thoughts?"
