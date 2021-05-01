@@ -127,7 +127,6 @@
             label endTiffanyRole:
                 jump endOfRole
 
-
         label maryanneRole:
             $ girlsTalkedTo += 1
             if girlsTalkedTo == 1:
@@ -369,9 +368,225 @@
             else:
                 scene bg clubroom
                 mc "{i}Who should I talk to next?{/i}"
-
+    $ whoFirst = ""
+    $ whoSecond = ""
+    $ whoThird  = ""
+    $ girlsTalkedTo = 0
+    scene bg clubroom
     mc "I'll be the jungler."
+    mc "Regina is in the top lane."
+    mc "Maryanne is our mid."
+    mc "Tiffany is the ADC."
+    mc "And last but not least, Kristella is our support!"
+    show regina smile
+    pause(.25)
+    r "That's right."
+    hide regina smile
+    show tiffany smile
+    pause(.25)
+    t "Y-yeah."
+    hide tiffany smile
+    show maryanne smile
+    pause(.25)
+    ma "Sounds great."
+    hide maryanne smile
+    show kristella laugh
+    pause(.25)
+    kr "Woo!"
+    hide kristella laugh
+    show kelvin smile
+    pause(.25)
+    kel "Okay, we can start training now."
+    mc "Yeah, of course!"
+    scene bg clubroom
+    mc "{i}Who should I train first?{/i}"
+    while girlsTalkedTo <= 3: 
+        scene bg clubroom
+        menu:
+            "Tiffany" if whoFirst != "Tiffany" and whoSecond != "Tiffany" and whoThird != "Tiffany":
+                jump tiffanyTraining 
 
+            "Maryanne" if whoFirst != "Maryanne" and whoSecond != "Maryanne" and whoThird != "Maryanne":
+                jump maryanneTraining 
+
+            "Regina" if whoFirst != "Regina" and whoSecond != "Regina" and whoThird != "Regina":
+                jump reginaTraining 
+
+            "Kristella" if whoFirst != "Kristella" and whoSecond != "Kristella" and whoThird != "Kristella":
+                jump kristellaTraining
+
+        label tiffanyTraining:
+            $ girlsTalkedTo += 1
+            if girlsTalkedTo == 1:
+                $ whoFirst = "Tiffany"
+            elif girlsTalkedTo == 2:
+                $ whoSecond = "Tiffany"
+            elif girlsTalkedTo == 3:
+                $ whoThird = "Tiffany"
+            show tiffany shy
+            pause(.25)
+            t "I-I guess you're here to teach me?"
+            mc "Yeah, we'll go through the basics today."
+            show tiffany nervous
+            pause(.25)
+            t "O-okay, I-I might make a lot of mistakes."
+            mc "Don't worry. Everyone makes mistakes whenever they're trying something new."
+            t "Y-yeah, I guess..."
+            mc "{i}Geez, I wonder how she's going to handle the ingame toxicity.{/i}"
+            mc "{i}I hope she doesn't get flamed...{/i}"
+            mc "Uh, have you made an account yet?"
+            t "U-uh, yea. M-my username is KawaiiTiff."
+            mc "Oh..."
+            menu:
+                "I like your name":
+                    jump tiffanyNameOne
+                "What did you base your name on?":
+                    jump tiffanyNameTwo
+                "Interesting name...":
+                    jump tiffanyNameThree
+
+            label tiffanyNameOne:
+                show tiffany shy
+                pause(.25)
+                t "U-uh, t-thanks."
+                mc "What does kawaii mean?"
+                show tiffany flustered
+                pause(.25)
+                t "U-uagh, i-it m-means c-c-cute in Japanese."
+                mc "Oh, it suits you well."
+                show tiffany blush 
+                pause(.25)
+                t "C-can we get on with the lesson?"
+                jump tiffanyNameEnd
+            
+            label tiffanyNameTwo:
+                show tiffany flustered
+                pause(.25)
+                t "U-uah, K-Kawaii m-means c-c-cute in Japanese."
+                mc "Oh, I see, it fits your personality well."
+                t "T-thanks. C-can we s-start the lesson now?"
+                jump tiffanyNameEnd
+            
+            label tiffanyNameThree:
+                show tiffany shy
+                pause(.25)
+                t "T-t-thanks..."
+                mc "{i}I didn't know she was a weeb...{/i}"
+                t "U-uh why are you staring at me."
+                mc "Oh, I was just thinking."
+                t "O-oh, c-can we s-start the lesson?"
+                jump tiffanyNameEnd
+
+            label tiffanyNameEnd:
+                scene bg computer
+
+            mc "Alright, we should..."
+            menu:
+                "Go into a pvp match.":
+                    jump tiffanyTrainingOne
+                "Play some 1v1s.":
+                    jump tiffanyTrainingTwo
+                "Have you watch me for a bit.":
+                    jump tiffanyTrainingThree
+
+            label tiffanyTrainingOne:
+                show tiffany shocked
+                pause(.25)
+                t "W-wait, a PvP match??? S-shouldn't I practice against bots or something to learn the game?"
+                mc "Well, most players do, but since we're playing in a tournament soon, we need to improve quickly and I think by going straight into PvP is the best way to do that."
+                show tiffany neutral
+                pause(.25)
+                t "O-okay. So I just click on this?"
+                mc "Yes. Then just accept the game when it pops up."
+                show tiffany shocked
+                pause(.25)
+                t "Oh. I-I got a game."
+                mc "Ok so just type that you're playing ADC."
+                show tiffany neutral
+                pause(.25)
+                t "Okay so what champ should I play."
+                mc "I think Bane would be a good champion for you."
+                scene bg computer game
+                with fade
+                mc "Alright so you should..."
+                menu:
+                    "Focus on last hitting the creeps.":
+                        jump TiffanyPVPOne
+                    "Try to kill the enemy.":
+                        jump TiffanyPVPTwo
+                
+                label TiffanyPVPOne:
+                    show tiffany neutral 
+                    pause(.25)
+                    t "S-so do I just hit them like this."
+                    mc "No, no, no, wait until it's low then hit it."
+                    t "O-oh so like thi-. I-I didn't get it."
+                    mc "Don't worry, it takes time to get used to- oh they're trying to kill you."
+                    show tiffany scared
+                    pause(.25)
+                    t "W-what d-do I do, they're hitting me. [mc] h-help!"
+                    mc "Well, you fight bac- oh you died."
+                    mc "{i}This is going to be harder than I thought{/i}"
+                    jump tiffanyPVPEnd
+
+                label TiffanyPVPTwo:
+                    mc "Alright so when you level up start attacking the enemy."
+                    show tiffany confused
+                    pause(.25)
+                    t "D-do I just walk up and-?"
+                    mc "NO DON'T WALK-. Well you're dead."
+                    t "O-oh, I-I died so fast..."
+                    mc "yeah, you have to be careful with their abilities."
+                    mc "{i}This is going to be a long day...{/i}"
+                    jump tiffanyPVPEnd
+
+                label tiffanyPVPEnd:
+                    scene bg computer
+                    with fade
+                
+                show tiffany exhausted
+                pause(.25)
+                t "W-wow I won, even though I died a lot."
+                mc "{i}For a new player, she isn't that bad.{/i}"
+                mc "Nice job. I'll point out your mis-."
+                mc "{i}Wait, why is she typing so much?{/i}"
+                mc "{i}???{/i}"
+
+
+        label maryanneTraining:
+            $ girlsTalkedTo += 1
+            if girlsTalkedTo == 1:
+                $ whoFirst = "Maryanne"
+            elif girlsTalkedTo == 2:
+                $ whoSecond = "Maryanne"
+            elif girlsTalkedTo == 3:
+                $ whoThird = "Maryanne"
+
+        label reginaTraining:
+            $ girlsTalkedTo += 1
+            if girlsTalkedTo == 1:
+                $ whoFirst = "Regina"
+            elif girlsTalkedTo == 2:
+                $ whoSecond = "Regina"
+            elif girlsTalkedTo == 3:
+                $ whoThird = "Regina"
+
+        label kristellaTraining:
+            $ girlsTalkedTo += 1
+            if girlsTalkedTo == 1:
+                $ whoFirst = "Kristella"
+            elif girlsTalkedTo == 2:
+                $ whoSecond = "Kristella"
+            elif girlsTalkedTo == 3:
+                $ whoThird = "Kristella"
+
+        label endOfTraining:
+            if girlsTalkedTo == 4:
+                scene bg clubroom
+                mc "Okay, that's everyone! It all worked out, so the roles are decided-"
+            else:
+                scene bg clubroom
+                mc "{i}Who should I talk to next?{/i}"
 
 
     return
