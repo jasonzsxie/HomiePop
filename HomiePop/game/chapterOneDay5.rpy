@@ -571,6 +571,95 @@
                 jump tiffanyTrainingEnd
 
             label tiffanyTrainingTwo:
+                show tiffany shocked
+                pause(.25)
+                t "W-wait, a 1v1? W-with you? Aren't you really good at this game?"
+                mc "Exactly. I'm Diamond, so I'm farm better than the average player. By playing against better competition, you'll learn quicker."
+                t "I guess you're right. S-so what champ should I play?"
+                mc "I think Bane is a good champion for you."
+                scene bg computer game
+                with fade
+                mc "{i}Hmm, it's been 5 minutes and she is getting low on health.{/i}"
+                mc "{i}I am getting a little bored{/i}"
+                mc "{i}Should I...{/i}"
+                menu:
+                    "Try to kill her.":
+                        jump tiffany1v1One
+                    "Play patiently.":
+                        jump tiffany1v1Two
+                    "Let her kill me.":
+                        jump tiffany1v1Three
+
+                label tiffany1v1One:
+                    mc "{i}Ok, so I will just start my combo off and...{/i}"
+                    mc "!!!" with hpunch
+                    show tiffany confused
+                    pause(.25)
+                    t "U-uh, h-how did you miss everything?"
+                    mc "{i}How did she dodge everything? Maybe I'll just...{/i}"
+                    "You have been slain." #maybe play audio file of league announcer instead
+                    t "O-oh, I-I killed you. Y-you went easy on my right?"
+                    mc "H-how di...err yeah, I didn't try that hard, good job surviving the assault."
+                    mc "{i}I can't believe I died to the turret.{/i}"
+                    mc "Anyways, are you ready for round 2?"
+                    show tiffany confident
+                    pause(.25)
+                    t "Bring it on!"
+                    jump tiffany1v1End
+            
+                label tiffany1v1Two:
+                    mc "{i}I'll just wait until she makes a mistake and k-"
+                    mc "!!!"
+                    show tiffany annoyed 
+                    pause(.25)
+                    t "W-why are you playing so far back?"
+                    mc "{i}Wow that was close. Now I can...{/i}"
+                    t "S-stop running away from me.L-let me-"
+                    "An enemy has been slain."
+                    t "O-oh... I died."
+                    mc "{i}Phew that was close.{/i}"
+                    mc "That was a good try. Next time, make sure to dodge my attacks."
+                    t "U-understood."
+                    jump tiffany1v1End
+
+                label tiffany1v1Three:
+                    mc "{i}Okay, so I just let her attack me and I'll run under her turret. This should be good for her confidence.{/i}"
+                    show tiffany confused
+                    pause(.25)
+                    t "[mc]? W-what are you doing?"
+                    mc "Hmm? Doing what?"
+                    "You have been slain."
+                    mc "Ah, I guess you killed me. Good job."
+                    t "Y-you didn’t try very hard did you?"
+                    mc "O-of course I was trying..."
+                    t "Y-you were just bored of playing right?"
+                    mc "Y-yea, I guess. I'm sorry."
+                    t "N-next time can you g-go a little harder? I-I promise I w-won’t be boring."
+                    mc "Alright."
+                    jump tiffany1v1End
+
+                label tiffany1v1End:
+                    scene bg computer
+                    with fade
+                
+                mc "{i}She has good mechanics. Just need to work on-{/i}"
+                mc "{i}Why is she typing to me?{/i}"
+                mc "!!!" with hpunch
+                show tiffany smile 
+                pause(.25)
+                t "W-wow I got completely destroyed. I gu- [mc]?"
+                mc "{i}Whoa whoa, this is the kind of stuff that you have to censor really heavily, just a bit of pixelation won't cut it..."
+                t "[mc]?!?"
+                mc "..."
+                mc "{i}I'm surprised she has so much to say when she's usually so quiet.{/i}"
+                show tiffany shocked
+                pause(.25)
+                t "G-guys? I-I think [mc] needs h-help!"
+                mc "N-no need. I’m fine. I’ll tell you what you did wrong at the next meeting."
+                t "A-are you sure?"
+                mc "{i}I should disable her ability to chat in game. I didn’t expect her to be so toxic.{/i}"
+                mc "Y-yea, bye."
+                jump tiffanyTrainingEnd
 
             label tiffanyTrainingEnd:
                 jump endOfTraining
