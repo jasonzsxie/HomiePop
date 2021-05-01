@@ -549,8 +549,32 @@
                 t "W-wow I won, even though I died a lot."
                 mc "{i}For a new player, she isn't that bad.{/i}"
                 mc "Nice job. I'll point out your mis-."
+                scene bg computer
                 mc "{i}Wait, why is she typing so much?{/i}"
                 mc "{i}???{/i}"
+                mc "{i}Whoa whoa, this is the kind of stuff that you have to censor really heavily, just a bit of pixelation won't cut it..."
+                show tiffany shy
+                pause(.25)
+                mc "..."
+                t "[mc]? I-is something wrong? You've been staring at me for a bit..."
+                mc "..."
+                mc "{i}Isn't she usually super quiet?{/i}"
+                t "[mc]???"
+                mc "..."
+                mc "{i}Why is she toxic in game?{/i}"
+                t "G-guys? [mc] looks really pale... He stopped breathing! Guys h-help!"
+                mc "I-I'm fine. M-maybe we can review your game next time..."
+                t "A-are y-you sure?"
+                mc "{i}I should disable her chat function{/i}"
+                mc "Y-yea, see you."
+                t "B-bye."
+                jump tiffanyTrainingEnd
+
+            label tiffanyTrainingTwo:
+
+            label tiffanyTrainingEnd:
+                jump endOfTraining
+
 
 
         label maryanneTraining:
