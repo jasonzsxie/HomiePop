@@ -696,7 +696,7 @@
         label endOfTraining:
             if girlsTalkedTo == 4:
                 scene bg clubroom
-                mc "Okay, that's everyone! It all worked out, so the roles are decided-"
+                mc "Oh wait, we should head back."
             else:
                 scene bg clubroom
                 mc "{i}Who should I talk to next?{/i}"
