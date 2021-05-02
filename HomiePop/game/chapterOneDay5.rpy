@@ -990,7 +990,133 @@
                         jump maryanne1v1Three
                 
                 label maryanne1v1One:
+                    mc "{i}Ok, I'll just walk up and unleash my full combo.{/i}"
+                    show maryanne panic
+                    pause(.25)
+                    ma "[mc], w-what are you doing?"
+                    mc "Don't worry about it."
+                    ma "Wait I'm going to di-"
+                    hide maryanne panic
+                    "An enemy has been slain."
+                    show maryanne pout
+                    pause(.25)
+                    ma "Hmph, it seems like you just wanted to bully me…"
+                    mc "W-well, you were low on health and you were pretty close so I just thought I can just go in for the kill."
+                    show maryanne angry #idk
+                    pause(.25)
+                    ma "Fight me again! This time, I'll make sure to kill you."
+                    mc "That's the spirit!"
+                    mc "{i}I swear if I die to her somehow...{/i}"
+                    jump maryanne1v1End
+
+                label maryanne1v1Two:
+                    mc "{i}Alright, I’m about to level up and unlock my ultimate ability. As soon as I get my ultimate, I’ll go in for the kill.{/i}"
+                    show maryanne panic
+                    pause(.25)
+                    ma "[mc], H-how are you higher level tha- STOP ATTACKING ME!!!"
+                    mc "Heh. I just kill the creeps faster tha- also you’re dead."
+                    hide maryanne panic
+                    "An enemy has been slain."
+                    show maryanne pout
+                    pause(.25)
+                    ma "Heyyyy. You were just bullying me the whole time."
+                    mc "U-uh, I just got my ultimate and saw the kill potential, so I went for it."
+                    show maryanne angry
+                    pause(.25)
+                    ma "Fine! 1v1 me again! This time, I'll make sure to win!"
+                    mc "Bring it!"
+                    m "{i}I like that energy.{/i}"
+                    jump maryanne1v1End
+
+                label maryanne1v1Three:
+                    mc "{i}SO I should just walk into her turret and let her hit me to get the kill.{/i}"
+                    show maryanne confused
+                    pause(.25)
+                    ma "[mc], why are you just walking up and-"
+                    hide maryanne confused
+                    "You have been slain."
+                    mc "Ah, I guess I died. Oh well."
+                    show maryanne pout
+                    pause(.25)
+                    ma "[mc]~, you’re such a meanie. Why are you looking down on me?"
+                    mc "{i}A meanie?{/i}"
+                    mc "W-what do you mean...?"
+                    ma "You weren't trying at all were you."
+                    mc "I-I guess..."
+                    mc "I'm sorry."
+                    show maryanne angry #or neutral? idk
+                    pause(.25)
+                    ma "If you’re sorry, you’ll fight me again. Maybe the second time will be just as easy as the first haha."
+                    mc "Oh you're going down..."
+                    mc "{i}She's going to get destroyed.{/i}"
+                    jump maryanne1v1End
+
+                label maryanne1v1End:
+                    scene bg computer
+                    with fade
+                    show maryanne exhausted
+                    pause(.25)
+                    ma "Ah, I got completely destroyed..."
+                    mc "That's to be expected. At least you're learning right?"
+                    ma "Yep! I feel like if I go into a PvP game I can beat all the other players. Onii-chan really is the best teacher!"
+                    mc "Woah, woah, you’re getting ahead of yours- wait, what did you just call me?"
+                    show maryanne flustered
+                    pause(.25)
+                    ma "OH N-NOTHING! I-I JUST SAID YOU’RE A GOOD TEACHER."
+                    mc "{i}Did I mishear her? Ah forget it.{/i}"
+                    mc "Owww, my ears..."
+                    show maryanne apologetic
+                    pause(.25)
+                    ma "Oh, sorry for yelling. Anyways, when can I play a PvP game against other people?"
+                    mc "Ah, we’re running out of time. Maybe you can play a PvP game at the next meeting."
+                    show maryanne smile 
+                    pause(.25)
+                    ma "Okay! See you!"
+                    mc "Later."
+                    mc "{i}Man, it's exhausting just talking to her...{/i}"
+                    jump endOfTraining
+
+            label maryanneTrainingThree:
+                scene bg computer
+                show maryanne confused
+                pause(.25)
+                ma "Watch you play? How is that going to help me?"
+                mc "Well, it's easier to explain what I want you to do when you can see it with your own eyes."
+                show maryanne slight smile
+                pause(.25)
+                ma "Oh so you want me to learn based on visual cues?"
+                mc "Uhh, I guess?"
+                mc "{i}Why did she have to put it in complicated terms...{/i}"
+                ma "Okay. I kind of wanted to play myself, but I can learn this way as well."
+                pause(1)
+                ma "Oh, you got a game."
+                mc "Ok, so I'll just type mid to let my team know where I'm going."
+                mc "Now who should I play..."
+                ma "I think Straight Fate looks cool."
+                mc "Really? I was thinking of playing Fang, Pyre or Synk…"
+                mc "{i}I really don't want to play Straight Fate...{/i}"
+                show maryanne excited
+                pause(.25)
+                ma "Yeah! Let me watch you play Straight Fate."
+                mc "I guess I have no other choice..."
+                mc "{i}I wanted to have fun with this game...{/i}"
+                scene bg computer game
+                with fade
+                mc "{i}I should probably explain my thought process, so Maryanne can learn.{/i}"
+                mc "{i}I think she'll actually understand quickly.{/i}"
+                mc "Listen up, Maryanne. The enemy is killing creeps under tower, and he's low on both mana and health."
+                mc "I'm goiing to..."
+                menu:
+                    "Dive under the tower and go for a kill.":
+                        jump maryanneWatchOne
+                    "Roam to another lane.":
+                        jump maryanneWatchTwo
+                    "Help my jungler with a neutral objective.":
+                        jump maryanneWatchThree
+                
+                label maryanneWatchOne:
                     
+
 
 
             label maryanneTrainingEnd:
