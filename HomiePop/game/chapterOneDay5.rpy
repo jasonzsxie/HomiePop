@@ -661,10 +661,110 @@
                 mc "Y-yea, bye."
                 jump tiffanyTrainingEnd
 
+            label tiffanyTrainingThree:
+                show tiffany confused
+                pause(.25)
+                t "U-uh shouldn't I play against bots to practice?"
+                mc "Well, it helps to watch someone who knows what they are doing."
+                show tiffany understanding
+                pause(.25)
+                t "O-oh I see..."
+                mc "Anyways, I'll just queue up as ADC and play Bane."
+                show tiffany confused
+                pause(.25)
+                t "W-who's Bane?"
+                mc "He's a playable character that I think fits you."
+                scene bg computer game
+                with fade
+                mc "{i}It's so boring right now. The enemy is low but the support doesn't want to fight. I've already explained the basics to Tiffany.{/i}"
+                mc "{i}Should I-{/i}"
+                menu:
+                    "Start attacking the enemy.":
+                        jump tiffanyWatchOne
+                    "Wait for the enemy to make a mistake.":
+                        jump tiffanyWatchTwo
+                    "Tell the support to fight.":
+                        jump tiffanyWatchThree
+
+                label tiffanyWatchOne:
+                    mc "Alright, Tiffany never imitate what I am about to do because it's reckless."
+                    show tiffany confused 
+                    pause(.25)
+                    t "H-huh, i-isn't the enemy almost dead? W-why don-"
+                    hide tiffany confused
+                    "You have been slain."
+                    mc "Ah, I misplayed that fight. This is why you shou-"    
+                    "An enemy has been slain."
+                    mc "Ah, he died to creeps. Anyways, never go for that kill because if you die and the enemy doesn't, the game becomes very unplayable."
+                    show tiffany understanding
+                    pause(.25)
+                    t "O-oh, I-I understand now. I-if you have the a-advantage, you shouldn't gamble it away."
+                    mc "I guess you could put it that way."
+                    mc "{i}Wow, she's a fast learner.{/i}"
+                    jump tiffanyWatchEnd
+
+                label tiffanyWatchTwo:
+                    mc "Ok Tiffany, now that the enemy is low, I'll wait for him to make a mistake. Then I can kill him."
+                    show tiffany confused
+                    pause(.25)
+                    t "B-but how can y-you tell when he makes a mistake?"
+                    mc "Well, you need to- oh he's so dead."
+                    hide tiffany confused
+                    "An enemy has been slain."
+                    mc "Oh? The support is also running in?"
+                    "Double Kill."
+                    mc "Well, that was two easy kills. As I was saying, you need to be able to tell when he’s in kill range and how far your abilities travel. When he gets a little too close, you can kill him, but make sure you don’t miss."
+                    show tiffany understanding
+                    pause(.25)
+                    t "O-oh, s-so when he gets too close and is low on health, s-start attacking?"
+                    mc "Uh, sounds about right."
+                    mc "{i}She's grasping the basics pretty fast.{/i}"
+                    jump tiffanyWatchEnd
+
+                label tiffanyWatchThree:
+                    mc "Ok, so now that the enemy is low, I am going to tell my support to start attacking and I will follow."
+                    show tiffany confused
+                    pause(.25)
+                    t "H-huh? W-why the support? W-why not just go in by yourself?"
+                    mc "Well... If I go in by myself, it - oh he missed. Whatever, the enemy is still dead."
+                    hide tiffany confused
+                    "An enemy has been slain."
+                    mc "As I was saying, you should tell the support to start attacking because if you attack by yourself, it becomes a 1v2 and it’s very likely you die. Also, the support typically has abilities that restrain the enemy’s movement."
+                    t "U-uh, s-so the support goes in to restrain the enemy so it's easier to kill? I-I'm kind of confused."
+                    mc "That's right!"
+                    mc "I thought it would be harder to teach her, but she's learning pretty quickly."
+                    jump tiffanyWatchEnd
+
+                label tiffanyWatchEnd:
+                    scene bg computer
+                    with fade
+                    mc "Nice, I won. That game was pretty easy since I got a lot of kills."
+                    t "C-can I see the keyboard and mouse for a bit?"
+                    mc "Oh? You want to see my settings? It's understandable since I'm so g-"
+                    pause
+                    mc "{i}Wait a minute...{/i}"
+                    mc "{i}W-wha? It shounds like she's typing an essay. What is she-{/i}"
+                    mc "!!!" with hpunch
+                    mc "{i}Woah, woah, woah. This is the type of stuff that you have to censor heavily, just a bit of pixelating won't cut it.{/i}"
+                    show tiffany shy
+                    pause(.25)
+                    t "A-alright you can hav- MC???"
+                    mc "..."
+                    mc "{i}Wait, I might get chat restricted.{/i}"
+                    t "[mc]???"
+                    mc "..."
+                    mc "{i}Please don't get chat restricted. I still need to get my rewards.{/i}"
+                    t "G-guys, help. I-I think [mc] is-"
+                    mc "I-I’m fine. Don’t worry about me. I-I think our training session is done."
+                    t "B-but I didn't play yet."
+                    mc "I'll watch you play next time."
+                    t "O-oh, okay. B-bye."
+                    mc "See ya."
+                    mc "{i}I need to disable her chat or else she might get banned.{/i}"
+                    jump tiffanyTrainingEnd
+
             label tiffanyTrainingEnd:
                 jump endOfTraining
-
-
 
         label maryanneTraining:
             $ girlsTalkedTo += 1
@@ -674,6 +774,16 @@
                 $ whoSecond = "Maryanne"
             elif girlsTalkedTo == 3:
                 $ whoThird = "Maryanne"
+            show maryanne excited
+            pause(.25)
+            ma "Hey [mc]! I'm ready to learn the basics of the game!"
+            mc "{i}She has a lot of energy.{/i}"
+            mc "Alright, I'm assumiing you have an account already?"
+            ma "Yep! My account is called Stan Jae."
+            mc "{i}She's a koreaboo?{/i}"
+            ma "[mc]? What's wrong?"
+            menu:
+                
 
         label reginaTraining:
             $ girlsTalkedTo += 1
