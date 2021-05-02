@@ -1115,14 +1115,100 @@
                         jump maryanneWatchThree
                 
                 label maryanneWatchOne:
-                    
+                    mc "..."
+                    "An enemy has been slain."
+                    mc "Easy! Did you see that, Maryanne."
+                    show maryanne excited
+                    pause(.25)
+                    ma "Yeah, That was cool!"
+                    show maryanne thinking
+                    pause(.25)
+                    ma "So you figured out that the proportion of the derivative of the combined damage of the enemy and the tower to the derivative of your damage output was…"
+                    ma "{cps=*3}smaller than the proportion of your health to his health, right?{/cps}"
+                    ma "{cps=*3}I assume that you also realized that he would not have the summoner spell “Flash” yet{/cps}"
+                    ma "{cps=*3}because he utilized it 4 minutes and 23 seconds ago, and the cooldown is 5 minutes.{/cps}"
+                    show maryanne smile
+                    pause(.25)
+                    ma "Simple calculations, huh?"
+                    mc "Uhh, sure..."
+                    mc "{i}I just used my intuition...{/i}"
+                    mc "Wait, how do you know all that? Summoner spell cooldowns and all that."
+                    ma "Oh, I gathered information from LL-Wiki earlier today."
+                    mc "Ah..."
+                    mc "{i}Math competitions, huh?{/i}"
+                    mc "{i}I'm feeling good about this tournament...{/i}"
+                    jump maryanneWatchEnd
 
+                label maryanneWatchTwo:
+                    show maryanne excited
+                    pause(.25)
+                    ma "Oh! That's where you move to a side lane to help your teammates, right?"
+                    ma "I read about that."
+                    mc "Yeah!"
+                    mc "{i}She's so prepared...{/i}"
+                    mc "It looks like their bot lane is pushed forward, so I'm going to try to kill them."
+                    mc "..."
+                    mc "..."
+                    "An enemy has been slain."
+                    pause(.5)
+                    "Double Kill."
+                    mc "Nice! See, I sacrificed resources Mid to gain an advantage for myself and my team mates."
+                    show maryanne slight smile
+                    pause(.25)
+                    ma "Yeah, I've seen Baker do that."
+                    mc "Y-you already watch Baker? Why are you even watching me, then?"
+                    show maryanne smile
+                    pause(.25)
+                    ma "Oh. Well, Baker is obviously better than you, but I still like to watch you, [mc]."
+                    show maryanne looking away
+                    pause(.25)
+                    ma "After all, I've been watching you for a long time..."
+                    mc "E-ehrm, uh, wh-wha!??!" with hpunch
+                    show maryanne blush
+                    pause(.25)
+                    ma "Oh, I meant your replays! I found your account and watched some of your recorded games."
+                    mc "A-ah, I see."
+                    mc "{i}That's still a little weird...{/i}"
+                    jump maryanneWatchEnd
 
+                label maryanneWatchThree:
+                    mc "My enemy laner is stuck under tower, so I can create a numbers advantage elsewhere on the map."
+                    mc "My Jungler is close, so I’m just going to kill the Dragon with him."
+                    mc "..."
+                    "You have slain the Fire Dragon."
+                    show maryanne excited
+                    pause(.25)
+                    ma "Great! That’s a 5 percent buff to damage for everyone on the team, right?"
+                    mc "Yeah...How do you know that?"
+                    show maryanne slight smile
+                    pause(.25)
+                    ma "I studied a little bit beforehand."
+                    mc "{i}Wow... I'm impressed.{/i}"
+                    mc "Th-that's good."
+                    jump maryanneWatchEnd
+
+                label maryanneWatchEnd:
+                    scene bg computer
+                    with fade
+                    mc "So, was that useful?"
+                    show maryanne smile
+                    pause(.25)
+                    ma "Of course! Onii-chan is such a good teacher!"
+                    mc "Uh-, ah, than- Wait, what did you just call me?"
+                    show maryanne flustered
+                    pause(.25)
+                    ma "N-NOTHING, YOU'RE JUST A GOOD TEACHER WAS WHAT I SAID!"
+                    mc "Uhhh, thanks I guess."
+                    show maryanne blush
+                    pause(.25)
+                    ma "A-anyways, I'll see you later, [mc]."
+                    mc "Bye, Maryanne."
+                    mc "{i}She's kind of weird...{/i}"
+                    jump maryanneTrainingEnd
 
             label maryanneTrainingEnd:
                 jump endOfTraining
                 
-
         label reginaTraining:
             $ girlsTalkedTo += 1
             if girlsTalkedTo == 1:
@@ -1131,6 +1217,145 @@
                 $ whoSecond = "Regina"
             elif girlsTalkedTo == 3:
                 $ whoThird = "Regina"
+            show regina arms crossed
+            pause(.25)
+            r "Hey dummy, are you here to teach me?"
+            mc "Y-yeah, and can you not call me-"
+            r "I’ll call you what I want. Besides, are you sure you’re good enough to teach me?"
+            mc "Hey! I'll have you know that I am Diamond in this gam-"
+            r "Yeah, yeah, whatever, can you start teaching now?"
+            mc "..."
+            mc "Well, do you have an account yet?"
+            r "Obviously. I just made one yesterday."
+            mc "Oh, what's your username? I'll send you a friend request."
+            show regina flustered
+            pause(.25)
+            r "U-uh, i-its kiwik47"
+            mc "{i}Her username is cute compared to her normal demeanor...{/i}"
+            show regina pout
+            pause(.25)
+            r "Hey! You have a problem with it?"
+            pause
+            menu:
+                "N-no, no problems here.":
+                    jump reginaNameOne
+                "Uh, why did you name yourself kiwik47?":
+                    jump reginaNameTwo
+                "Your name is kinda cute...":
+                    jump reginaNameThree
+
+            label reginaNameOne:
+                show regina arm crossed 
+                pause(.25)
+                r "Good."
+                mc "But why-"
+                r "It's because I like kiwis and cats. OKAY!? No more questions about my name."
+                mc "U-understood."
+                show regina neutral
+                pause(.25)
+                r "So what are we doing today?"
+                jump reginaNameEnd
+
+            label reginaNameTwo:
+                show regina arms crossed
+                pause(.25)
+                r "It's not like you will understand or anything."
+                mc "But we're a team no-"
+                show regina glare
+                pause(.25)
+                r "Does that mean I need to tell you everything about me?"
+                mc "W-well no but-"
+                r "If you really want to know, it's because I like cats and kiwis. Now no more personal questions."
+                mc "O-okay."
+                show regina neutral
+                pause(.25)
+                r "You still haven't told me what we're doing."
+                jump reginaNameEnd
+
+            label reginaNameThree:
+                show regina flustered
+                pause(.25)
+                r "Uagh, i-it's not like I-i tried to m-make it cute."
+                mc "What made you make such a cute-"
+                show regina annoyed
+                pause(.25)
+                r "Shut up. I didn’t try to make it cute. I just like cats and kiwis so I combined the two."
+                mc "Ooh, I also like c-"
+                r "Stop talking. I don’t want to share any similar qualities with an idiot like you."
+                mc "W-wait, what's wrong with-"
+                r "We’re getting off topic. What are we going to do?"
+                jump reginaNameEnd
+
+            label reginaNameEnd:
+                mc "Oh, right. We should..."
+            menu:
+                "Go into a PvP game.":
+                    jump reginaTrainingOne
+                "Play some 1v1s.":
+                    jump reginaTrainingTwo
+                "Have you watch me for a bit.":
+                    jump reginaTrainingThree
+            
+            label reginaTrainingOne:
+                show regina frown
+                pause(.25)
+                r "PvP?"
+                r "Shouldn't I be practicing against bots first?"
+                mc "Most players do, but we need to improve quickly and I think the best way to do that is by jumping straight into matches."
+                r "Hmph. I see..."
+                scene bg computer
+                show regina neutral
+                pause(.25)
+                r "So you want me to hit this option here?"
+                mc "Yep."
+                mc "{i}When it comes to learning, she's surprisingly compliant.{/i}"
+                mc "Oh, you got a g-"
+                show regina annoyed
+                pause(.25)
+                r "I'm not blind. So do I just click accept?"
+                mc "Yep and make sure to claim top."
+                show regina evil smile
+                pause(.25)
+                r "Oh, I always do."
+                mc "And make sure to... wait what?"
+                r "Shut up."
+                mc "..."
+                mc "Anyways you should pick Rak."
+                show regina neutral
+                pause(.25)
+                r "Hmm, maybe I will, maybe I won't."
+                mc "..."
+                mc "{i}I hate this girl.{/i}"
+                scene bg computer game
+                mc "{i}Ok so Regina plays very aggressively and has reduced the enemy to 20 percent health. I’m surprised she hasn’t died yet. I should tell her to…{/i}"
+                menu:
+                    "Go for the kill.":
+                        jump reginaPvPOne
+                    "Play safer.":
+                        jump reginaPvPTwo
+                    "Tell the jungler to come.":
+                        jump reginaPvPThree
+                
+                label reginaPvPOne:
+                    mc "Hey Regina, you should go in and ki-"
+                    show regina annoyed
+                    pause(.25)
+                    r "Can't you see I'm tryi- HEY! WHY IS THE JUNGLER HERE!?"
+                    mc "{i}Oh I forget to tell her that she was too far up. Well she’s dead.{/i}"
+                    mc "Oh, you're so dead."
+                    hide regina annoyed
+                    "You have been slain."
+                    show regina angry
+                    pause(.25)
+                    r "Hmph, I should've killed him."
+                    mc "Well you need to make sur-"
+                    r "I know, I know. I need to make sure I go fast before the enemy jungler comes."
+                    mc "Uh, yea..."
+                    mc "{i}That's not what I was going to say but I guess it works.{/i}"
+                    jump reginaPvPEnd
+
+                label reginaPvPEnd:
+                    
 
         label kristellaTraining:
             $ girlsTalkedTo += 1
