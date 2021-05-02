@@ -783,6 +783,218 @@
             mc "{i}She's a koreaboo?{/i}"
             ma "[mc]? What's wrong?"
             menu:
+                "Uh, interesting name.":
+                    jump maryanneNameOne
+                "is that a kpop singer?":
+                    jump maryanneNameTwo
+                "I like your name!":
+                    jump maryanneNameThree
+            
+            label maryanneNameOne:
+                show maryanne excited
+                pause(.25)
+                ma "O-oh, I'm not very creative with names."
+                mc "He's a member of Day6 right?"
+                show maryanne blush
+                pause(.25)
+                ma "Yea! He's so cute and reminds me of someone."
+                mc "{i}Why does it feel so hot in this room?{/i}"
+                mc "Hmm, I wonder who...?"
+                ma "Isn't it pretty obvious?"
+                mc "Uhh, not really... Anyways, we're getting off topic."
+                show maryanne neutral
+                pause(.25)
+                ma "Oh right! What do you want me to do again?"
+                jump maryanneNameEnd
+
+            label maryanneNameTwo:
+                show maryanne excited
+                pause(.25)
+                ma "Yeah! He's a member of Day6 and he's super cute."
+                mc " I didn't know you were into kpop."
+                ma "Oh I love kpop! We should listen to it while you coach me!"
+                mc "U-uh, I'm good."
+                show maryanne pout
+                pause(.25)
+                ma "You probably listen to EDM or something."
+                mc "{i}EDM is good though...{/i}"
+                mc "W-we're getting off topic."
+                show maryanne neutral
+                pause(.25)
+                ma "Oh right! What do you want me to do again?"
+                jump maryanneNameEnd
+
+            label maryanneNameThree:
+                show maryanne excited
+                pause(.25)
+                ma "Oh really?! You also listen to kpop?!?"
+                mc "Well, I occasionally do. Jae's a member of Day6 right?"
+                show maryanne blush
+                pause(.25)
+                ma "Yea! He's so dreamy, like a certain someone."
+                mc "{i}I guess kpop idols are pretty hot...{/i}"
+                mc "I guess yo- Huh, what are you staring at?"
+                show maryanne flustered
+                pause(.25)
+                ma "O-oh n-nothing!"
+                mc "Ah, forget it. We're getting off topic."
+                show maryanne neutral
+                pause(.25)
+                ma "Oh yea! So what should I do?"
+                jump maryanneNameEnd
+
+            label maryanneNameEnd:
+                scene bg computer
+                mc "Well, you should..."
+            menu:
+                "Play a PvP Game":
+                    jump maryanneTrainingOne
+                "1v1 me.":
+                    jump maryanneTrainingTwo
+                "Watch me play a game.":
+                    jump maryanneTrainingThree
+
+            label maryanneTrainingOne:
+                show maryanne confused
+                pause(.25)
+                ma "A PvP game? Don’t I need to learn the game first?"
+                mc "Well yes, but you’ll learn faster by playing against other people. Besides, I’ll be helping you so don’t worry."
+                show maraynne neutral
+                pause(.25)
+                ma "If you say so... So do I just press this option?"
+                mc "Yep! Then we just wait for a game."
+                pause(3)
+                ma "Oh! I got a game!"
+                mc "Okay so now, type mid to let the other players know where you are going."
+                ma "Done! So who should I play? Fang? Synk? Pyre?"
+                mc "You like to help impact the map right? Hmm, I think Straight Fate would be a good character to play."
+                ma "Hmmm, alright if you say so."
+                mc "{i}Now to teach her the basics...{/i}"
+                scene bg computer game
+                with fade
+                mc "{i}Seems like the game is going well right now. She hasn’t died, but is around half health, same with her opponent. It seems they are about to level up and get their ultimate moves. I should tell her to…{/i}"
+                menu:
+                    "Back off and be careful.":
+                        jump maryannePvPOne
+                    "Go help another lane.":
+                        jump maryannePvPTwo
+                    "Help her jungler.":
+                        jump maryannePvPThree
+
+                label maryannePvPOne:
+                    mc "Hey Maryanne, you should back off and play safer."
+                    show maryanne confused
+                    pause(.25)
+                    ma "Huh? Why do I need to back off? I think I'm doi-"
+                    mc "WATCH OUT! The enemy just got his ultimate... I'm pretty sure you're dead."
+                    hide maryanne confused
+                    "You have been slain."
+                    show maryanne neutral
+                    pause(.25)
+                    ma "Oh, well. I guess I died haha. But why should I back off? Wouldn’t I get my ultimate the same time as him?"
+                    mc "Uh, well, his ultimate allows him to do more damage while your ultimate is more of a utility that allows you to impact the map."
+                    show maryanne understanding
+                    pause(.25)
+                    ma "Oooohh, so since my ultimate isn’t good for 1v1 and my opponent’s is, I should be careful when he has it?"
+                    mc "That's the gist of it."
+                    mc "{i}Wow I'm surprised she got all that from just a simple explanation.{/i}"
+                    jump maryannePvPEnd
+
+                label maryannePvPTwo:
+                    mc "Maryanne, you should go help another lane."
+                    show maryanne confused
+                    pause(.25)
+                    ma "Do I just start walking to the top lane?"
+                    mc "No, no, you just got your ultimate, just use it to instantly travel there and kill the enemy."
+                    show maryanne understanding
+                    pause(.25)
+                    ma "Ohhhh, so like this?"
+                    mc "NOT UNDER T-"
+                    hide maryanne understanding
+                    "You have been slain."
+                    "An enemy has been slain."
+                    mc "I guess you helped kill the enemy so it’s not the worst that can happen. Just make sure not to teleport into a dangerous spot."
+                    show maryanne understanding
+                    pause(.25)
+                    ma "So basically, my ultimate allows me to make a 1v1 into a 2v1 in favor of my teammate, but if I teleport too far away, I put myself at risk of dying?"
+                    mc "Sounds about right."
+                    mc "{i}That's what I was going to say next...{/i}"
+                    jump maryannePvPEnd
+                
+                label maryannePvPThree:
+                    mc "Hey, your jungler is fighting the enemy jungler, you should go help him. You should use your ultimate to teleport there."
+                    show maryanne confused 
+                    pause(.25)
+                    ma "Do I just click here to teleport?"
+                    mc "Yep! Now just kill the enemy jungler."
+                    hide maryanne confused
+                    "An enemy has been slain."
+                    mc "Nice! You should always help your jungler if he’s in trouble. It will allow him to push the tempo and make aggressive plays."
+                    show maryanne understanding
+                    pause(.25)
+                    ma "Ohh, so I should go help my jungler win the 1v1, then go impact somewhere on the map since the enemy won’t know where we’re going to go and their jungler can’t answer it?"
+                    mc "Basically yeah."
+                    mc "{i}I'm surprised she actually understood all of that.{/i}"
+                    jump maryannePvPEnd
+
+                label maryannePvPEnd:
+                    scene bg computer 
+                    with fade
+                show maryanne happy
+                pause(.25)
+                ma "I can't believe we just won."
+                mc "Nice job on winning your first game."
+                ma "Well, it was all thanks to you. Nii-chan is such a good coach."
+                mc "I can’t just take all the credit. You pulled in yo-Wait, did you just call me-"
+                show maryanne flustered
+                pause(.25)
+                ma "N-NO! I DIDN’T SAY ANYTHING. YOU MUST HAVE HEARD SOMETHING WRONG."
+                mc "{i}Why is she so flustered?{/i}"
+                mc "I-I guess so… Anyways, we’re running out of time. I’ll review your game at the next meeting."
+                ma "O-okay, B-bye [mc]."
+                mc "S-see ya."
+                mc "{i}I wonder why she was in a hurry to get out of there…{/i}"
+                jump maryanneTrainingEnd
+
+            label maryanneTrainingTwo:
+                show maryanne shocked
+                pause(.25)
+                ma "1v1 YOU? Aren’t you way out of my league??"
+                mc "Well, I am pretty hot."
+                show maryanne blushing
+                pause(.25)
+                ma "I MEAN IN LL YOU DUMMY!!!"
+                mc "Oh. I mean, even if I am way better than you, it’ll help you improve and learn the game much quicker."
+                show maryanne pout
+                pause(.25)
+                ma "Sounds like an excuse to just beat me over and over."
+                mc "{i}She's not wrong...{/i}"
+                mc "Don't worry, I'll take it easy on you."
+                ma "You promise?"
+                mc "Yes… Ok so I think you should play Straight Fate. Even though he is better to learn in a PvP game, it should be okay to use him to learn the basics."
+                ma "It sounds like you're just making it easier to kill me."
+                mc "No, no, no, it's for pract-"
+                show maryanne giggle #use smile if image not present
+                pause(.25)
+                ma "Hehe, I know, I was just messing with you."
+                mc "..."
+                scene bg computer game
+                with fade
+                mc "{i}I can’t believe she survived for this long. Well, I guess it makes sense since she was playing so safe. Hmm, maybe I should just…{/i}"
+                menu:
+                    "Go kill her":
+                        jump maryanne1v1One
+                    "Wait for a bit, then kill her.":
+                        jump maryanne1v1Two
+                    "Let her kill me.":
+                        jump maryanne1v1Three
+                
+                label maryanne1v1One:
+                    
+
+
+            label maryanneTrainingEnd:
+                jump endOfTraining
                 
 
         label reginaTraining:
@@ -805,8 +1017,8 @@
 
         label endOfTraining:
             if girlsTalkedTo == 4:
-                scene bg clubroom
                 mc "Oh wait, we should head back."
+                scene bg clubroom                
             else:
                 scene bg clubroom
                 mc "{i}Who should I talk to next?{/i}"
