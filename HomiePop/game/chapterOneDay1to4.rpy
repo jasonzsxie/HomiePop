@@ -115,7 +115,7 @@
 
     scene bg desk side view
     pause(.5)
-    show kelvin on phone
+    show kelvin on phone #or neutral
     pause(.25)
     kel "{size=-8}...dammit, my rank dropped again.{/size}"
     mc "Rank?"

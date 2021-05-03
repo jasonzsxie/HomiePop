@@ -434,7 +434,11 @@
             t "Y-yeah, I guess..."
             mc "{i}Geez, I wonder how she's going to handle the ingame toxicity.{/i}"
             mc "{i}I hope she doesn't get flamed...{/i}"
+            scene bg computer 
+            with fade
             mc "Uh, have you made an account yet?"
+            show tiffany nervous
+            pause(.25)
             t "U-uh, yea. M-my username is KawaiiTiff."
             mc "Oh..."
             menu:
@@ -778,7 +782,11 @@
             pause(.25)
             ma "Hey [mc]! I'm ready to learn the basics of the game!"
             mc "{i}She has a lot of energy.{/i}"
+            scene bg computer 
+            with fade
             mc "Alright, I'm assumiing you have an account already?"
+            show maryanne excited
+            pause(.25)
             ma "Yep! My account is called Stan Jae."
             mc "{i}She's a koreaboo?{/i}"
             ma "[mc]? What's wrong?"
@@ -1225,7 +1233,11 @@
             mc "Hey! I'll have you know that I am Diamond in this gam-"
             r "Yeah, yeah, whatever, can you start teaching now?"
             mc "..."
+            scene bg computer
+            with fade
             mc "Well, do you have an account yet?"
+            show regina arms crossed
+            pause(.25)
             r "Obviously. I just made one yesterday."
             mc "Oh, what's your username? I'll send you a friend request."
             show regina flustered
@@ -1327,6 +1339,7 @@
                 mc "..."
                 mc "{i}I hate this girl.{/i}"
                 scene bg computer game
+                with fade
                 mc "{i}Ok so Regina plays very aggressively and has reduced the enemy to 20 percent health. I’m surprised she hasn’t died yet. I should tell her to…{/i}"
                 menu:
                     "Go for the kill.":
@@ -1425,7 +1438,6 @@
                 r "1v1? You mean I get to beat you over and over again?"
                 mc "Uh, the point is to teach you the core gameplay."
                 r "Whatever, are you ready to lose?"
-                scene bg computer
                 mc "Hey, you should play Rak, I think it sui-"
                 show regina annoyed
                 pause(.25)
@@ -1533,7 +1545,6 @@
                 r "Watch you? Ugh, it's going to be so boring..."
                 mc "I'm pretty sure you're going to learn a lot by wat-"
                 r "Yeah, yeah, whatever, you got a game by the way."
-                scene bg computer 
                 mc "Alright, I'm just going to tell my teammates that I'm top."
                 mc "Hmm, now for which character to play."
                 show regina neutral
@@ -1634,6 +1645,7 @@
                     
 
         label kristellaTraining:
+            $ kristellaCute = 0
             $ girlsTalkedTo += 1
             if girlsTalkedTo == 1:
                 $ whoFirst = "Kristella"
@@ -1641,6 +1653,239 @@
                 $ whoSecond = "Kristella"
             elif girlsTalkedTo == 3:
                 $ whoThird = "Kristella"
+            show kristella giggle
+            pause(.25)
+            kr "Hey again, [mc]. It's good to see that you've calmed down."
+            mc "Y-yea... Anyways, are you ready?"
+            show kristella smile
+            kr "Of course! Where should we start?"
+            mc "Let's head over to the library."
+            scene bg computer
+            with fade
+            show kristella smile
+            pause(.25)
+            kr "So, how are you going to train me, [mc]?"
+            mc "Well first, we'll need to make you an account. What username are you using?"
+            kr "Hmm... I think I'll go with Krisquish."
+            mc "I l-like that..."
+            show kristella giggle
+            pause(.25)
+            kr "Hehe, it's just my name but squishy~"
+            mc "It f-fits you. And I think it's, um, cute."
+            show kristella eyes looking up
+            pause(.25)
+            kr "Aww, [mc]... Are you calling me cute?"
+            menu:
+                "N-no! That's not what I meant!":
+                    jump kristellaNameOne
+                "Yeah, I did. And I mean it.":
+                    jump kristellaNameTwo
+                "Umm... maybe?":
+                    jump kristellaNameThree
+            
+            label kristellaNameOne:
+                $ kristellaCute = 1
+                show kristella giggle
+                pause(.25)
+                kr "Hehe~ [mc], I'm just messing with you."
+                mc "Oh… y-yea, I, um, knew that…"
+                show kristella smile
+                pause(.25)
+                kr "Oh, I'm sure you did. But you meant it, right?"
+                mc "B-bu, I th-th-"
+                show kristella laugh
+                pause(.25)
+                kr "I got you again!"
+                mc "F-fine… Let’s just get into the game."
+                show kristella excited
+                pause(.25)
+                kr "Right! What are we doing?"
+                jump kristellaNameEnd
+
+            label kristellaNameTwo:
+                $ kristellaCute = 2
+                mc "Ehr, um - y- , a-a …"
+                mc "{i}T-that’s not what I meant to say...{/i}"
+                show kristella pout
+                pause(.25)
+                kr "Hmph. You shouldn’t have said it if you didn’t mean it, [mc]."
+                mc "N-no! Of course I muh-meant it!"
+                mc "I totally think you’re, ah, c-cute..."
+                mc "{i}Oh no... what have I gotten myself into?{/i}"
+                show kristella smile
+                pause(.25)
+                kr "Oh. I was kidding, but that's really sweet of you to say."
+                kr "And I think you're kind of cute, too~"
+                mc "Wh-what?!?!?!?!" with hpunch
+                show kristella giggle
+                pause(.25)
+                kr "Hehe! But we should start training, right?"
+                mc "R-right."
+                jump kristellaNameEnd
+            
+            label kristellaNameThree:
+                $ kristellaCute = 3
+                show kristella thinking
+                pause(.25)
+                kr "Hmm... If you’re not sure, then it’s up to me."
+                show kristella smile
+                pause(.25)
+                mc "Wh-what do you mean?"
+                kr "You won't tell me what you mean, so I've chosen how to interpret it."
+                mc "Oh. I see..."
+                mc  "W-well, what's the verdict?"
+                show kristella giggle
+                pause(.25)
+                kr "I'm not telling you, unless you tell me."
+                mc "{i}I need to know...{/i}"
+                mc "F-fine... I th-think you're c-cute..."
+                show kristella laugh
+                pause(.25)
+                kr "Hehe ~ you admit it! The court declares you guilty!"
+                kr "Your sentence is one training session with me. Do you accept?"
+                mc "Y-yes, your honor..."
+                show kristella giggle
+                pause(.25)
+                kr "What will we be doing first, prisoner?"
+                jump kristellaNameEnd
+
+            label kristellaNameEnd:
+                mc "I think we should..."
+
+            menu:
+                "Start with a couple 1v1s.":
+                    jump kristellaTrainingOne
+                "Hop straight into a PvP game.":
+                    jump kristellaTrainingTwo
+                "Have you watch me for a bit.":
+                    jump kristellaTrainingThree
+
+            label kristellaTrainingOne:   
+                show kristella giggle
+                pause(.25)
+                kr "Ooh ~ 1 on 1? That sounds fun!"
+                mc "R-right, er... it'll h-help you understand the core gameplay."
+                show kristella excited
+                pause(.25)
+                kr "I'm excited! Let's get right into it."
+                scene bg computer game
+                with fade
+                show kristella excited
+                pause(.25)
+                kr "Wow! There are so many characters to choose from! Who are we going to play, [mc]?"
+                mc "Hmm... you're the support, so let's go with Luna."
+                show kristella abashed
+                pause(.25)
+                kr "Ok ~ Also, promise me one thing."
+                mc "Um sure, what is it?"
+                kr "Promise that you won't make fun of me if I don't do well."
+                mc "{i}Wha-? She's usually so confident.{/i}"
+                mc "{i}But this side of her is kind of cute...{/i}"
+                mc "Ehr, no! Of course I won't. But the same goes for you."
+                show kristella giggle 
+                pause(.25)
+                kr "Hehe ~ thanks, MC. But wait… are you scared to lose?"
+                mc "Ah - well, not really… I am a Diamond player facing total noob, after all."
+                show kristella laugh
+                pause(.25)
+                kr "What’d you call me?!? Oh, you’d better pray that you don’t lose now!"
+                mc "Hmph. The game's starting, so we'll find out soon enough, won't we?"
+                show kristella focused
+                pause(.25)
+                kr "You bet!"
+                scene bg computer game
+                with fade
+                mc "{i}It's been 5 minutes, and I still haven't managed to kill her...{/i}"
+                mc "{i}She’s better than expected, but she’s still pretty low on health.{/i}"
+                mc "{i}I’m getting bored… What should I do?{/i}"
+                menu:
+                    "Go all-in.":
+                        jump kristella1v1One
+                    "Be passive and patient.":
+                        jump kristella1v1Two
+                    "Let her kill me.":
+                        jump kristella1v1Three
+                
+                label kristella1v1One:
+                    mc "{i}Okay, so I'll jump in and use my full combo to finish her off.{/i}"
+                    mc "{i}Three...Two...One...{/i}"
+                    show kristella panic
+                    pause(.25)
+                    kr "Ahh! [mc] wh-what are you doing! S-stop it!"
+                    hide kristella panic
+                    "You have been slain."
+                    show kristella neutral
+                    pause(.25)
+                    kr "..."
+                    mc "Wha-? No! This can't be!" with hpunch
+                    mc "I-I- died to the tower..."
+                    show kristella laugh
+                    pause(.25)
+                    kr "Hehe ~ I win! Call me a noob again, [mc]!"
+                    mc "F-fine. I’m the noob. But please don’t tell anyone…"
+                    show kristella wink
+                    pause(.25)
+                    kr "Okay,  it’ll be our little secret."
+                    show kristella giggle
+                    pause(.25)
+                    kr "But in return, you have to call me “the noobslayer” from now on."
+                    mc "Th-thanks, Kristella - um, the noobslayer..."
+                    kr "I’m kidding! You don’t actually have to call me that."
+                    show kristella eyes looking unplayable
+                    pause(.25)
+                    kr "But I did well, right? Are you proud of me, MC?"
+                    mc "Y-yeah, you did great! But I want a rematch!"
+                    show kristella smile
+                    pause(.25)
+                    kr "Okay~"
+                    jump kristella1v1End
+
+                label kristella1v1Two:
+                    mc "{i}Alright. No need to rush, right? I'll just take it sl-{/i}"
+                    mc "W-wha!?!"
+                    show kristella laugh
+                    pause(.25)
+                    kr "Ha! You wouldn't go in, so I decided-"
+                    hide kristella laugh
+                    "An enemy has been slain."
+                    show kristella smile
+                    pause(.25)
+                    kr "Hmph. It was worth a try."
+                    mc "{i}What was that?? I won, but it was really close...{/i}"
+                    mc "Haha... N-not even c-close, noob!"
+                    show kristella giggle
+                    pause(.25)
+                    kr "Oh? Why are you sweating, then?"
+                    mc "W-what are you ta-... F-fine. It was kind of scary."
+                    kr "Hehe! I know~ You didn't expect me to come onto you like that, right?"
+                    mc "Ehr, ah , d-d-definitely not.  L-let's just get back to practice, okay?"
+                    kr "Of course!"
+                    jump kristella1v1End
+
+                label kristella1v1Three:
+                    mc "{i}I'll just run it under the tower and let her kill me… It’ll be good for her confidence, right?{/i}"
+                    show kristella surprised
+                    pause(.25)
+                    kr "[mc]? W-why are you doing that?"
+                    mc "Me? Doing what?"
+                    hide kristella surprised
+                    "You have been slain."
+                    show kristella pout
+                    pause(.25)
+                    "Hmph. You're taking it easy on me, aren't you?"
+                    mc "Haha n-no, why would I do that?"
+                    if kristellaCute == 1:
+                        kr "Tell me the truth, [mc]."
+                        mc "Alright, I let you win..."
+                        show kristella patty eyes
+                        pause(.25)
+                        kr "Oh, so you lied earlier, didn't you?"
+                        mc "Ah, I mean, yeah. I did let you win..."
+                        
+
+                
+
+
 
         label endOfTraining:
             if girlsTalkedTo == 4:
