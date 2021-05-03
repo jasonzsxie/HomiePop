@@ -1354,7 +1354,283 @@
                     mc "{i}That's not what I was going to say but I guess it works.{/i}"
                     jump reginaPvPEnd
 
+                label reginaPvPTwo:
+                    mc "Regina, stop being so far up. You need to-"
+                    show regina angry
+                    pause(.25)
+                    r "Shut up. I'm going to kil- HEY! WHY IS THE JUNGLER HERE!?"
+                    mc "{i}And this is why I told her to stay back. Now she gets punished for it.{/i}"
+                    mc "Well you're dead now."
+                    hide regina angry
+                    "You have been slain."
+                    show regina angry
+                    pause(.25)
+                    r "Grr, I would've killed him if the jungler didn't come."
+                    mc "This was why I wanted you to stay back. Now the game is go-"
+                    r "Hmph, you would've still died."
+                    mc "{i}I would've just outplayed them. Their coordination was awful.{/i}"
+                    mc "Well, I wouldn't be putting myself in dange-"
+                    r "Shut up, I already understand. Kill them faster before the enemy jungler comes."
+                    mc "uhh, sure."
+                    mc "{i}Uh, that was not what I was trying to say, but whatever works.{/i}"
+                    jump reginaPvPEnd
+
+                label reginaPvPThree:
+                    mc "Regina, tell your jungler to co-"
+                    show regina annoyed
+                    pause(.25)
+                    r "No need. I'm about to kill hi- WHY IS HE HERE!?"
+                    mc "{i}And this is why I wanted her to tell the jungler to come.{/i}"
+                    mc "You are so dead."
+                    hide regina annoyed
+                    "You have been slain."
+                    show regina angry
+                    pause(.25)
+                    r "That's not fair. He asked for help."
+                    mc "Well, I did say to tell your jungler to come."
+                    r "Hmph, I will admit you were right for once."
+                    mc "{i}For once?{/i}"
+                    mc "Ok, so now you shou-"
+                    show regina evil smile
+                    pause(.25)
+                    r "Shut up, I know what I'm doing now. I'll just kill him before the jungler comes."
+                    mc "Um, yea..."
+                    mc "{i}She is way off the mark of what I was saying...{/i}"
+                    jump reginaPvPEnd
+
                 label reginaPvPEnd:
+                    show regina happy
+                    pause(.25)
+                    r "Nice, I won, this game is so easy."
+                    mc "Congrats. But uh, you died 12 times."
+                    show regina annoyed
+                    pause(.25)
+                    r "Shut up, the enemy just got more help than me."
+                    mc "Well you shouldn't be in tha-"
+                    r "Hmph, I still won, isn't all that matters?"
+                    mc "{i}She's not wrong...{/i}"
+                    mc "Er, well yeah, but you still made a lot of mistakes."
+                    r "And aren't you supposed to tell me what I did wrong and review the game with me?"
+                    mc "Well, we're running out of time. I'll go over your game next meeting."
+                    show regina arms crossed
+                    pause(.25)
+                    r "Whatever, if you got nothing helpful to say, scram."
+                    mc "B-b-bye."
+                    mc "{i}She's scary...{/i}"
+                    jump reginaTrainingEnd
+
+            label reginaTrainingTwo:
+                show regina evil smile
+                pause(.25)
+                r "1v1? You mean I get to beat you over and over again?"
+                mc "Uh, the point is to teach you the core gameplay."
+                r "Whatever, are you ready to lose?"
+                scene bg computer
+                mc "Hey, you should play Rak, I think it sui-"
+                show regina annoyed
+                pause(.25)
+                r "Don't tell me what to do, baka."
+                mc "O-oh, okay..."
+                r "Luckily for you, I was planning to choose him anyways."
+                mc "Anyways, ready to lose?"
+                r "HEY! That's my line."
+                scene bg computer game
+                with fade
+                mc "{i}Why does she play so aggressively? She already lost so much health attacking me but she did a lot of damage to me. Maybe I should-{/i}"
+                menu:
+                    "Go in for the kill.":
+                        jump regina1v1One
+                    "Let her make a mistake and die.":
+                        jump regina1v1Two
+                    "Let her kill me.":
+                        jump regina1v1Three
+
+                label regina1v1One:
+                    mc "{i}Alright, I just unleash my full combo when she walks up...RIGHT NOW!{/i}"
+                    show regina shocked
+                    pause(.25)
+                    r "WOAH! You're finally starting to attack me now? WAIT, NO STAY BACK!"
+                    hide regina shocked
+                    "An enemy has been slain."
+                    mc "NOT EVEN CLOSE!"
+                    mc "{i}If she used any attack on me, I would have died.{/i}"
+                    show regina anger
+                    pause(.25)
+                    r "GRR. You got lucky there and surprised me. Fight me again. This time I'll make sure I kill you."
+                    mc "HAH. Bring it on."
+                    mc "{i}Man it feels good to kill her.{/i}"
+                    jump regina1v1End
+
+                label regina1v1Two:
+                    mc "{i}She's going to throw an ability there, so I just need to make sure I dodge it and...{/i}"
+                    mc "Woah!"
+                    show regina annoyed 
+                    pause(.25)
+                    r "You're boring. If you're not going to come to me, I'll just come to-"
+                    hide regina annoyed
+                    "An enemy has been slain."
+                    mc "Uh, seems like you died."
+                    show regina pout
+                    pause(.25)
+                    r "HEY! IT's NOT FAIR. Your turret killed me."
+                    mc "Well, the turret is part of the game."
+                    r "Whatever. Fight me again, this time I'll make sure you die."
+                    mc "Ha, make sure you don't die to turret again."
+                    show regina angry
+                    pause(.25)
+                    r "GRR!!!"
+                    jump regina1v1End
+                
+                label regina1v1Three:
+                    mc "{i}I'll just walk up and let her hit me and die to turret.{/i}"
+                    show regina annoyed
+                    pause(.25)
+                    r "Why aren't you trying to dodge anything?"
+                    hide regina annoyed
+                    "You have been slain."
+                    mc "Oh, I died."
+                    show regina angry
+                    pause(.25)
+                    r "HEY! You didn't even try to fight back."
+                    show regina pout
+                    pause(.25)
+                    r "Do you think I'm that bad?"
+                    mc "N-no..."
+                    show regina angry
+                    pause(.25)
+                    r "Liar!"
+                    mc "F-fine, I'll take you seriously this time."
+                    r "Hmph, I don't believe you."
+                    mc "Wha-"
+                    mc "{i}I don't understand this girl.{/i}"
+                    jump regina1v1End
+                                    
+                label regina1v1End:
+                    scene bg computer
+                    with fade
+                    mc "Seems like I won."
+                    show regina angry
+                    pause(.25)
+                    r "Grr, it's not like you're better than me or anything."
+                    mc "Uh, I am pretty sure I am better."
+                    r "Shut up."
+                    mc "Y-yes ma'am."
+                    show regina neutral
+                    pause(.25)
+                    r "Anyways, when are you going to review the game with me?"
+                    mc "Oh, I was planning on doing that at the next meeting."
+                    mc "{i}I'm a little scared of her right now.{/i}"
+                    show regina arms crossed
+                    pause(.25)
+                    r "Ok then. Bye. I don't want to talk to you anymore if you got nothing to say."
+                    mc "U-uh bye."
+                    mc "{i}Ok, I am very scared of her right now.{/i}"
+                    jump reginaTrainingEnd
+
+            label reginaTrainingThree:
+                show regina annoyed
+                pause(.25)
+                r "Watch you? Ugh, it's going to be so boring..."
+                mc "I'm pretty sure you're going to learn a lot by wat-"
+                r "Yeah, yeah, whatever, you got a game by the way."
+                scene bg computer 
+                mc "Alright, I'm just going to tell my teammates that I'm top."
+                mc "Hmm, now for which character to play."
+                show regina neutral
+                pause(.25)
+                mc "Huh? I was going to pic-"
+                r "I don't care, pick Rak, he looks cool."
+                mc "{i}Ugh, I hate playing this character.{/i}"
+                mc "Fine, I guess I have no choice."
+                scene bg computer game
+                with fade
+                mc "{i}This game is so boring. I already explained everything I am doing and no team has a kill yet. Maybe I should just -{/i}"
+                menu:
+                    "Go in for the kill.":
+                        jump reginaWatchOne
+                    "Back off and wait.":
+                        jump reginaWatchTwo
+                    "Tell the jungler to come.":
+                        jump reginaWatchThree
+
+                label reginaWatchOne:
+                    mc "Ok, I will just go in an-"
+                    show regina neutral
+                    pause(.25)
+                    mc "{i}Shoot, I forgot about the enemy jungler.{/i}"
+                    mc "Well, I have to try to outplay this then."
+                    hide regina neutral
+                    "You have been slain."
+                    "An enemy has been slain."
+                    "Double Kill."
+                    mc "Nice! Ok Regina, if the enemy jungler comes but you manage to kill bo-"
+                    show regina neutral
+                    pause(.25)
+                    r "Yeah, I saw. I guess you're better than what I initially thought."
+                    mc "{i}Wha?{/i}"
+                    mc "Uh, what I'm trying to say is that if you ca-"
+                    r "I already understand. If I can kill both of them, even if I die, it's very good for me and the team."
+                    mc "That's uh, spot on."
+                    mc "{i}I'm surprised she already understood everything.{/i}"
+                    jump reginaWatchEnd
+                
+                label reginaWatchTwo:
+                    mc "Here I shouldn't keep fighting bec-"
+                    show regina confused
+                    pause(.25)
+                    r "Why are you backing off when you can just kill him? You're being stupid."
+                    mc "Well I see the enemy jungler nearby. If I go in right now, I could die. So I'm just going to wait and... attack now!"
+                    hide regina confused
+                    "First blood."
+                    mc "See, by waiting for the enemy jungler to leave, it made it less ris-"
+                    show regina arms crossed
+                    r "Hmph, can't you just try to kill the jungler if he comes."
+                    mc "{i}Huh?{/i}"
+                    mc "I mean, yeah, but it's riskier because I have a chance to die without getting a kill."
+                    r "Oh so you're just a scaredy cat?"
+                    mc "W-w-what? I'm j-"
+                    r "Haha, you should've seen your face. You're so dumb, I was obviously just messing with you. You just want to reduce the risks of outside variables right?"
+                    mc "Y-yeah, that's right."
+                    mc "{i}She actually understood everything?!?!{/i}"
+                    jump reginaWatchEnd
+
+                label reginaWatchThree:
+                    mc "Alright, I'm just going to tell my jungler to come help."
+                    show regina confused
+                    pause(.25)
+                    r "Huh? Why ask for help when you can kill him by yourself?"
+                    mc "Well, it's highly likely the enemy jungler is here and it's easier to fight a 2v2 than an 1v2. Now that he's here, we can..."
+                    hide regina confused
+                    "An enemy has been slain."
+                    "Double kill."
+                    mc "Easy! See? It was less risky by making it a 2v2."
+                    show regina confused
+                    pause(.25)
+                    r "Hmph, I sweared you can just kill both of them by yourself."
+                    mc "W-well yea, but 2v-"
+                    show regina understanding
+                    pause(.25)
+                    r "Yeah, whatever, I guess if you die and don't get a kill, the game just becomes harder to play?"
+                    mc "Yes..."
+                    mc "{i}That's what I was saying!!!{/i}"
+                    jump reginaWatchEnd    
+                
+                label reginaWatchEnd:
+                    scene bg computer
+                    mc "Well, that was an easy win."
+                    show regina annoyed
+                    pause(.25)
+                    r "Ughhh. That was so boring to watch."
+                    mc "Didn't you learn anything?"
+                    r "Eh, I guess, but still, I want to play."
+                    mc "U-uh, unfortunately, we are running out of time."
+                    r "Grr, I really wanted to play. Well, whatever, I guess you were useful for a bit. Now that you got nothing more useful to say, get out of my sight."
+                    mc "G-goodbye."
+                    mc "{i}I swear I was more than just a bit useful. But I’m never saying that to her face. She terrifies me.{/i}"
+                    jump reginaTrainingEnd
+            
+            label reginaTrainingEnd:
+                jump endOfTraining
                     
 
         label kristellaTraining:
