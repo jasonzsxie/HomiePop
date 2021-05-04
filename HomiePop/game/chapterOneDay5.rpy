@@ -1881,19 +1881,453 @@
                         pause(.25)
                         kr "Oh, so you lied earlier, didn't you?"
                         mc "Ah, I mean, yeah. I did let you win..."
-                        
-
+                        show kristella blush
+                        pause(.25)
+                        kr "No - not that, silly~"
+                        mc "W-what do you mean, then?"
+                        show kristella giggle
+                        pause(.25)
+                        kr "You - you do think I’m cute ~ don’t you? Why else would you let me win, [mc]?"
+                        mc "U-uh, e-... Fine. I th-think you're cute..."
+                        show kristella smile
+                        pause(.25)
+                        kr "I knew it! I like it when you’re honest, MC."
+                        show kristella blush
+                        pause(.25)
+                        kr "And... I think you're kind of cute as well."
+                        with hpunch
+                        mc "A-aha, c-coo,... excuse me for a bit..."
+                        show kristella laugh
+                        pause(.25)
+                        kr "Hehe, okay ~ hurry up, so I can beat you for real!"
+                        mc "O-of cou-course..."
+                    elif kristellaCute == 2:
+                        kr "I can tell that you didn't try."
+                        kr "Hmph. I know how you feel, but that doesn’t mean that you should take it easy on me..."
+                        mc "Oh. Sorry..."
+                        show kristella mischievous smile
+                        pause(.25)
+                        kr "Hm... I know exactly how you can make it up to me."
+                        mc "Oh, what's that?"
+                        show kristella giggle
+                        pause(.25)
+                        kr "Call me cute again."
+                        with hpunch
+                        mc "B-bu, uh-, aa..."
+                        show kristella laugh
+                        pause(.25)
+                        kr "Hehe~ I'm just kidding, [mc]."
+                        mc "Oh..."
+                        show kristella smile
+                        pause(.25)
+                        kr "There is something that you can actually do, though. Come back here and play again!"
+                        kr "And actually try this time: I’m not scared of a challenge!"
+                        mc "You got it."
+                    elif kristellaCute == 3:
+                        kr "You were probably tired of the game or something..."
+                        mc "O-okay, I admit it..."
+                        show kristella giggle
+                        pause(.25)
+                        kr "Hehe ~ I thought you would’ve learned your lesson with admitting your crimes!"
+                        show kristella wink
+                        pause(.25)
+                        kr "I’m lengthening your sentence, but I’ll let you out on good behavior~"
+                        mc "N-not again... I mean, uh, yes, your honor!"
+                        show kristella giggle
+                        pause(.25)
+                        kr "Good. Now play again!"
+                        mc "R-right away..."
+                    jump kristella1v1End
                 
+                label kristella1v1End:
+                    scene bg computer
+                    with fade
+                    mc "Okay, I think we can stop here. Good job, Kristella."
+                    show kristella giggle
+                    pause(.25)
+                    kr "It was so much fun! Let's do it again soon! Okay, [mc]?"
+                    mc "Right. See you."
+                    kr "Bye!"
+                    jump kristellaTrainingEnd
 
+            label kristellaTrainingTwo:
+                show kristella surprised
+                pause(.25)
+                kr "W-wha? Are you sure?"
+                mc "Yeah. Bot lane is a duo-lane, so as a Support, you need to learn to work with your ADC."
+                show kristella nervous
+                pause(.25)
+                kr "O-okay..."
+                mc "Kristella...are you nervous?"
+                kr "Yeah... I'm a little scared."
+                mc "What? You’re normally so confident..."
+                kr "But I've never done this before."
+                mc "Well, don't worry. I'm right here to guide you."
+                kr "Promise?"
+                mc "I promise."
+                kr "R-right. Let's do this then."
+                mc "Click on play, then join the queue."
+                show kristella neutral
+                pause(.25)
+                kr "Okay... Oh, I got a match!"
+                mc "Accept and type in chat 'sup'."
+                show kristella confused
+                pause(.25)
+                kr "Sup? Is this the LL way to greet your team-mates?"
+                mc "Haha - no, you noob. You're claiming your role."
+                if kristellaCute == 1:
+                    show kristella giggle
+                    pause(.25)
+                    kr "Aww, noob - that's a term of endearment, right?"
+                    mc "...You can't fool me again."
+                    show kristella laugh
+                    pause(.25)
+                    kr "Oh? He's learning!"
+                elif kristellaCute == 2:
+                    show kristella pout
+                    pause(.25)
+                    kr "Hmph. Don’t call me a noob when I haven’t even shown you my skills yet."
+                    mc "Alright, let's see it then."
+                elif kristellaCute == 3:
+                    show kristella laugh
+                    pause(.25)
+                    kr "Noob? Is that how you address me, prisoner?"
+                    mc "N-no, your honor. Please continue with your game..."
+                    kr "That's what I thought."
+                pause(2)
+                show kristella questioning
+                pause(.25)
+                kr "Wait, there are so many characters. Who do I pick?"
+                mc "Let's see... your ADC picked Sumeera, so I'd choose Luna for the synergy."
+                kr "Synergy?"
+                show kristella smile
+                pause(.25)
+                kr "Oh, I know what you mean."
+                kr "Our characters work well together, right?"
+                mc "Yeah, exactly."
+                show kristella questioning
+                pause(.25)
+                kr "What do we do now?"
+                mc "We're just waiting for the game to start."
+                show kristella concerned
+                pause(.25)
+                kr "Okay...[mc]?"
+                mc "Yeah?"
+                show kristella slight smile
+                pause(.25)
+                kr "Remember your promise."
+                mc "Of course."
+                scene bg computer game
+                with fade
+                mc "{i}Hmm. it’s been six minutes, and nothing has really happened...{/i}"
+                mc "{i}It seems like she’s starting to understand the basics, though.{/i}"
+                mc "Good job, Kristella. I think you're st-"
+                show kristella panic
+                pause(.25)
+                kr "[mc], help me! They're attacking!"
+                mc "Stay calm. You should..."
+                menu:
+                    "Fight back.":
+                        jump kristellaPvPOne
+                    "Run away!":
+                        jump kristellaPvPTwo
 
+                label kristellaPvPOne:
+                    show kristella focused
+                    pause(.25)
+                    kr "Okay! We're going in!"
+                    "..."
+                    hide kristella focused
+                    "An enemy has been slain."
+                    pause(1)
+                    "Double Kill."
+                    mc "Nice job!"
+                    show kristella excited
+                    pause(.25)
+                    kr "Yay ~ we did it!"
+                    mc "Yeah, keep going."
+                    jump kristellaPvPEnd
+
+                label kristellaPvPTwo:
+                    show kristella scared
+                    pause(.25)
+                    kr "Alright! Ahh ~ run, run!"
+                    "..."
+                    hide kristella scared
+                    "You have been slain"
+                    pause(1)
+                    "Enemy double kill."
+                    show kristella disappointed
+                    pause(.25)
+                    kr "..."
+                    mc "D-don't worry about it, Kristella. It was a nice try..."
+                    show kristella slight smile
+                    pause(.25)
+                    kr "Yeah... we'll get them next time!"
+                    mc "Definitely."
+                    jump kristellaPvPEnd
+
+                label kristellaPvPEnd:
+                    scene bg computer
+                    with fade
+                    mc "Good work today, Kristella. You really learned a lot."
+                    show kristella smile
+                    pause(.25)
+                    kr "Thanks, [mc]. You're a good teacher..."
+                    if kristellaCute == 3:
+                        show kristella giggle
+                        pause(.25)
+                        kr "I think this is enough to warrant release for good behavior."
+                    show kristella smile
+                    pause(.25)
+                    kr "I'll see you later, [mc]."
+                    mc "Bye."
+                    mc "{i}She's going to be a good support...{/i}"
+                    jump kristellaTrainingEnd
+
+            label kristellaTrainingThree:
+                show kristella smile
+                pause(.25)
+                kr "Sounds good! I can learn a lot by watching since you’re pretty good , right?"
+                mc "I'm Diamond, so I'm in the top one percent of players."
+                kr "Wow! That's pretty impressive, [mc]."
+                show kristella nervous
+                pause(.25)
+                kr "Also, it's probably better this way..."
+                mc "Hm? What do you mean?"
+                kr "Well, I'm a little nervous to play by myself..."
+                mc "{i}Huh? She's always so confident...{/i}"
+                kr "It's just that, um- I've never done this before."
+                mc "Hmm... If that's the case, then would you feel better playing your first game with me?"
+                mc "I’ll be by your side the whole time."
+                if kristellaCute == 1:
+                    show kristella patty eyes
+                    pause(.25)
+                    kr "Aww, you want me by your side?"
+                    mc "Eh-ehr, y-yeah, I think it’d be good."
+                    show kristella smile
+                    pause(.25)
+                    kr "Okay, it's decided then. Let's do this!"
+                    mc "Right."
+                elif kristellaCute == 2:
+                    show kristella smile
+                    pause(.25)
+                    kr "Oh…  I’d really like that. I think we’d do well together, don’t you?"
+                    mc "Uh... y-yeah. L-let's do it."
+                    show kristella giggle
+                    pause(.25)
+                    kr "Wait, why are you nervous now, [mc]?"
+                    mc "O-oh, it's nothing..."
+                elif kristellaCute == 3:
+                    show kristella giggle
+                    pause(.25)
+                    kr "You know what? A game together would fulfill your sentence, prisoner."
+                    mc "Coming right up, your honor."
+                    kr "Hehe~"
+                scene bg computer game
+                with fade
+                mc "You're a support player, so I'm going to play ADC with you in the bot lane."
+                mc "I’ll play Sumeera. Do any of these characters stand out to you?"
+                show kristella excited
+                pause(.25)
+                kr "Yeah! I like the one with the light blue shield."
+                mc "Ah, that's Luna. Good choice. She works really well with my character."
+                show kristella head tilt slight smile #uh idk if we hv this
+                pause(.25)
+                kr "Why's that?"
+                mc "Oh, our characters have synergy. Our abilities enhance each other’s strengths."
+                if kristellaCute == 1:
+                    show kristella patty eyes
+                    pause(.25)
+                    kr "Hm… just like real life, right?"
+                    with hpunch
+                    mc "A-ah, oh! Look, we’re in game, haha..."
+                elif kristellaCute == 2:
+                    show kristella giggle
+                    pause(.25)
+                    kr "Wow ~ I can't wait to play with you, [mc]!"
+                    mc "W-well, the game's starting..."
+                elif kristellaCute == 3:
+                    show kristella giggle
+                    pause(.25)
+                    kr "Hmph. Who would have thought? A prisoner and a judge working together..."
+                    mc "Haha, the game's starting now."
+                scene bg computer game
+                with fade
+                mc "{i}Hmm...our characters are about to hit level three, but our enemies have more HP than us...{/i}"
+                mc "{i}What should we do?{/i}"
+                menu:
+                    "Use everything and go all in.":
+                        jump kristellaWatchOne
+                    "Ask Kristella what to do.":
+                        jump kristellaWatchTwo
+                    "Run away.":
+                        jump kristellaWatchThree
+                
+                label kristellaWatchOne:
+                    mc "Kristella, let’s use everything to fight them!"
+                    show kristella excited
+                    pause(.25)
+                    kr "Okay. Go, I'm on top of them!"
+                    mc "Oh, nice! I'm coming!"
+                    hide kristella excited
+                    pause(.5)
+                    "An enemy has been slain."
+                    pause(1)
+                    "Double kill."
+                    show kristella laugh
+                    pause(.25)
+                    kr "Ohh, MC ~ that felt good… We did it!"
+                    mc "Yeah, nice job, Kristella!"
+                    jump kristellaWatchEnd
+
+                label kristellaWatchTwo:
+                    show kristella panic
+                    pause(.25)
+                    kr "U-uh, l-let’s fight, right?"
+                    mc "Okay, going in!"
+                    kr "..."
+                    show kristella disappointed
+                    pause(.25)
+                    kr "Oh, they're running away..."
+                    mc "Ha! They're scared!"
+                    show kristella giggle
+                    pause(.25)
+                    kr "Hehe ~ scaredy-cats!"
+                    mc "We'll get them next time."
+                    kr "Right."
+                    jump kristellaWatchEnd
+
+                label kristellaWatchThree:
+                    mc "I don't like the way the enemy is positioning..."
+                    mc "Kristella, let's run!"
+                    show kristella panic
+                    pause(.25)
+                    kr "Oka- Ah! MC, help ~ there’s someone else on me!"
+                    mc "I knew it... their Jungler is ganking us!"
+                    mc "Hey, get off of her Boomumu!"
+                    pause(.5)
+                    "An enemy has been slain."
+                    show kristella excited
+                    pause(.25)
+                    kr "Oh... nice!"
+                    mc "Yeah. We drew their jungler to ur lane, and we killed him."
+                    mc "Good job, Kristella."
+                    show kristella smile
+                    pause(.25)
+                    kr "Thanks, you too."
+                    jump kristellaWatchEnd
+
+                label kristellaWatchEnd:
+                    scene bg computer
+                    with fade
+                    show kristella giggle
+                    pause(.25)
+                    kr "Wow~ That was so fun, [mc]!"
+                    kr "We should play together again sometime."
+                    mc "Of course. Did you add me as a friend?"
+                    kr "Yep. XtremeDragonSlayer, right?"
+                    mc "{i}Why did she have to say it out loud...{/i}"
+                    mc "Yeah..."
+                    show kristella smile
+                    pause(.25)
+                    kr "Okay, see you soon, [mc]."
+                    mc "Lata, Kristella."
+                    jump kristellaTrainingEnd
+  
+            label kristellaTrainingEnd:
+                jump endOfTraining       
 
         label endOfTraining:
             if girlsTalkedTo == 4:
                 mc "Oh wait, we should head back."
-                scene bg clubroom                
+                scene bg clubroom
+                with fade                
             else:
                 scene bg clubroom
                 mc "{i}Who should I talk to next?{/i}"
+        
+    show kelvin smile
+    pause(.25)
+    kel "Oh look, they're back."
+    mc "Hey, everyone. Great job today - I think we really made some progress."
+    show kelvin excited
+    pause(.25)
+    kel "Yep, definitely!"
+    hide kelvin excited
+    show regina evil smile
+    pause(.25)
+    r "I'm going to be even better next time."
+    hide regina evil smile
+    show tiffany nervous smile
+    pause(.25)
+    t "...M-me too!"
+    hide tiffany nervous smile
+    show kristella giggle
+    pause(.25)
+    kr "Hehe ~ me too, then."
+    hide kristella giggle
+    show maryanne smile
+    pause(.25)
+    ma "Right. Anyways, thanks, [mc]."
+    hide maryanne smile
+    mc "N-no problem. I’m sure we’re all tired, so let’s go home and rest."
+    scene bg neighborhood street
+    with fade
+    pause(.5)
+    mc "{i}Wow, what a week...{/i}"
+    mc "{i}I'm exhausted. So much has happened-{/i}"
+    mc "{i}Made a friend...{/i}"
+    scene bg classroom whiteboard
+    show kelvin smile
+    pause
+    hide kelvin smile
+    show teacher angry
+    pause
+    hide teacher angry
+    mc "{i}Started a club...{/i}"
+    scene bg clubroom
+    show tiffany neutral
+    pause
+    hide tiffany neutral
+    show maryanne neutral
+    pause
+    hide maryanne neutral
+    show regina neutral
+    pause
+    hide regina neutral
+    show kristella neutral
+    pause
+    hide kristella neutral
+    mc "{i}Kept that club...{/i}"
+    scene bg clubroom
+    show kelvin panic
+    pause
+    hide kelvin panic
+    show maryanne thinking
+    pause
+    hide maryanne thinking
+    mc "{i}Made more friends...{/i}"
+    scene bg computer
+    show tiffany shy
+    pause
+    hide tiffany shy
+    show maryanne blush
+    pause
+    hide maryanne blush
+    show regina arms crossed
+    pause
+    hide regina arms crossed
+    show kristella giggle
+    pause
+    hide kristella giggle 
+    scene bg neighborhood street
+    mc "{i}Or is it something more?{/i}"
+    scene bg black screen
+    with fade
+    mc "{i}...{/i}"
+    mc "{i}I need some rest.{/i}"
 
+    jump chapterOneDay6to10
 
     return

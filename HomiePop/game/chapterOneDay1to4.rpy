@@ -1044,7 +1044,7 @@
     window show
     mc "Hello, everyo-"
     scene bg clubroom
-    show kelvin paper panic
+    show kelvin panic
     pause(.25)
     kel "Bad news, guys."
     kel "The principal decided that we don't qualify as an official club."
@@ -1052,7 +1052,7 @@
     with hpunch
     pause(.25)
     kel "Apparently, we aren't different enough from the e-Gaming club."
-    hide kelvin paper panic
+    hide kelvin panic
     show kristella concerned
     pause(.25)
     kr "Oh no!"
