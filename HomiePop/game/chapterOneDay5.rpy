@@ -11,10 +11,10 @@
     with fade
     pause(.5)
     window show
-    show tiffany neutral left
-    show regina neutral centerleft
-    show maryanne neutral centerright  
-    show kristella neutral right
+    show tiffany neutral small at left
+    show regina neutral at centerleft
+    show maryanne neutral at centerright  
+    show kristella neutral at right
     pause(.25)
     mc "Today I'll be assigning roles to all of you."
     "All Females" "Roles?"
@@ -23,7 +23,7 @@
     pause(.25)
     kel "Yup! MC, would you like to explain?"
     mc "Right."
-    scene league maryanne_question_option_one
+    scene bg clubroom
     mc "LL is a team oriented strategy based game where 5 players fight each other, working their way to the other team's crystal."
     mc "The objective is to break the opponent's crystal before the other team gets to yours."
     mc "There are 3 lanes and a jungle, which contains neutral monsters that can be slain for resources or team buffs"
@@ -35,10 +35,10 @@
     mc "ADC and Support play together in the bottom lane. The Support takes care of the ADC and helps the team maintain vision of the map."
     mc "Sooo, did everyone understand that?"
     scene bg clubroom
-    show tiffany confused left
-    show regina confused centerleft
-    show maryanne confused centerright  
-    show kristella confused right
+    show tiffany confused small at left
+    show regina confused at centerleft
+    show maryanne confused at centerright  
+    show kristella confused at right
     pause(.25)
     "All Females" "Kinda...?" 
     scene bg clubroom
@@ -207,7 +207,7 @@
                 show regina evil smile
                 pause(.25)
                 r "Oh! Top lane sounds fun since I get to yell at you for help."
-                m "Err, you're supposed to be a tank and help teamfight."
+                mc "Err, you're supposed to be a tank and help teamfight."
                 r "So you're telling me I get to smack people around and not die? Even better."
                 mc "{i}She's completely missing the point.{/i}"
                 show regina glare
@@ -486,7 +486,7 @@
 
             mc "Alright, we should..."
             menu:
-                "Go into a pvp match.":
+                "Go into a PvP match.":
                     jump tiffanyTrainingOne
                 "Play some 1v1s.":
                     jump tiffanyTrainingTwo
@@ -1247,7 +1247,6 @@
             show regina pout
             pause(.25)
             r "Hey! You have a problem with it?"
-            pause
             menu:
                 "N-no, no problems here.":
                     jump reginaNameOne
@@ -1785,7 +1784,7 @@
                 show kristella giggle 
                 pause(.25)
                 kr "Hehe ~ thanks, MC. But wait… are you scared to lose?"
-                mc "Ah - well, not really… I am a Diamond player facing total noob, after all."
+                mc "Ah - well, not really… I am a Diamond player facing a total noob, after all."
                 show kristella laugh
                 pause(.25)
                 kr "What’d you call me?!? Oh, you’d better pray that you don’t lose now!"
@@ -1833,7 +1832,7 @@
                     kr "I’m kidding! You don’t actually have to call me that."
                     show kristella eyes looking unplayable
                     pause(.25)
-                    kr "But I did well, right? Are you proud of me, MC?"
+                    kr "But I did well, right? Are you proud of me, [mc]?"
                     mc "Y-yeah, you did great! But I want a rematch!"
                     show kristella smile
                     pause(.25)
