@@ -4,7 +4,7 @@
     $ whoThird  = ""
     $ girlsTalkedTo = 0
     window hide
-    scene day one
+    scene bg black screen
     pause
     # Background should be ceiling of room, blue light, morning
 
@@ -74,7 +74,7 @@
         jump club_end
 
     label club_end:
-        scene bg classroom whiteboard #facing whiteboard
+        scene bg classroom #facing whiteboard
         with fade
         pause
 
@@ -98,7 +98,7 @@
     pause(.25)
     "Teacher" "[mc], why don't you take a seat next to Kelvin."
 
-    scene bg classroom desk #facing desks
+    scene bg classroom #facing desks
     pause(.5)
     show kelvin happy
     pause(.25)
@@ -107,13 +107,14 @@
     kel "If you ever need help, don't be afraid to ask."
     mc "Okay..."
 
-    scene bg classroom whiteboard
+    scene bg classroom
     pause(.5)
     "Teacher" "We'll be continuing from our last lesson on combinations and permutations."
     "The teacher turns around and begins writing numbers on the whiteboard behind him." #gender not known yet
     "The lesson is long-winded, and the teacher's voice is mundane."
 
-    scene bg desk side view
+    scene bg classroom
+    with fade
     pause(.5)
     show kelvin on phone #or neutral
     pause(.25)
@@ -129,7 +130,7 @@
     kel "Whoa? You know Leeg of Legions?!?"    
     mc "I've been playing for..."
 
-    scene bg classroom whiteboard
+    scene bg classroom
     pause(.5)
     show teacher angry
     pause(.25)
@@ -161,7 +162,7 @@
     pause(.25)
     "Teacher" "Good to hear."
 
-    scene bg classroom whiteboard
+    scene bg classroom 
     pause(.5)
     "The rest of the classes pass by in a blur, and students are exiting the classroom."
     show kelvin happy
@@ -254,7 +255,7 @@
     kel "C'mon, let's go."
     mc "{i}Okay, calm down. You can do this...{/i}"
 
-    scene bg classroom desk
+    scene bg classroom
     pause(.5)
     mc "{i}Alright, I'll ask the first person I see. {/i}"
     "..."
@@ -282,11 +283,12 @@
     mc "Yea, I guess not..."
     "Random Guy" "I'll see you, then."
     mc "Bye..."
-    scene bg classroom desk
+    scene bg classroom
     mc "{i}Shoot! I messed up.{/i}"
     mc "{i}But it wasn't that bad, right?{/i}"
 
-    scene bg classroom whiteboard
+    scene bg classroom
+    with fade
     pause(.5)
     "Teacher" "Alright, get your textbooks out."
     mc "{i}I guess I'll have to wait until lunch for my next shot.{/i}"
@@ -300,14 +302,11 @@
     mc "{i}Good. That means there are a lot of people to ask.{/i}"
     mc "{i}Who should I ask first?{/i}"
     window hide
-    scene bg cafeteria one
+    scene bg cafeteria two
     show random person one
     pause
-    scene bg cafeteria two
-    show random person two
-    pause
     scene bg cafeteria three
-    show random person three
+    show random person two
     pause
     scene bg cafeteria four
     show dylan neutral
@@ -347,7 +346,7 @@
     mc "Thanks anyways! I'll see you around, Dylan."
     d "Bye [mc]."
 
-    scene bg classroom desk
+    scene bg classroom
     pause(.5)
     mc "{i}I asked a couple more people, but nobody was really interested...{/i}"
     mc "{i}Approaching people is a lot harder than I thought.{/i}"
@@ -892,6 +891,7 @@
                 kr "Lie down, and don't move."
                 mc "Okay, fine."
                 scene bg clubroom
+                with fade
                 pause(.5)
                 "Five minutes later, Kristella scurries back into the room."
                 show kristella panting

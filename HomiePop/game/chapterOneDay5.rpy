@@ -2277,7 +2277,7 @@
     mc "{i}Wow, what a week...{/i}"
     mc "{i}I'm exhausted. So much has happened-{/i}"
     mc "{i}Made a friend...{/i}"
-    scene bg classroom whiteboard
+    scene bg classroom 
     show kelvin smile
     pause
     hide kelvin smile
