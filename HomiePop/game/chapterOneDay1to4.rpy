@@ -116,12 +116,12 @@
     scene bg classroom
     with fade
     pause(.5)
-    show ethan on phone #or neutral
+    show ethan grimace #or neutral
     pause(.25)
     e "{size=-8}...dammit, my rank dropped again.{/size}"
     mc "Rank?"
     mc "{i}What is he talking about? {/i}"
-    show ethan abashed
+    show ethan slight smile
     pause(.25)
     e "Oh, sorry. It's nothing; don't mind me."
     mc "{i} Looking at it more closely, the site he's on looks pretty familiar...{/i}"
@@ -180,10 +180,10 @@
     mc "Oh..."
     e "I'm assuming you're not interested? Oh well, there are tons of established clubs here."
     e "For example, I'm in the tennis club."
-    show ethan handing paper
+    show ethan happy
     pause(.25)
     e "Here's a full list of clubs if you want to take a look."
-    hide ethan handing paper
+    hide ethan happy
     pause(.25)
     mc "Hmm..."
     mc "I don't see any clubs that really interest me."
@@ -203,22 +203,22 @@
     mc "{i} With only one day it'll be difficult to find other people...{/i}"
     e "Why? Got an idea for something?"
     mc "Yeah, maybe. Could I get your help with it?"
-    show ethan smile #could be same thing as ethan happy
+    show ethan happy #could be same thing as ethan happy
     pause(.25)
     e "Of course, what is it?"
     mc "After talking with you, I realized that it felt good to share my love of LL with someone..."
     mc "So - um -"
     mc "I was thinking that we could start a LL club."
     e "Count me in!"
-    show ethan uncertain #maybe ethan thinking
+    show ethan thinking #maybe ethan thinking
     pause(.25)
     e "But with only one day..."
     mc "I know it'll be hard, but I believe we can do it."
     mc "We'll find our members tomorrow."
-    show ethan smile
+    show ethan happy
     pause(.25)
     e "Okay, let's do it."
-    hide ethan smile
+    hide ethan happy
     pause(.25)
     "The bell rings." #add sound maybe?
     show ethan neutral
@@ -362,7 +362,7 @@
     with hpunch
     mc "{size=+10}WHAT??!?!{/size}" 
     mc "THANK YOU, ETHAN! YOU'RE SERIOUSLY THE BEST!"
-    show ethan smile scratching head
+    show ethan imposter sus
     pause(.25)
     e "Haha, no worries! I have many connections with people around here~"
     e "I'll introduce everyone to you tomorrow!"
@@ -376,7 +376,7 @@
     e "If you need to reach me, here's my number."
     mc "Oh thanks, here's mine as well."
     mc "{i}No way I'm telling him my mom and sister are the only ones on my contacts list.{/i}"
-    show ethan smile
+    show ethan happy
     pause(.25)
     e "Anyways, I need to get going to tennis practice now."
     e "See you at the meeting, [mc]."
@@ -450,7 +450,7 @@
     hide regina power stance at centerright
     hide kristella happy at right 
     pause(.5)
-    show ethan smile
+    show ethan happy
     pause(.25)
     e "Great! Now that everyone knows one another, we can start with the meeting."
     e "[mc], what did you have planned?"
@@ -458,7 +458,7 @@
     e "It's your club after all!"
     mc "Uh... I - um - didn't really plan anything."
     mc "{i}What should we do?{/i}"
-    hide ethan smile
+    hide ethan happy
     show kristella neutral
     pause(.25)
     kr "Why don't we get to know everyone better?"
@@ -982,19 +982,11 @@
                 mc "{i}Who should I talk to next?{/i}"
 
     mc "{i}Just in time, too.{/i}" 
-    mc "Um... L-listen up, everyone..."   
-    show ethan neutral        
-    show tiffany shy small at left
-    show maryanne slight smile at centerleft
-    show regina power stance at centerright
-    show kristella happy at right 
+    mc "Um... L-listen up, everyone..."    
     pause(.5) 
     mc "That's all the time we have for today, so I'll see y'all tomorrow."
     mc "Thank you for coming."
-    hide tiffany shy small at left
-    hide maryanne slight smile at centerleft
-    hide regina power stance at centerright
-    hide kristella happy at right
+    show ethan neutral
     pause(.25)
     e "Later [mc]."
     hide ethan neutral

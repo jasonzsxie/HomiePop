@@ -42,8 +42,9 @@
     pause(.25)
     "All Females" "Kinda...?" 
     scene bg clubroom
-    show ethan exasperated
+    show ethan stern
     pause(.25)
+    e "I think it could be a better idea to teach them one on one."
     mc "You're probably right..."
     mc "We should get roles decided first."
     mc "{i}Who should I talk to? {i}"
@@ -394,7 +395,7 @@
     pause(.25)
     kr "Woo!"
     hide kristella laugh
-    show ethan smile
+    show ethan happy
     pause(.25)
     e "Okay, we can start training now."
     mc "Yeah, of course!"
@@ -2282,7 +2283,7 @@
                 scene bg clubroom
                 mc "{i}Who should I talk to next?{/i}"
         
-    show ethan smile
+    show ethan happy
     pause(.25)
     e "Oh look, they're back."
     mc "Hey, everyone. Great job today - I think we really made some progress."
@@ -2314,9 +2315,9 @@
     mc "{i}I'm exhausted. So much has happened-{/i}"
     mc "{i}Made a friend...{/i}"
     scene bg classroom 
-    show ethan smile
+    show ethan happy
     pause
-    hide ethan smile
+    hide ethan happy
     show teacher angry
     pause
     hide teacher angry
