@@ -137,7 +137,7 @@
     "Teacher" "Kelvin and [mc], you're being too loud!"
     "Teacher" "Why don't you two step out into the hallway?"
 
-    scene bg hallway
+    scene bg school hallway
     pause(.5)
     show kelvin embarrassed
     pause(.25)
@@ -151,7 +151,7 @@
     show kelvin happy
     pause(.25)
     kel "Still, diamond is pretty impressive!"
-    scene bg hallway
+    scene bg school hallway
     "The two continue to discuss the game until the bell rings."
 
     show teacher neutral
