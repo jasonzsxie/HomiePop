@@ -55,6 +55,7 @@ define config.has_voice = True
 
 # define config.sample_sound = "sample-sound.ogg"
 # define config.sample_voice = "sample-voice.ogg"
+define config.default_sfx_volume = .05
 
 
 ## Uncomment the following line to set an audio file that will be played while
