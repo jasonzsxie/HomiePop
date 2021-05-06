@@ -78,7 +78,7 @@
         with fade
         pause
 
-    show teacher happy
+    show jacob smile
     pause(.25)
     "Teacher" "Good morning!"
     "Teacher" "Class, we have a new student."
@@ -91,11 +91,9 @@
     "{i}...Who transfers this late into the school year?{/i}"
     "{i}...Looks like a dork if you ask me...{/i}"
 
-    show teacher neutral
+    show jacob neutral
     pause(.25)
     "Teacher" "Alright, class, settle down now."
-    show teacher pointing
-    pause(.25)
     "Teacher" "[mc], why don't you take a seat next to Ethan."
 
     scene bg classroom #facing desks
@@ -132,7 +130,7 @@
 
     scene bg classroom
     pause(.5)
-    show teacher angry
+    show jacob angry
     pause(.25)
     "Teacher" "Ethan and [mc], you're being too loud!"
     "Teacher" "Why don't you two step out into the hallway?"
@@ -154,11 +152,11 @@
     scene bg school hallway
     "The two continue to discuss the game until the bell rings."
 
-    show teacher neutral
+    show jacob neutral
     pause(.25)
     "Teacher" "Boys, you can come back in now. Next time, please try not to disrupt the lesson."
     "Ethan and [mc]" "Sorry, it won't happen again."
-    show teacher happy
+    show jacob smile
     pause(.25)
     "Teacher" "Good to hear."
 
