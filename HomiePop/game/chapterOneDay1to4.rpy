@@ -96,15 +96,15 @@
     "Teacher" "Alright, class, settle down now."
     show teacher pointing
     pause(.25)
-    "Teacher" "[mc], why don't you take a seat next to Kelvin."
+    "Teacher" "[mc], why don't you take a seat next to Ethan."
 
     scene bg classroom #facing desks
     pause(.5)
-    show kelvin happy
+    show ethan happy
     pause(.25)
-    kel "Hi, I'm Kelvin. Nice to meet you, [mc]!"
+    e "Hi, I'm Ethan. Nice to meet you, [mc]!"
     mc "Hello."
-    kel "If you ever need help, don't be afraid to ask."
+    e "If you ever need help, don't be afraid to ask."
     mc "Okay..."
 
     scene bg classroom
@@ -116,48 +116,48 @@
     scene bg classroom
     with fade
     pause(.5)
-    show kelvin on phone #or neutral
+    show ethan on phone #or neutral
     pause(.25)
-    kel "{size=-8}...dammit, my rank dropped again.{/size}"
+    e "{size=-8}...dammit, my rank dropped again.{/size}"
     mc "Rank?"
     mc "{i}What is he talking about? {/i}"
-    show kelvin abashed
+    show ethan abashed
     pause(.25)
-    kel "Oh, sorry. It's nothing; don't mind me."
+    e "Oh, sorry. It's nothing; don't mind me."
     mc "{i} Looking at it more closely, the site he's on looks pretty familiar...{/i}"
     with hpunch
     mc "WAIT, YOU'RE GRANDMASTER?!?" 
-    kel "Whoa? You know Leeg of Legions?!?"    
+    e "Whoa? You know Leeg of Legions?!?"    
     mc "I've been playing for..."
 
     scene bg classroom
     pause(.5)
     show teacher angry
     pause(.25)
-    "Teacher" "Kelvin and [mc], you're being too loud!"
+    "Teacher" "Ethan and [mc], you're being too loud!"
     "Teacher" "Why don't you two step out into the hallway?"
 
     scene bg school hallway
     pause(.5)
-    show kelvin embarrassed
+    show ethan embarrassed
     pause(.25)
-    kel "Ahh, sorry to do this to you on your first day here; I was just excited to see that someone here actually plays LL."
+    e "Ahh, sorry to do this to you on your first day here; I was just excited to see that someone here actually plays LL."
     mc "Don't worry about it; it was my fault, too."
     mc "Also, what do you mean? Isn't LL a super popular game?"
-    show kelvin neutral
+    show ethan neutral
     pause(.25)
-    kel "It is, but most people here aren't interested in games. Everyone is too absorbed with studying or sports."
+    e "It is, but most people here aren't interested in games. Everyone is too absorbed with studying or sports."
     mc "I see... Anyways, I'm only Diamond, and I've been playing for a long time."
-    show kelvin happy
+    show ethan happy
     pause(.25)
-    kel "Still, diamond is pretty impressive!"
+    e "Still, diamond is pretty impressive!"
     scene bg school hallway
     "The two continue to discuss the game until the bell rings."
 
     show teacher neutral
     pause(.25)
     "Teacher" "Boys, you can come back in now. Next time, please try not to disrupt the lesson."
-    "Kelvin and [mc]" "Sorry, it won't happen again."
+    "Ethan and [mc]" "Sorry, it won't happen again."
     show teacher happy
     pause(.25)
     "Teacher" "Good to hear."
@@ -165,66 +165,66 @@
     scene bg classroom 
     pause(.5)
     "The rest of the classes pass by in a blur, and students are exiting the classroom."
-    show kelvin happy
+    show ethan happy
     pause(.25)
-    kel "Hey [mc]! Hope your first day was alright."
-    kel "Oh, I forgot to mention - every student needs to join a club."
-    kel "Are there any clubs that you have in mind?"
+    e "Hey [mc]! Hope your first day was alright."
+    e "Oh, I forgot to mention - every student needs to join a club."
+    e "Are there any clubs that you have in mind?"
     mc "Not really...now that I think about it, there was somebody trying to get me to join their club pretty desperately."
-    show kelvin neutral
+    show ethan neutral
     pause(.25)
-    kel "Oh, that's probably the e-Gaming club. They need one more member to officially register as a club but the deadline is coming up soon."
+    e "Oh, that's probably the e-Gaming club. They need one more member to officially register as a club but the deadline is coming up soon."
     mc "That sounds like a club I'd be interested in."
-    kel "Well, they don't really play any competitive games."
-    kel "It's basically a social club rather than a game-focused club."
+    e "Well, they don't really play any competitive games."
+    e "It's basically a social club rather than a game-focused club."
     mc "Oh..."
-    kel "I'm assuming you're not interested? Oh well, there are tons of established clubs here."
-    kel "For example, I'm in the tennis club."
-    show kelvin handing paper
+    e "I'm assuming you're not interested? Oh well, there are tons of established clubs here."
+    e "For example, I'm in the tennis club."
+    show ethan handing paper
     pause(.25)
-    kel "Here's a full list of clubs if you want to take a look."
-    hide kelvin handing paper
+    e "Here's a full list of clubs if you want to take a look."
+    hide ethan handing paper
     pause(.25)
     mc "Hmm..."
     mc "I don't see any clubs that really interest me."
-    show kelvin neutral
+    show ethan neutral
     pause(.25)
-    kel "That's too bad..."
-    hide kelvin neutral
+    e "That's too bad..."
+    hide ethan neutral
     pause(.25)
     mc "{i}My only hobby is LL I guess...{/i}"
     mc "{i}It's a shame that the students here don't seem to know much about the game.{/i}"
     with hpunch
     mc "{size=+10}{i}!!!{/i}{/size}"
-    mc "Hey Kelvin, about that club deadline. When is it?"
-    show kelvin thinking
+    mc "Hey Ethan, about that club deadline. When is it?"
+    show ethan thinking
     pause(.25)
-    kel "Hm? I think is was by the end of the week. Today is Thursday so that means..."
+    e "Hm? I think is was by the end of the week. Today is Thursday so that means..."
     mc "{i} With only one day it'll be difficult to find other people...{/i}"
-    kel "Why? Got an idea for something?"
+    e "Why? Got an idea for something?"
     mc "Yeah, maybe. Could I get your help with it?"
-    show kelvin smile #could be same thing as kelvin happy
+    show ethan smile #could be same thing as ethan happy
     pause(.25)
-    kel "Of course, what is it?"
+    e "Of course, what is it?"
     mc "After talking with you, I realized that it felt good to share my love of LL with someone..."
     mc "So - um -"
     mc "I was thinking that we could start a LL club."
-    kel "Count me in!"
-    show kelvin uncertain #maybe kelvin thinking
+    e "Count me in!"
+    show ethan uncertain #maybe ethan thinking
     pause(.25)
-    kel "But with only one day..."
+    e "But with only one day..."
     mc "I know it'll be hard, but I believe we can do it."
     mc "We'll find our members tomorrow."
-    show kelvin smile
+    show ethan smile
     pause(.25)
-    kel "Okay, let's do it."
-    hide kelvin smile
+    e "Okay, let's do it."
+    hide ethan smile
     pause(.25)
     "The bell rings." #add sound maybe?
-    show kelvin neutral
+    show ethan neutral
     pause(.25)
-    kel "Shoot, I better get going. Tennis practice is going to start soon."
-    kel "I'll see you tomorrow [mc]."
+    e "Shoot, I better get going. Tennis practice is going to start soon."
+    e "I'll see you tomorrow [mc]."
     mc "See you tomorrow."
 
     scene bg neighborhood street
@@ -246,13 +246,13 @@
     with fade
     pause(.5)
     window show
-    show kelvin smile
+    show ethan smile
     pause(.25)
-    kel "Hey. You ready?"
+    e "Hey. You ready?"
     mc "Sure."
-    kel "We're going to make it happen. You believe, right?"
+    e "We're going to make it happen. You believe, right?"
     mc "Yeah..."
-    kel "C'mon, let's go."
+    e "C'mon, let's go."
     mc "{i}Okay, calm down. You can do this...{/i}"
 
     scene bg classroom
@@ -351,40 +351,40 @@
     mc "{i}I asked a couple more people, but nobody was really interested...{/i}"
     mc "{i}Approaching people is a lot harder than I thought.{/i}"
     mc "{i}But I think I'm making progress!{/i}"
-    mc "{i}I can talk to Dylan and Kelvin without sounding completely incoherent.{/i}"
-    show kelvin happy
+    mc "{i}I can talk to Dylan and Ethan without sounding completely incoherent.{/i}"
+    show ethan happy
     pause(.25)
-    kel "Hey, did you manage to find anyone that was willing to join?"
+    e "Hey, did you manage to find anyone that was willing to join?"
     mc "Ah..."
     mc "I didn't manage to find anyone interested in joining..."
     mc "Sorry about that, even after asking for your help with something like this..."
-    kel "Oh, don't worry about it! I already got 4 members!"
+    e "Oh, don't worry about it! I already got 4 members!"
     with hpunch
     mc "{size=+10}WHAT??!?!{/size}" 
-    mc "THANK YOU, KELVIN! YOU'RE SERIOUSLY THE BEST!"
-    show kelvin smile scratching head
+    mc "THANK YOU, ETHAN! YOU'RE SERIOUSLY THE BEST!"
+    show ethan smile scratching head
     pause(.25)
-    kel "Haha, no worries! I have many connections with people around here~"
-    kel "I'll introduce everyone to you tomorrow!"
-    show kelvin happy
+    e "Haha, no worries! I have many connections with people around here~"
+    e "I'll introduce everyone to you tomorrow!"
+    show ethan happy
     pause(.25)
-    kel "Also, I've already submitted a club registration to the principal."
-    kel "We'll be using room F-143."
-    mc "{i}Kelvin's pretty incredible...{/i}"
+    e "Also, I've already submitted a club registration to the principal."
+    e "We'll be using room F-143."
+    mc "{i}Ethan's pretty incredible...{/i}"
     mc "{i}I found it pretty hard to even approach people, but he's already gone and found enough people for me.{/i}"
     mc "{i}Without him, I don't know what I would have done...{/i}"
-    kel "If you need to reach me, here's my number."
+    e "If you need to reach me, here's my number."
     mc "Oh thanks, here's mine as well."
     mc "{i}No way I'm telling him my mom and sister are the only ones on my contacts list.{/i}"
-    show kelvin smile
+    show ethan smile
     pause(.25)
-    kel "Anyways, I need to get going to tennis practice now."
-    kel "See you at the meeting, [mc]."
-    mc "Bye, Kelvin."
+    e "Anyways, I need to get going to tennis practice now."
+    e "See you at the meeting, [mc]."
+    mc "Bye, Ethan."
 
     scene bg neighborhood street
     pause(1)
-    mc "{i}I can't believe that Kelvin actually managed to recruit enough members for our club.{/i}"
+    mc "{i}I can't believe that Ethan actually managed to recruit enough members for our club.{/i}"
     mc "{i}I wonder what everyone will be like...{/i}"
 
     scene day three
@@ -397,12 +397,12 @@
     pause(1)
     window show
     mc "{i}So this is the clubroom.{/i}"
-    show kelvin neutral
+    show ethan neutral
     pause(.25)
-    kel "Oh, [mc], you're already here."
-    kel "Sorry to have kept you waiting."
-    kel "Well, let me introduce you to everyone."
-    hide kelvin neutral
+    e "Oh, [mc], you're already here."
+    e "Sorry to have kept you waiting."
+    e "Well, let me introduce you to everyone."
+    hide ethan neutral
     show tiffany shy small at left
     show maryanne neutral at centerleft
     show regina power stance at centerright
@@ -450,24 +450,24 @@
     hide regina power stance at centerright
     hide kristella happy at right 
     pause(.5)
-    show kelvin smile
+    show ethan smile
     pause(.25)
-    kel "Great! Now that everyone knows one another, we can start with the meeting."
-    kel "[mc], what did you have planned?"
+    e "Great! Now that everyone knows one another, we can start with the meeting."
+    e "[mc], what did you have planned?"
     mc "-Me?"
-    kel "It's your club after all!"
+    e "It's your club after all!"
     mc "Uh... I - um - didn't really plan anything."
     mc "{i}What should we do?{/i}"
-    hide kelvin smile
+    hide ethan smile
     show kristella neutral
     pause(.25)
     kr "Why don't we get to know everyone better?"
     mc "Sure..."
     hide kristella neutral
-    show kelvin neutral
+    show ethan neutral
     pause(.25)
-    kel "Sounds good! I'll go get some snacks."
-    hide kelvin neutral
+    e "Sounds good! I'll go get some snacks."
+    hide ethan neutral
     pause(.25)
     mc "{i}Who should I talk to first?{/i}"
     while girlsTalkedTo <= 3: 
@@ -559,7 +559,7 @@
                 "So, why did you join the club?":
                     jump tiffany_question_two_option_one
 
-                "What's your relationship with Kelvin?":
+                "What's your relationship with Ethan?":
                     jump tiffany_question_two_option_two
 
                 "What club were you in before this?":
@@ -581,11 +581,11 @@
                 jump tiffany_question_two_ending
 
             label tiffany_question_two_option_two:
-                mc "What's your relationship with Kelvin?"
+                mc "What's your relationship with Ethan?"
                 show tiffany smile
                 pause(.25)
                 t "Oh! We knew each other as children but never really talked until high school."
-                mc "{i}How does Kelvin have so many connections?{/i}"
+                mc "{i}How does Ethan have so many connections?{/i}"
                 mc "Oh, that's nice. Are you two... close?"
                 show tiffany uwu
                 pause(.25)
@@ -593,7 +593,7 @@
                 show tiffany shy smile
                 pause(.25)
                 t "I g-guess you could say that we're good friends."
-                mc "{i}D-does she like Kelvin??{/i}"
+                mc "{i}D-does she like Ethan??{/i}"
                 mc "{i}She was probably just embarrassed, right{/i}"
                 mc "Oh. That's nice..."
                 jump tiffany_question_two_ending
@@ -609,7 +609,7 @@
                 show tiffany embarrassed
                 pause(.25)
                 t "Well, I k-kinda chickened out..."
-                t "B-besides, Kelvin asked me to j-join this one."
+                t "B-besides, Ethan asked me to j-join this one."
                 mc "I see. Well, I'm glad you did!"
                 mc "It's nice to have you here."
                 t "..."
@@ -646,7 +646,7 @@
                 "What do you think about games?":
                     jump maryanne_question_option_one
 
-                "How did you meet Kelvin?":
+                "How did you meet Ethan?":
                     jump maryanne_question_option_two
 
                 "Why did you decide to join this club?":
@@ -681,7 +681,7 @@
                 jump maryanne_question_end
 
             label maryanne_question_option_two:
-                mc "How did you meet Kelvin?"
+                mc "How did you meet Ethan?"
                 show maryanne smile
                 pause(.25)
                 ma "Well, we were both in the competitive math club our freshman year. He's a good friend, isn't he?"
@@ -692,7 +692,7 @@
                 mc "W-wha? What are you talking about??"
                 show maryanne embarrassed smile
                 pause(.25)
-                ma "Oh, sorry... I just meant that I've known Kelvin for a long time. We're pretty close..."
+                ma "Oh, sorry... I just meant that I've known Ethan for a long time. We're pretty close..."
                 mc "I knew it!"
                 show maryanne blushing #and laughing as well i guess?
                 pause(.25)
@@ -787,7 +787,7 @@
                 mc "Anyways..."
             
             menu:
-                "How do you know Kelvin?":
+                "How do you know Ethan?":
                     jump regina_question_two_option_one
 
                 "Do you enjoy playing games?":
@@ -797,9 +797,9 @@
                     jump regina_question_two_option_three
 
             label regina_question_two_option_one:
-                mc "How do you know Kelvin?"
+                mc "How do you know Ethan?"
                 r "Oh that guy, I had a class with him last year and we sat next to each other."
-                mc "{i}How did Kelvin put up with this girl for a year? He's amazing as usual.{/i}"
+                mc "{i}How did Ethan put up with this girl for a year? He's amazing as usual.{/i}"
                 mc "I see... What was he like?"
                 show regina arms crossed looking away
                 pause(.25)
@@ -936,7 +936,7 @@
                 "Why did you decide to join this club?":
                     jump kristella_question_two_option_one
 
-                "Kelvin's lucky to know you...":
+                "Ethan's lucky to know you...":
                     jump kristella_question_two_option_two   
 
             label kristella_question_two_option_one:
@@ -954,13 +954,13 @@
                 jump kristella_question_two_end
 
             label kristella_question_two_option_two:
-                mc "Kelvin's lucky to know you..."
+                mc "Ethan's lucky to know you..."
                 show kristella smile
                 pause(.25)
                 kr "Oh, I think you misunderstand."
-                kr "I met Kelvin for the first time yesterday."
-                mc "{i}K-kelvin randomly approached her?{/i}"
-                mc "Wow... how did Kelvin convince you to join the club?"
+                kr "I met Ethan for the first time yesterday."
+                mc "{i}K-Ethan randomly approached her?{/i}"
+                mc "Wow... how did Ethan convince you to join the club?"
                 kr "Actually, I noticed him in the hallway with his head down."
                 kr "He looked dismayed, so I asked him what happened, and he told me that he needed members for a club."
                 kr "I wanted to help, so here I am."
@@ -983,7 +983,7 @@
 
     mc "{i}Just in time, too.{/i}" 
     mc "Um... L-listen up, everyone..."   
-    show kelvin neutral        
+    show ethan neutral        
     show tiffany shy small at left
     show maryanne slight smile at centerleft
     show regina power stance at centerright
@@ -996,8 +996,8 @@
     hide regina power stance at centerright
     hide kristella happy at right
     pause(.25)
-    kel "Later [mc]."
-    hide kelvin neutral
+    e "Later [mc]."
+    hide ethan neutral
     pause(.5)
     show tiffany embarrassed
     pause(.25)
@@ -1026,7 +1026,7 @@
     mc "{i}Meeting everyone was pretty cool...{/i}"
     mc "{i}It went better than expected.{/i}"
     mc "{i}I'm excited for tomorrow's meeting.{/i}"
-    mc "{i}Kelvin and I can teach everyone about LL, and we can continue to get to know each other better...{/i}"
+    mc "{i}Ethan and I can teach everyone about LL, and we can continue to get to know each other better...{/i}"
 
     scene day four
     window hide
@@ -1044,15 +1044,15 @@
     window show
     mc "Hello, everyo-"
     scene bg clubroom
-    show kelvin panic
+    show ethan panic
     pause(.25)
-    kel "Bad news, guys."
-    kel "The principal decided that we don't qualify as an official club."
+    e "Bad news, guys."
+    e "The principal decided that we don't qualify as an official club."
     pause(.25)
     with hpunch
     pause(.25)
-    kel "Apparently, we aren't different enough from the e-Gaming club."
-    hide kelvin panic
+    e "Apparently, we aren't different enough from the e-Gaming club."
+    hide ethan panic
     show kristella concerned
     pause(.25)
     kr "Oh no!"
@@ -1069,9 +1069,9 @@
     pause(.25)
     ma "Everyone calm down. Think, what can we do?"
     hide maryanne thinking
-    show kelvin neutral
+    show ethan neutral
     pause(.25)
-    kel "Yeah, Maryanne's right. [mc], what do you think?"
+    e "Yeah, Maryanne's right. [mc], what do you think?"
     scene bg clubroom
     pause(.25)
     mc "{i}Well, I know I don't want to let this stop the club...{/i}"
@@ -1096,10 +1096,10 @@
     pause(.25)
     ma "Of course we will."
     hide maryanne smile
-    show kelvin excited
+    show ethan excited
     pause(.25)
-    kel "Yeah! Let's all start brainstorming. Any ideas to start us off?"
-    hide kelvin excited
+    e "Yeah! Let's all start brainstorming. Any ideas to start us off?"
+    hide ethan excited
     show regina evil smile
     pause(.25)
     r "Me!"
@@ -1116,22 +1116,22 @@
     pause(.5)
     mc "..."
     hide regina evil laugh
-    show kelvin annoyed #replace with better expression 
+    show ethan annoyed #replace with better expression 
     pause(.25)
-    kel "Um... Thanks for the input, but I think that may be a little too troublesome."
-    hide kelvin annoyed
+    e "Um... Thanks for the input, but I think that may be a little too troublesome."
+    hide ethan annoyed
     show kristella neutral
     pause(.25)
     kr "I agree..."
     hide kristella neutral
     show regina annoyed
     pause(.25)
-    r "Grr... fine. Y'all are a buch of scaredy-cats."
+    r "Grr... fine. Y'all are a bunch of scaredy-cats."
     hide regina annoyed
-    show kelvin neutral
+    show ethan neutral
     pause(.25)
-    kel "Anyone else?"
-    hide kelvin neutral
+    e "Anyone else?"
+    hide ethan neutral
     show tiffany embarrassed
     pause(.25)
     t "Um, I c-can't think of anything- s-sorry..."
@@ -1161,29 +1161,29 @@
     ma "Hmm.. that would satisfy the conditions for qualification."
     ma "However, we lack the experience and game knowledge necessary to place highly."
     hide maryanne smile
-    show kelvin neutral
+    show ethan neutral
     pause(.25)
-    kel "There's still time for you all to get familiar with the game before the tournament-"
-    kel "But it'll require a lot of effort."
-    hide kelvin neutral
+    e "There's still time for you all to get familiar with the game before the tournament-"
+    e "But it'll require a lot of effort."
+    hide ethan neutral
     show regina smile
     pause(.25)
     r "I'm down. Let's do it!"
     hide regina smile
-    show kelvin neutral
+    show ethan neutral
     pause(.25)
-    kel "Unfortunately, you all will have to play without me."
-    hide kelvin neutral
+    e "Unfortunately, you all will have to play without me."
+    hide ethan neutral
     show tiffany aghast
     pause(.25)
     t "W-whyy??"
     hide tiffany aghast
-    show kelvin slight smile
+    show ethan slight smile
     pause(.25)
-    kel "Between tennis tournaments and my other LL team, I won't have time to participate."
+    e "Between tennis tournaments and my other LL team, I won't have time to participate."
     extend "I'm sorry, but there are five of you anyways, the perfect number fo an LL team."
     mc "Yeah... Let's do it guys."
-    hide kelvin slight smile
+    hide ethan slight smile
     show kristella questioning
     pause(.25)
     kr "Okay, then. [mc], thoughts?"

@@ -19,9 +19,9 @@
     mc "Today I'll be assigning roles to all of you."
     "All Females" "Roles?"
     scene bg clubroom
-    show kelvin excited
+    show ethan excited
     pause(.25)
-    kel "Yup! MC, would you like to explain?"
+    e "Yup! MC, would you like to explain?"
     mc "Right."
     scene bg clubroom
     mc "LL is a team oriented strategy based game where 5 players fight each other, working their way to the other team's crystal."
@@ -42,7 +42,7 @@
     pause(.25)
     "All Females" "Kinda...?" 
     scene bg clubroom
-    show kelvin exasperated
+    show ethan exasperated
     pause(.25)
     mc "You're probably right..."
     mc "We should get roles decided first."
@@ -394,9 +394,9 @@
     pause(.25)
     kr "Woo!"
     hide kristella laugh
-    show kelvin smile
+    show ethan smile
     pause(.25)
-    kel "Okay, we can start training now."
+    e "Okay, we can start training now."
     mc "Yeah, of course!"
     scene bg clubroom
     mc "{i}Who should I train first?{/i}"
@@ -2282,14 +2282,14 @@
                 scene bg clubroom
                 mc "{i}Who should I talk to next?{/i}"
         
-    show kelvin smile
+    show ethan smile
     pause(.25)
-    kel "Oh look, they're back."
+    e "Oh look, they're back."
     mc "Hey, everyone. Great job today - I think we really made some progress."
-    show kelvin excited
+    show ethan excited
     pause(.25)
-    kel "Yep, definitely!"
-    hide kelvin excited
+    e "Yep, definitely!"
+    hide ethan excited
     show regina evil smile
     pause(.25)
     r "I'm going to be even better next time."
@@ -2314,9 +2314,9 @@
     mc "{i}I'm exhausted. So much has happened-{/i}"
     mc "{i}Made a friend...{/i}"
     scene bg classroom 
-    show kelvin smile
+    show ethan smile
     pause
-    hide kelvin smile
+    hide ethan smile
     show teacher angry
     pause
     hide teacher angry
@@ -2336,9 +2336,9 @@
     hide kristella neutral
     mc "{i}Kept that club...{/i}"
     scene bg clubroom
-    show kelvin panic
+    show ethan panic
     pause
-    hide kelvin panic
+    hide ethan panic
     show maryanne thinking
     pause
     hide maryanne thinking
