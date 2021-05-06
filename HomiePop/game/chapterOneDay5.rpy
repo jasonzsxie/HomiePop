@@ -13,8 +13,8 @@
     window show
     show tiffany neutral small at left
     show regina neutral at centerleft
-    show maryanne neutral at centerright  
-    show kristella neutral at right
+    show maryanne neutral small at centerright  
+    show kristella neutral small at right
     pause(.25)
     mc "Today I'll be assigning roles to all of you."
     "All Females" "Roles?"
@@ -37,8 +37,8 @@
     scene bg clubroom
     show tiffany confused small at left
     show regina confused at centerleft
-    show maryanne confused at centerright  
-    show kristella confused at right
+    show maryanne confused small at centerright  
+    show kristella confused small at right
     pause(.25)
     "All Females" "Kinda...?" 
     scene bg clubroom
@@ -149,7 +149,7 @@
                     jump maryanneRoleThree
                 
             label maryanneRoleOne:
-                show maryanne excited
+                show maryanne smile
                 pause(.25)
                 ma "Mid sounds fun. I get to help impact all the other lanes and set the tempo of the game."
                 mc "Yep, that's essentially what the Mid laner has to do."
@@ -173,7 +173,7 @@
                 pause(.25)
                 ma "Huh? But why mid out of all the roles?"
                 mc "Well, you seem to enjoy helping other people, and I trust in you to control the pace of the game with your intuition."
-                show maryanne blushing
+                show maryanne blush
                 pause(.25)
                 ma "Well... If YOU are suggesting it, I guess I can't refuse."
                 mc "Okay then..."
@@ -326,7 +326,7 @@
                 mc "Well, do you have a role in mind?"
                 kr "Support - it sounds super fun to nourish and care for my teammates!"
                 mc "That's great! I think you'll enjoy supporting, too."
-                show kristella wink
+                show kristella cute
                 pause(.25)
                 kr "Oh, I'm sure I will~"
                 mc "Um, er - b-bb-, e-excuse me..."
@@ -340,7 +340,7 @@
                 pause(.25)
                 kr "Oh? Why do you say that, [mc]?"
                 mc "W-well... I think you're really c-caring and kind, so you'd be good at it..."
-                show kristella touched
+                show kristella cute
                 pause(.25)
                 kr "Aww - thank you, [mc]."
                 kr "Also, I was thinking the same~"
@@ -787,14 +787,14 @@
                 $ whoSecond = "Maryanne"
             elif girlsTalkedTo == 3:
                 $ whoThird = "Maryanne"
-            show maryanne excited
+            show maryanne smile
             pause(.25)
             ma "Hey [mc]! I'm ready to learn the basics of the game!"
             mc "{i}She has a lot of energy.{/i}"
             scene bg computer 
             with fade
             mc "Alright, I'm assumiing you have an account already?"
-            show maryanne excited
+            show maryanne smile
             pause(.25)
             ma "Yep! My account is called Stan Jae."
             mc "{i}She's a koreaboo?{/i}"
@@ -808,7 +808,7 @@
                     jump maryanneNameThree
             
             label maryanneNameOne:
-                show maryanne excited
+                show maryanne slight smile
                 pause(.25)
                 ma "O-oh, I'm not very creative with names."
                 mc "He's a member of Day6 right?"
@@ -825,7 +825,7 @@
                 jump maryanneNameEnd
 
             label maryanneNameTwo:
-                show maryanne excited
+                show maryanne smile
                 pause(.25)
                 ma "Yeah! He's a member of Day6 and he's super cute."
                 mc " I didn't know you were into kpop."
@@ -842,7 +842,7 @@
                 jump maryanneNameEnd
 
             label maryanneNameThree:
-                show maryanne excited
+                show maryanne smile
                 pause(.25)
                 ma "Oh really?! You also listen to kpop?!?"
                 mc "Well, I occasionally do. Jae's a member of Day6 right?"
@@ -851,7 +851,7 @@
                 ma "Yea! He's so dreamy, like a certain someone."
                 mc "{i}I guess kpop idols are pretty hot...{/i}"
                 mc "I guess yo- Huh, what are you staring at?"
-                show maryanne flustered
+                show maryanne surprised
                 pause(.25)
                 ma "O-oh n-nothing!"
                 mc "Ah, forget it. We're getting off topic."
@@ -911,7 +911,7 @@
                     pause(.25)
                     ma "Oh, well. I guess I died haha. But why should I back off? Wouldn’t I get my ultimate the same time as him?"
                     mc "Uh, well, his ultimate allows him to do more damage while your ultimate is more of a utility that allows you to impact the map."
-                    show maryanne understanding
+                    show maryanne well actually
                     pause(.25)
                     ma "Oooohh, so since my ultimate isn’t good for 1v1 and my opponent’s is, I should be careful when he has it?"
                     mc "That's the gist of it."
@@ -924,17 +924,17 @@
                     pause(.25)
                     ma "Do I just start walking to the top lane?"
                     mc "No, no, you just got your ultimate, just use it to instantly travel there and kill the enemy."
-                    show maryanne understanding
+                    show maryanne well actually
                     pause(.25)
                     ma "Ohhhh, so like this?"
                     mc "NOT UNDER T-"
-                    hide maryanne understanding
+                    hide maryanne well actually
                     play sound "you_have_been_slain.mp3"
                     "You have been slain."
                     play sound "an_enemy_has_been_slain.mp3"
                     "An enemy has been slain."
                     mc "I guess you helped kill the enemy so it’s not the worst that can happen. Just make sure not to teleport into a dangerous spot."
-                    show maryanne understanding
+                    show maryanne well actually
                     pause(.25)
                     ma "So basically, my ultimate allows me to make a 1v1 into a 2v1 in favor of my teammate, but if I teleport too far away, I put myself at risk of dying?"
                     mc "Sounds about right."
@@ -951,7 +951,7 @@
                     play sound "an_enemy_has_been_slain.mp3"
                     "An enemy has been slain."
                     mc "Nice! You should always help your jungler if he’s in trouble. It will allow him to push the tempo and make aggressive plays."
-                    show maryanne understanding
+                    show maryanne actually
                     pause(.25)
                     ma "Ohh, so I should go help my jungler win the 1v1, then go impact somewhere on the map since the enemy won’t know where we’re going to go and their jungler can’t answer it?"
                     mc "Basically yeah."
@@ -961,13 +961,13 @@
                 label maryannePvPEnd:
                     scene bg computer 
                     with fade
-                show maryanne happy
+                show maryanne smile
                 pause(.25)
                 ma "I can't believe we just won."
                 mc "Nice job on winning your first game."
                 ma "Well, it was all thanks to you. Nii-chan is such a good coach."
                 mc "I can’t just take all the credit. You pulled in yo-Wait, did you just call me-"
-                show maryanne flustered
+                show maryanne surprised
                 pause(.25)
                 ma "N-NO! I DIDN’T SAY ANYTHING. YOU MUST HAVE HEARD SOMETHING WRONG."
                 mc "{i}Why is she so flustered?{/i}"
@@ -978,11 +978,11 @@
                 jump maryanneTrainingEnd
 
             label maryanneTrainingTwo:
-                show maryanne shocked
+                show maryanne surprised
                 pause(.25)
                 ma "1v1 YOU? Aren’t you way out of my league??"
                 mc "Well, I am pretty hot."
-                show maryanne blushing
+                show maryanne blush
                 pause(.25)
                 ma "I MEAN IN LL YOU DUMMY!!!"
                 mc "Oh. I mean, even if I am way better than you, it’ll help you improve and learn the game much quicker."
@@ -1012,19 +1012,19 @@
                 
                 label maryanne1v1One:
                     mc "{i}Ok, I'll just walk up and unleash my full combo.{/i}"
-                    show maryanne panic
+                    show maryanne horrified
                     pause(.25)
                     ma "[mc], w-what are you doing?"
                     mc "Don't worry about it."
                     ma "Wait I'm going to di-"
-                    hide maryanne panic
+                    hide maryanne horrified
                     play sound "an_enemy_has_been_slain.mp3"
                     "An enemy has been slain."
                     show maryanne pout
                     pause(.25)
                     ma "Hmph, it seems like you just wanted to bully me…"
                     mc "W-well, you were low on health and you were pretty close so I just thought I can just go in for the kill."
-                    show maryanne angry #idk
+                    show maryanne stern #idk
                     pause(.25)
                     ma "Fight me again! This time, I'll make sure to kill you."
                     mc "That's the spirit!"
@@ -1033,18 +1033,18 @@
 
                 label maryanne1v1Two:
                     mc "{i}Alright, I’m about to level up and unlock my ultimate ability. As soon as I get my ultimate, I’ll go in for the kill.{/i}"
-                    show maryanne panic
+                    show maryanne horrified
                     pause(.25)
                     ma "[mc], H-how are you higher level tha- STOP ATTACKING ME!!!"
                     mc "Heh. I just kill the creeps faster tha- also you’re dead."
-                    hide maryanne panic
+                    hide maryanne horrified
                     play sound "an_enemy_has_been_slain.mp3"
                     "An enemy has been slain."
                     show maryanne pout
                     pause(.25)
                     ma "Heyyyy. You were just bullying me the whole time."
                     mc "U-uh, I just got my ultimate and saw the kill potential, so I went for it."
-                    show maryanne angry
+                    show maryanne stern
                     pause(.25)
                     ma "Fine! 1v1 me again! This time, I'll make sure to win!"
                     mc "Bring it!"
@@ -1068,7 +1068,7 @@
                     ma "You weren't trying at all were you."
                     mc "I-I guess..."
                     mc "I'm sorry."
-                    show maryanne angry #or neutral? idk
+                    show maryanne stern #or neutral? idk
                     pause(.25)
                     ma "If you’re sorry, you’ll fight me again. Maybe the second time will be just as easy as the first haha."
                     mc "Oh you're going down..."
@@ -1078,18 +1078,18 @@
                 label maryanne1v1End:
                     scene bg computer
                     with fade
-                    show maryanne exhausted
+                    show maryanne slight smile
                     pause(.25)
                     ma "Ah, I got completely destroyed..."
                     mc "That's to be expected. At least you're learning right?"
                     ma "Yep! I feel like if I go into a PvP game I can beat all the other players. Onii-chan really is the best teacher!"
                     mc "Woah, woah, you’re getting ahead of yours- wait, what did you just call me?"
-                    show maryanne flustered
+                    show maryanne surprised
                     pause(.25)
                     ma "OH N-NOTHING! I-I JUST SAID YOU’RE A GOOD TEACHER."
                     mc "{i}Did I mishear her? Ah forget it.{/i}"
                     mc "Owww, my ears..."
-                    show maryanne apologetic
+                    show maryanne concerned
                     pause(.25)
                     ma "Oh, sorry for yelling. Anyways, when can I play a PvP game against other people?"
                     mc "Ah, we’re running out of time. Maybe you can play a PvP game at the next meeting."
@@ -1119,7 +1119,7 @@
                 ma "I think Straight Fate looks cool."
                 mc "Really? I was thinking of playing Fang, Pyre or Synk…"
                 mc "{i}I really don't want to play Straight Fate...{/i}"
-                show maryanne excited
+                show maryanne smile
                 pause(.25)
                 ma "Yeah! Let me watch you play Straight Fate."
                 mc "I guess I have no other choice..."
@@ -1143,7 +1143,7 @@
                     play sound "an_enemy_has_been_slain.mp3"
                     "An enemy has been slain."
                     mc "Easy! Did you see that, Maryanne."
-                    show maryanne excited
+                    show maryanne smile
                     pause(.25)
                     ma "Yeah, That was cool!"
                     show maryanne thinking
@@ -1165,7 +1165,7 @@
                     jump maryanneWatchEnd
 
                 label maryanneWatchTwo:
-                    show maryanne excited
+                    show maryanne smile
                     pause(.25)
                     ma "Oh! That's where you move to a side lane to help your teammates, right?"
                     ma "I read about that."
@@ -1186,7 +1186,7 @@
                     show maryanne smile
                     pause(.25)
                     ma "Oh. Well, Baker is obviously better than you, but I still like to watch you, [mc]."
-                    show maryanne looking away
+                    show maryanne shame
                     pause(.25)
                     ma "After all, I've been watching you for a long time..."
                     mc "E-ehrm, uh, wh-wha!??!" with hpunch
@@ -1203,7 +1203,7 @@
                     mc "..."
                     play sound "blue_team_has_slain_the_dragon.mp3"
                     "Blue team has slain the Dragon."
-                    show maryanne excited
+                    show maryanne smile
                     pause(.25)
                     ma "Great! That’s a 5 percent buff to damage for everyone on the team, right?"
                     mc "Yeah...How do you know that?"
@@ -1222,7 +1222,7 @@
                     pause(.25)
                     ma "Of course! Onii-chan is such a good teacher!"
                     mc "Uh-, ah, than- Wait, what did you just call me?"
-                    show maryanne flustered
+                    show maryanne surprised
                     pause(.25)
                     ma "N-NOTHING, YOU'RE JUST A GOOD TEACHER WAS WHAT I SAID!"
                     mc "Uhhh, thanks I guess."
@@ -1702,7 +1702,7 @@
             pause(.25)
             kr "Hehe, it's just my name but squishy~"
             mc "It f-fits you. And I think it's, um, cute."
-            show kristella eyes looking up
+            show kristella cute
             pause(.25)
             kr "Aww, [mc]... Are you calling me cute?"
             menu:
@@ -1727,7 +1727,7 @@
                 pause(.25)
                 kr "I got you again!"
                 mc "F-fine… Let’s just get into the game."
-                show kristella excited
+                show kristella smile
                 pause(.25)
                 kr "Right! What are we doing?"
                 jump kristellaNameEnd
@@ -1795,16 +1795,16 @@
                 pause(.25)
                 kr "Ooh ~ 1 on 1? That sounds fun!"
                 mc "R-right, er... it'll h-help you understand the core gameplay."
-                show kristella excited
+                show kristella smile
                 pause(.25)
                 kr "I'm excited! Let's get right into it."
                 scene bg computer game
                 with fade
-                show kristella excited
+                show kristella smile
                 pause(.25)
                 kr "Wow! There are so many characters to choose from! Who are we going to play, [mc]?"
                 mc "Hmm... you're the support, so let's go with Luna."
-                show kristella abashed
+                show kristella pout
                 pause(.25)
                 kr "Ok ~ Also, promise me one thing."
                 mc "Um sure, what is it?"
@@ -1820,7 +1820,7 @@
                 pause(.25)
                 kr "What’d you call me?!? Oh, you’d better pray that you don’t lose now!"
                 mc "Hmph. The game's starting, so we'll find out soon enough, won't we?"
-                show kristella focused
+                show kristella grr
                 pause(.25)
                 kr "You bet!"
                 scene bg computer game
@@ -1854,7 +1854,7 @@
                     pause(.25)
                     kr "Hehe ~ I win! Call me a noob again, [mc]!"
                     mc "F-fine. I’m the noob. But please don’t tell anyone…"
-                    show kristella wink
+                    show kristella cute
                     pause(.25)
                     kr "Okay,  it’ll be our little secret."
                     show kristella giggle
@@ -1862,7 +1862,7 @@
                     kr "But in return, you have to call me “the noobslayer” from now on."
                     mc "Th-thanks, Kristella - um, the noobslayer..."
                     kr "I’m kidding! You don’t actually have to call me that."
-                    show kristella eyes looking unplayable
+                    show kristella troll
                     pause(.25)
                     kr "But I did well, right? Are you proud of me, [mc]?"
                     mc "Y-yeah, you did great! But I want a rematch!"
@@ -1938,7 +1938,7 @@
                         kr "I can tell that you didn't try."
                         kr "Hmph. I know how you feel, but that doesn’t mean that you should take it easy on me..."
                         mc "Oh. Sorry..."
-                        show kristella mischievous smile
+                        show kristella smile
                         pause(.25)
                         kr "Hm... I know exactly how you can make it up to me."
                         mc "Oh, what's that?"
@@ -1962,7 +1962,7 @@
                         show kristella giggle
                         pause(.25)
                         kr "Hehe ~ I thought you would’ve learned your lesson with admitting your crimes!"
-                        show kristella wink
+                        show kristella cute
                         pause(.25)
                         kr "I’m lengthening your sentence, but I’ll let you out on good behavior~"
                         mc "N-not again... I mean, uh, yes, your honor!"
@@ -2066,28 +2066,28 @@
                         jump kristellaPvPTwo
 
                 label kristellaPvPOne:
-                    show kristella focused
+                    show kristella grr
                     pause(.25)
                     kr "Okay! We're going in!"
                     "..."
-                    hide kristella focused
+                    hide kristella grr
                     play sound "an_enemy_has_been_slain.mp3"
                     "An enemy has been slain."
                     play sound "double_kill.mp3"
                     "Double Kill."
                     mc "Nice job!"
-                    show kristella excited
+                    show kristella smile
                     pause(.25)
                     kr "Yay ~ we did it!"
                     mc "Yeah, keep going."
                     jump kristellaPvPEnd
 
                 label kristellaPvPTwo:
-                    show kristella scared
+                    show kristella nervous
                     pause(.25)
                     kr "Alright! Ahh ~ run, run!"
                     "..."
-                    hide kristella scared
+                    hide kristella nervous
                     play sound "you_have_been_slain.mp3"
                     "You have been slain"
                     play sound "enemy_double_kill.mp3"
@@ -2163,11 +2163,11 @@
                 with fade
                 mc "You're a support player, so I'm going to play ADC with you in the bot lane."
                 mc "I’ll play Sumeera. Do any of these characters stand out to you?"
-                show kristella excited
+                show kristella smile
                 pause(.25)
                 kr "Yeah! I like the one with the light blue shield."
                 mc "Ah, that's Luna. Good choice. She works really well with my character."
-                show kristella head tilt slight smile #uh idk if we hv this
+                show kristella slight smile 
                 pause(.25)
                 kr "Why's that?"
                 mc "Oh, our characters have synergy. Our abilities enhance each other’s strengths."
@@ -2201,11 +2201,11 @@
                 
                 label kristellaWatchOne:
                     mc "Kristella, let’s use everything to fight them!"
-                    show kristella excited
+                    show kristella smile
                     pause(.25)
                     kr "Okay. Go, I'm on top of them!"
                     mc "Oh, nice! I'm coming!"
-                    hide kristella excited
+                    hide kristella smile
                     pause(.5)
                     play sound "an_enemy_has_been_slain.mp3"
                     "An enemy has been slain."
@@ -2245,7 +2245,7 @@
                     pause(.5)
                     play sound "an_enemy_has_been_slain.mp3"
                     "An enemy has been slain."
-                    show kristella excited
+                    show kristella laughing
                     pause(.25)
                     kr "Oh... nice!"
                     mc "Yeah. We drew their jungler to ur lane, and we killed him."

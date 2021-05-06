@@ -404,9 +404,9 @@
     e "Well, let me introduce you to everyone."
     hide ethan neutral
     show tiffany shy small at left
-    show maryanne neutral at centerleft
+    show maryanne neutral small at centerleft
     show regina power stance at centerright
-    show kristella happy at right #could be kristella smile (no clue yet)
+    show kristella smile small at right #could be kristella smile (no clue yet)
     pause(.25)
     "..."
     with hpunch
@@ -439,9 +439,9 @@
     kr "I hope we get to know each other better."
     hide kristella happy
     show tiffany shy small at left
-    show maryanne neutral at centerleft
+    show maryanne neutral small at centerleft
     show regina power stance at centerright
-    show kristella happy at right #could be kristella smile (no clue yet)
+    show kristella smile small at right #could be kristella smile (no clue yet)
     pause(.25)
     mc "Nice to meet y'all."
     mc "{i}Wow. Everyone is so different...{/i}"
@@ -631,15 +631,15 @@
                 $ whoSecond = "Maryanne"
             elif girlsTalkedTo == 3:
                 $ whoThird = "Maryanne"
-            show maryanne patty eyes #idk wtf this is
+            show maryanne giggle #idk wtf this is
             pause(.25)
             ma "Hey [mc]... It's been a while."
             mc "Huh? What are you talking about?"
-            show maryanne shocked
+            show maryanne surprised
             pause(.25)
             ma "{cps=*3}{size=-8}{i}Oh ... d-does he not remember me?{/i}{/size}{/cps}"
             mc "Sorry, what was that? I couldn't hear you."
-            show maryanne embarrassed smile
+            show maryanne smile
             ma "Oh nothing! I was just thinking out loud."
             mc "Oh, I see. Anyways..."
             menu:
@@ -663,15 +663,15 @@
                 ma "What about you? How did you get into games?"
                 mc "Hmm...actually, I've pretty much always enjoyed games. I vividly remember the first time I used a computer."
                 mc "I was probably four or five, and I've been in love ever since."
-                show maryanne aggressive glare
+                show maryanne stern
                 pause(.25)
                 ma "Oh...me too. I feel like we always remember the important parts of our childhood, don't you?"
                 mc "Oh yeah, for sure. I thi- wait, why d-do you look so angry?"
-                show maryanne fake smile
+                show maryanne joy
                 pause(.25)
                 ma "Oh, it's nothing. Don't worry about it."
                 mc "Oh, alright. If you say so."
-                show maryanne aggressive glare
+                show maryanne stern
                 pause(.25)
                 ma "..."
                 mc "{i}I should probably go...{/i}"
@@ -686,15 +686,15 @@
                 pause(.25)
                 ma "Well, we were both in the competitive math club our freshman year. He's a good friend, isn't he?"
                 mc "Yeah, he really is! I just met him, but I feel like we've known each other forever..."
-                show maryanne excited #idk about frothing at the mouth my dude
+                show maryanne laugh #idk about frothing at the mouth my dude
                 pause(.25)
                 ma "It sure feels like we have!" with vpunch
                 mc "W-wha? What are you talking about??"
-                show maryanne embarrassed smile
+                show maryanne smile
                 pause(.25)
                 ma "Oh, sorry... I just meant that I've known Ethan for a long time. We're pretty close..."
                 mc "I knew it!"
-                show maryanne blushing #and laughing as well i guess?
+                show maryanne blush #and laughing as well i guess?
                 pause(.25)
                 ma "No, not in that way! I already like somebody else..."
                 mc "Hehe, I was just kidding."
@@ -718,7 +718,7 @@
                 pause(.25)
                 ma "Of course I will, {cps=*3}{size=-8}{i}you're in it...{/i}{/size}{/cps}"
                 mc "What did you say?"
-                show maryanne shy smile
+                show maryanne slight smile
                 pause(.25)
                 ma "Oh, I was just thinking out loud."
                 mc "{i}I guess she just has a habit of thinking out loud.{/i}"
@@ -883,7 +883,7 @@
                 kr "Oh no! Are you alright?"
                 mc "Yeah, don't worry about me."
                 kr "I'm not convinced..."
-                show kristella lightbulb #have an idea, idk 
+                show kristella idea #have an idea, idk 
                 pause(.25)
                 kr "Hold on, I can help!"
                 show kristella stern
@@ -1006,10 +1006,10 @@
     r "Hmph. Bye."
     hide regina pout
     pause(.5)
-    show kristella laugh
+    show kristella laughing
     pause(.25)
     kr "It was fun! See you around, [mc]~"
-    hide kristella laugh
+    hide kristella laughing
     pause
 
     scene bg neighborhood street
@@ -1029,9 +1029,9 @@
     with fade
     pause(.5)
     show tiffany neutral small at left
-    show maryanne neutral at centerleft
+    show maryanne neutral small at centerleft
     show regina neutral at centerright
-    show kristella neutral at right
+    show kristella neutral small at right
     pause(.25)
     window show
     mc "Hello, everyo-"
@@ -1139,11 +1139,11 @@
     ma "2) The proposed club will be centered around an activity that is school-appropriate, as defined by the jurisdiction of the principal."
     ma "3) The proposed club must have unique elements distinguishing it from pre-existing organizations, including, but not limited to, separate focus, competitive prowess, and/or new acti-"
     hide maryanne reading
-    show kristella excited
+    show kristella smile
     pause(.25)
     kr "That's it - competitiveness!"
     kr "We can separate ourselves from the e-Gaming club by entering and winning a competition!"
-    hide kristella excited
+    hide kristella smile
     show tiffany aghast
     pause(.25)
     t "C-c...competition???"
