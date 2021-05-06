@@ -71,7 +71,7 @@
                 $ whoSecond = "Tiffany"
             elif girlsTalkedTo == 3:
                 $ whoThird = "Tiffany"
-            show tiffany nervous
+            show tiffany looking away
             pause(.25)
             mc "Hey Tiffany."
             t "H-hi."
@@ -97,12 +97,12 @@
                 jump endTiffanyRole
             
             label tiffanyRoleTwo:   
-                show tiffany nervous
+                show tiffany looking away
                 pause(.25)
                 t "Er-r, we just try to destroy the enemy crystal right? And each person has a role to play."
                 mc "{i}So she did understand...{/i}"
                 mc "Yeah, that's pretty much it. So have you decided on a role?"
-                show tiffany slight smile
+                show tiffany shy smile
                 pause(.25)
                 t "A-ADC sounds kinda fun, b-because I get to be protected and far from the enemy."
                 mc "Oh, but you're going to have a large weight on you back late in the game. Are you able to withstand that pressure?"
@@ -112,11 +112,11 @@
                 jump endTiffanyRole
 
             label tiffanyRoleThree:
-                show tiffany surprised
+                show tiffany uwu
                 pause(.25)
                 t "A-ADC?!?! W-why do you think I would be good at it?"
                 mc "Well, you seem like you would enjoy being protected by the team. Plus, there will be someone playing with you to get you through the early stages of the game."
-                show tiffany nervous
+                show tiffany looking away
                 pause(.25)
                 t "D-don't I have a lot of pressure later in the game to carry?"
                 mc "I believe in your ability to withstand that pressure."
@@ -428,7 +428,7 @@
             pause(.25)
             t "I-I guess you're here to teach me?"
             mc "Yeah, we'll go through the basics today."
-            show tiffany nervous
+            show tiffany looking away
             pause(.25)
             t "O-okay, I-I might make a lot of mistakes."
             mc "Don't worry. Everyone makes mistakes whenever they're trying something new."
@@ -438,7 +438,7 @@
             scene bg computer 
             with fade
             mc "Uh, have you made an account yet?"
-            show tiffany nervous
+            show tiffany looking away
             pause(.25)
             t "U-uh, yea. M-my username is KawaiiTiff."
             mc "Oh..."
@@ -455,17 +455,17 @@
                 pause(.25)
                 t "U-uh, t-thanks."
                 mc "What does kawaii mean?"
-                show tiffany flustered
+                show tiffany uwu
                 pause(.25)
                 t "U-uagh, i-it m-means c-c-cute in Japanese."
                 mc "Oh, it suits you well."
-                show tiffany blush 
+                show tiffany embarrassed 
                 pause(.25)
                 t "C-can we get on with the lesson?"
                 jump tiffanyNameEnd
             
             label tiffanyNameTwo:
-                show tiffany flustered
+                show tiffany uwu
                 pause(.25)
                 t "U-uah, K-Kawaii m-means c-c-cute in Japanese."
                 mc "Oh, I see, it fits your personality well."
@@ -495,7 +495,7 @@
                     jump tiffanyTrainingThree
 
             label tiffanyTrainingOne:
-                show tiffany shocked
+                show tiffany aghast
                 pause(.25)
                 t "W-wait, a PvP match??? S-shouldn't I practice against bots or something to learn the game?"
                 mc "Well, most players do, but since we're playing in a tournament soon, we need to improve quickly and I think by going straight into PvP is the best way to do that."
@@ -503,7 +503,7 @@
                 pause(.25)
                 t "O-okay. So I just click on this?"
                 mc "Yes. Then just accept the game when it pops up."
-                show tiffany shocked
+                show tiffany aghast
                 pause(.25)
                 t "Oh. I-I got a game."
                 mc "Ok so just type that you're playing ADC."
@@ -527,7 +527,7 @@
                     mc "No, no, no, wait until it's low then hit it."
                     t "O-oh so like thi-. I-I didn't get it."
                     mc "Don't worry, it takes time to get used to- oh they're trying to kill you."
-                    show tiffany scared
+                    show tiffany aghast
                     pause(.25)
                     t "W-what d-do I do, they're hitting me. [mc] h-help!"
                     mc "Well, you fight bac- oh you died."
@@ -549,7 +549,7 @@
                     scene bg computer
                     with fade
                 
-                show tiffany exhausted
+                show tiffany looking away
                 pause(.25)
                 t "W-wow I won, even though I died a lot."
                 mc "{i}For a new player, she isn't that bad.{/i}"
@@ -576,7 +576,7 @@
                 jump tiffanyTrainingEnd
 
             label tiffanyTrainingTwo:
-                show tiffany shocked
+                show tiffany aghast
                 pause(.25)
                 t "W-wait, a 1v1? W-with you? Aren't you really good at this game?"
                 mc "Exactly. I'm Diamond, so I'm farm better than the average player. By playing against better competition, you'll learn quicker."
@@ -660,7 +660,7 @@
                 t "[mc]?!?"
                 mc "..."
                 mc "{i}I'm surprised she has so much to say when she's usually so quiet.{/i}"
-                show tiffany shocked
+                show tiffany aghast
                 pause(.25)
                 t "G-guys? I-I think [mc] needs h-help!"
                 mc "N-no need. I’m fine. I’ll tell you what you did wrong at the next meeting."
@@ -674,7 +674,7 @@
                 pause(.25)
                 t "U-uh shouldn't I play against bots to practice?"
                 mc "Well, it helps to watch someone who knows what they are doing."
-                show tiffany understanding
+                show tiffany neutral
                 pause(.25)
                 t "O-oh I see..."
                 mc "Anyways, I'll just queue up as ADC and play Bane."
@@ -726,7 +726,7 @@
                     play sound "double_kill.mp3"
                     "Double Kill."
                     mc "Well, that was two easy kills. As I was saying, you need to be able to tell when he’s in kill range and how far your abilities travel. When he gets a little too close, you can kill him, but make sure you don’t miss."
-                    show tiffany understanding
+                    show tiffany neutral
                     pause(.25)
                     t "O-oh, s-so when he gets too close and is low on health, s-start attacking?"
                     mc "Uh, sounds about right."
@@ -1592,6 +1592,7 @@
                     mc "Ok, I will just go in an-"
                     show regina neutral
                     pause(.25)
+                    r "Hey idiot, someone is walking towards you."
                     mc "{i}Shoot, I forgot about the enemy jungler.{/i}"
                     mc "Well, I have to try to outplay this then."
                     hide regina neutral
@@ -2295,10 +2296,10 @@
     pause(.25)
     r "I'm going to be even better next time."
     hide regina evil smile
-    show tiffany nervous smile
+    show tiffany shy smile
     pause(.25)
     t "...M-me too!"
-    hide tiffany nervous smile
+    hide tiffany shy smile
     show kristella giggle
     pause(.25)
     kr "Hehe ~ me too, then."

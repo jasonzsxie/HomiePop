@@ -246,7 +246,7 @@
     with fade
     pause(.5)
     window show
-    show ethan smile
+    show ethan happy
     pause(.25)
     e "Hey. You ready?"
     mc "Sure."
@@ -362,7 +362,7 @@
     with hpunch
     mc "{size=+10}WHAT??!?!{/size}" 
     mc "THANK YOU, ETHAN! YOU'RE SERIOUSLY THE BEST!"
-    show ethan imposter sus
+    show ethan slight smile
     pause(.25)
     e "Haha, no worries! I have many connections with people around here~"
     e "I'll introduce everyone to you tomorrow!"
@@ -518,7 +518,7 @@
 
             label tiffany_question_one_option_one:
                 mc "Tiffany, you don't need to be nervous..."
-                show tiffany embarrassed #prob same thing as shy
+                show tiffany shy #prob same thing as shy
                 pause(.25)
                 t "S-sorry... I c-can't help it."
                 t "I'll try h-harder..."
@@ -567,7 +567,7 @@
 
             label tiffany_question_two_option_one:
                 mc "So, why did you join the club?"
-                show tiffany embarrassed
+                show tiffany looking away
                 pause(.25)
                 t "Um... I wanted to meet new people, I guess."
                 mc "{i}New faces. I'm familiar with that...{/i}"
@@ -606,7 +606,7 @@
                 mc "The debate club!? Are you a good public speaker?"
                 t "N-no, but I wanted to become more c-confident..."
                 mc "Ah. Then why didn't you do it?"
-                show tiffany embarrassed
+                show tiffany looking away
                 pause(.25)
                 t "Well, I k-kinda chickened out..."
                 t "B-besides, Ethan asked me to j-join this one."
@@ -991,10 +991,10 @@
     e "Later [mc]."
     hide ethan neutral
     pause(.5)
-    show tiffany embarrassed
+    show tiffany looking away
     pause(.25)
     t "T-thank you, [mc]."
-    hide tiffany embarrassed
+    hide tiffany looking away
     pause(.5)
     show maryanne slight smile
     pause(.25)
@@ -1124,11 +1124,11 @@
     pause(.25)
     e "Anyone else?"
     hide ethan neutral
-    show tiffany embarrassed
+    show tiffany looking away
     pause(.25)
     t "Um, I c-can't think of anything- s-sorry..."
     mc "It's alright, Tiffany. Maryanne, any ideas?"
-    hide tiffany embarrassed
+    hide tiffany looking away
     show maryanne thinking
     pause(.25)
     ma "Hmm... first, we should establish the conditions for qualifications as an official club."
