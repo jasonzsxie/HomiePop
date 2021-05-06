@@ -601,6 +601,7 @@
                     pause(.25)
                     t "U-uh, h-how did you miss everything?"
                     mc "{i}How did she dodge everything? Maybe I'll just...{/i}"
+                    play you_have_been_slain.mp3
                     "You have been slain." #maybe play audio file of league announcer instead
                     t "O-oh, I-I killed you. Y-you went easy on my right?"
                     mc "H-how di...err yeah, I didn't try that hard, good job surviving the assault."
@@ -619,6 +620,7 @@
                     t "W-why are you playing so far back?"
                     mc "{i}Wow that was close. Now I can...{/i}"
                     t "S-stop running away from me.L-let me-"
+                    play an_enemy_has_been_slain.mp3
                     "An enemy has been slain."
                     t "O-oh... I died."
                     mc "{i}Phew that was close.{/i}"
@@ -632,6 +634,7 @@
                     pause(.25)
                     t "[mc]? W-what are you doing?"
                     mc "Hmm? Doing what?"
+                    play you_have_been_slain.mp3
                     "You have been slain."
                     mc "Ah, I guess you killed me. Good job."
                     t "Y-you didn’t try very hard did you?"
@@ -696,8 +699,10 @@
                     pause(.25)
                     t "H-huh, i-isn't the enemy almost dead? W-why don-"
                     hide tiffany confused
+                    play you_have_been_slain.mp3
                     "You have been slain."
-                    mc "Ah, I misplayed that fight. This is why you shou-"    
+                    mc "Ah, I misplayed that fight. This is why you shou-"  
+                    play an_enemy_has_been_slain.mp3  
                     "An enemy has been slain."
                     mc "Ah, he died to creeps. Anyways, never go for that kill because if you die and the enemy doesn't, the game becomes very unplayable."
                     show tiffany understanding
@@ -714,8 +719,10 @@
                     t "B-but how can y-you tell when he makes a mistake?"
                     mc "Well, you need to- oh he's so dead."
                     hide tiffany confused
+                    play an_enemy_has_been_slain.mp3
                     "An enemy has been slain."
                     mc "Oh? The support is also running in?"
+                    play double_kill.mp3
                     "Double Kill."
                     mc "Well, that was two easy kills. As I was saying, you need to be able to tell when he’s in kill range and how far your abilities travel. When he gets a little too close, you can kill him, but make sure you don’t miss."
                     show tiffany understanding
@@ -732,6 +739,7 @@
                     t "H-huh? W-why the support? W-why not just go in by yourself?"
                     mc "Well... If I go in by myself, it - oh he missed. Whatever, the enemy is still dead."
                     hide tiffany confused
+                    play an_enemy_has_been_slain.mp3
                     "An enemy has been slain."
                     mc "As I was saying, you should tell the support to start attacking because if you attack by yourself, it becomes a 1v2 and it’s very likely you die. Also, the support typically has abilities that restrain the enemy’s movement."
                     t "U-uh, s-so the support goes in to restrain the enemy so it's easier to kill? I-I'm kind of confused."
@@ -896,6 +904,7 @@
                     ma "Huh? Why do I need to back off? I think I'm doi-"
                     mc "WATCH OUT! The enemy just got his ultimate... I'm pretty sure you're dead."
                     hide maryanne confused
+                    play you_have_been_slain.mp3
                     "You have been slain."
                     show maryanne neutral
                     pause(.25)
@@ -919,7 +928,9 @@
                     ma "Ohhhh, so like this?"
                     mc "NOT UNDER T-"
                     hide maryanne understanding
+                    play you_have_been_slain.mp3
                     "You have been slain."
+                    play an_enemy_has_been_slain.mp3
                     "An enemy has been slain."
                     mc "I guess you helped kill the enemy so it’s not the worst that can happen. Just make sure not to teleport into a dangerous spot."
                     show maryanne understanding
@@ -936,6 +947,7 @@
                     ma "Do I just click here to teleport?"
                     mc "Yep! Now just kill the enemy jungler."
                     hide maryanne confused
+                    play an_enemy_has_been_slain.mp3
                     "An enemy has been slain."
                     mc "Nice! You should always help your jungler if he’s in trouble. It will allow him to push the tempo and make aggressive plays."
                     show maryanne understanding
@@ -1005,6 +1017,7 @@
                     mc "Don't worry about it."
                     ma "Wait I'm going to di-"
                     hide maryanne panic
+                    play an_enemy_has_been_slain.mp3
                     "An enemy has been slain."
                     show maryanne pout
                     pause(.25)
@@ -1024,6 +1037,7 @@
                     ma "[mc], H-how are you higher level tha- STOP ATTACKING ME!!!"
                     mc "Heh. I just kill the creeps faster tha- also you’re dead."
                     hide maryanne panic
+                    play an_enemy_has_been_slain.mp3
                     "An enemy has been slain."
                     show maryanne pout
                     pause(.25)
@@ -1042,6 +1056,7 @@
                     pause(.25)
                     ma "[mc], why are you just walking up and-"
                     hide maryanne confused
+                    play you_have_been_slain.mp3
                     "You have been slain."
                     mc "Ah, I guess I died. Oh well."
                     show maryanne pout
@@ -1124,6 +1139,7 @@
                 
                 label maryanneWatchOne:
                     mc "..."
+                    play an_enemy_has_been_slain.mp3
                     "An enemy has been slain."
                     mc "Easy! Did you see that, Maryanne."
                     show maryanne excited
@@ -1157,6 +1173,7 @@
                     mc "It looks like their bot lane is pushed forward, so I'm going to try to kill them."
                     mc "..."
                     mc "..."
+                    play an_enemy_has_been_slain.mp3
                     "An enemy has been slain."
                     pause(.5)
                     "Double Kill."
@@ -1183,7 +1200,8 @@
                     mc "My enemy laner is stuck under tower, so I can create a numbers advantage elsewhere on the map."
                     mc "My Jungler is close, so I’m just going to kill the Dragon with him."
                     mc "..."
-                    "You have slain the Fire Dragon."
+                    play blue_team_has_slain_the_dragon.mp3
+                    "Blue team has slain the Dragon."
                     show maryanne excited
                     pause(.25)
                     ma "Great! That’s a 5 percent buff to damage for everyone on the team, right?"
@@ -1356,6 +1374,7 @@
                     mc "{i}Oh I forget to tell her that she was too far up. Well she’s dead.{/i}"
                     mc "Oh, you're so dead."
                     hide regina annoyed
+                    play you_have_been_slain
                     "You have been slain."
                     show regina angry
                     pause(.25)
@@ -1374,6 +1393,7 @@
                     mc "{i}And this is why I told her to stay back. Now she gets punished for it.{/i}"
                     mc "Well you're dead now."
                     hide regina angry
+                    play you_have_been_slain.mp3
                     "You have been slain."
                     show regina angry
                     pause(.25)
@@ -1395,6 +1415,7 @@
                     mc "{i}And this is why I wanted her to tell the jungler to come.{/i}"
                     mc "You are so dead."
                     hide regina annoyed
+                    play you_have_been_slain.mp3
                     "You have been slain."
                     show regina angry
                     pause(.25)
@@ -1462,6 +1483,7 @@
                     pause(.25)
                     r "WOAH! You're finally starting to attack me now? WAIT, NO STAY BACK!"
                     hide regina shocked
+                    play an_enemy_has_been_slain.mp3
                     "An enemy has been slain."
                     mc "NOT EVEN CLOSE!"
                     mc "{i}If she used any attack on me, I would have died.{/i}"
@@ -1479,6 +1501,7 @@
                     pause(.25)
                     r "You're boring. If you're not going to come to me, I'll just come to-"
                     hide regina annoyed
+                    play an_enemy_has_been_slain.mp3
                     "An enemy has been slain."
                     mc "Uh, seems like you died."
                     show regina pout
@@ -1498,6 +1521,7 @@
                     pause(.25)
                     r "Why aren't you trying to dodge anything?"
                     hide regina annoyed
+                    play you_have_been_slain.mp3
                     "You have been slain."
                     mc "Oh, I died."
                     show regina angry
@@ -1570,8 +1594,11 @@
                     mc "{i}Shoot, I forgot about the enemy jungler.{/i}"
                     mc "Well, I have to try to outplay this then."
                     hide regina neutral
+                    play you_have_been_slain.mp3
                     "You have been slain."
+                    play an_enemy_has_been_slain.mp3
                     "An enemy has been slain."
+                    play double_kill.mp3
                     "Double Kill."
                     mc "Nice! Ok Regina, if the enemy jungler comes but you manage to kill bo-"
                     show regina neutral
@@ -1611,7 +1638,9 @@
                     r "Huh? Why ask for help when you can kill him by yourself?"
                     mc "Well, it's highly likely the enemy jungler is here and it's easier to fight a 2v2 than an 1v2. Now that he's here, we can..."
                     hide regina confused
+                    play an_enemy_has_been_slain.mp3
                     "An enemy has been slain."
+                    play double_kill.mp3
                     "Double kill."
                     mc "Easy! See? It was less risky by making it a 2v2."
                     show regina confused
@@ -1812,6 +1841,7 @@
                     pause(.25)
                     kr "Ahh! [mc] wh-what are you doing! S-stop it!"
                     hide kristella panic
+                    play you_have_been_slain.mp3
                     "You have been slain."
                     show kristella neutral
                     pause(.25)
@@ -1846,6 +1876,7 @@
                     pause(.25)
                     kr "Ha! You wouldn't go in, so I decided-"
                     hide kristella laugh
+                    play an_enemy_has_been_slain.mp3
                     "An enemy has been slain."
                     show kristella smile
                     pause(.25)
@@ -1868,6 +1899,7 @@
                     kr "[mc]? W-why are you doing that?"
                     mc "Me? Doing what?"
                     hide kristella surprised
+                    play you_have_been_slain.mp3
                     "You have been slain."
                     show kristella pout
                     pause(.25)
@@ -2037,8 +2069,9 @@
                     kr "Okay! We're going in!"
                     "..."
                     hide kristella focused
+                    play an_enemy_has_been_slain.mp3
                     "An enemy has been slain."
-                    pause(1)
+                    play double_kill
                     "Double Kill."
                     mc "Nice job!"
                     show kristella excited
@@ -2053,8 +2086,9 @@
                     kr "Alright! Ahh ~ run, run!"
                     "..."
                     hide kristella scared
+                    play you_have_been_slain.mp3
                     "You have been slain"
-                    pause(1)
+                    play enemy_double_kill.mp3
                     "Enemy double kill."
                     show kristella disappointed
                     pause(.25)
@@ -2171,8 +2205,9 @@
                     mc "Oh, nice! I'm coming!"
                     hide kristella excited
                     pause(.5)
+                    play an_enemy_has_been_slain.mp3
                     "An enemy has been slain."
-                    pause(1)
+                    play double_kill.mp3
                     "Double kill."
                     show kristella laugh
                     pause(.25)
@@ -2206,6 +2241,7 @@
                     mc "I knew it... their Jungler is ganking us!"
                     mc "Hey, get off of her Boomumu!"
                     pause(.5)
+                    play an_enemy_has_been_slain.mp3
                     "An enemy has been slain."
                     show kristella excited
                     pause(.25)
