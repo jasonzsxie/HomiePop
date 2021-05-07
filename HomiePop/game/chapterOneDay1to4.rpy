@@ -236,8 +236,8 @@
     mc "{i}I hope we can find members tomorrow.{/i}"
 
     scene day two
-    window hide
     with Fade(.5, 1, .5)
+    window hide
     pause
 
     scene bg school entrance
@@ -301,12 +301,9 @@
     mc "{i}Who should I ask first?{/i}"
     window hide
     scene bg cafeteria two
-    show random person one
+    show josh neutral
     pause
     scene bg cafeteria three
-    show random person two
-    pause
-    scene bg cafeteria four
     show dylan neutral
     pause
 
@@ -386,8 +383,8 @@
     mc "{i}I wonder what everyone will be like...{/i}"
 
     scene day three
-    window hide
     with Fade(.5, 1, .5)
+    window hide
     pause
 
     scene bg clubroom
@@ -403,7 +400,7 @@
     hide ethan neutral
     show tiffany shy small at left
     show maryanne neutral small at centerleft
-    show regina power stance at centerright
+    show regina power stance small at centerright
     show kristella smile small at right #could be kristella smile (no clue yet)
     pause(.25)
     "..."
@@ -438,7 +435,7 @@
     hide kristella happy
     show tiffany shy small at left
     show maryanne neutral small at centerleft
-    show regina power stance at centerright
+    show regina power stance small at centerright
     show kristella smile small at right #could be kristella smile (no clue yet)
     pause(.25)
     mc "Nice to meet y'all."
@@ -539,7 +536,7 @@
 
             label tiffany_question_one_option_three:
                 mc "Your stutter is super cute."
-                show tiffany uwu
+                show tiffany blush
                 pause(.25)
                 t "W-wha...? Really?"
                 mc "Yeah, seriously."
@@ -585,7 +582,7 @@
                 t "Oh! We knew each other as children but never really talked until high school."
                 mc "{i}How does Ethan have so many connections?{/i}"
                 mc "Oh, that's nice. Are you two... close?"
-                show tiffany uwu
+                show tiffany blush
                 pause(.25)
                 t "N-no! Of course n-n-... Oh. I m-mean, not in that way."
                 show tiffany shy smile
@@ -799,7 +796,7 @@
                 r "Oh that guy, I had a class with him last year and we sat next to each other."
                 mc "{i}How did Ethan put up with this girl for a year? He's amazing as usual.{/i}"
                 mc "I see... What was he like?"
-                show regina arms crossed looking away
+                show regina arms crossed
                 pause(.25)
                 r "Hmph, aren't you in one of his classes? You can expreience him for yourself."
                 mc "Understood..."
@@ -808,7 +805,7 @@
 
             label regina_question_two_option_two:
                 mc "Do you enjoy playing games?"
-                show regina glare
+                show regina stern
                 pause(.25)
                 r "Of course I do. If I didn't, why would I be here? You're dense."
                 mc "Err s-sorry... this was just a genuine question."
@@ -830,7 +827,7 @@
                 r "It's not my fault that you're a big baby."
                 mc "..."
                 mc "Please don't hurt me..."
-                show regina evil smile
+                show regina smile
                 pause(.25)
                 r "Don't annoy me any more, and I'll consider it."
                 mc "{i}I better take this opportunity to get out...{/i}"
@@ -1019,8 +1016,8 @@
     mc "{i}Ethan and I can teach everyone about LL, and we can continue to get to know each other better...{/i}"
 
     scene day four
-    window hide
     with Fade(.5, 1, .5)
+    window hide
     pause
 
     scene bg clubroom
@@ -1028,7 +1025,7 @@
     pause(.5)
     show tiffany neutral small at left
     show maryanne neutral small at centerleft
-    show regina neutral at centerright
+    show regina neutral small at centerright
     show kristella neutral small at right
     pause(.25)
     window show
@@ -1051,14 +1048,14 @@
     pause(.25)
     t "W-wow... that's not g-good."
     hide tiffany sad
-    show regina annoyed
+    show regina arms crossed
     pause(.25)
     r "Ugh. Stupid principal."
-    hide regina annoyed
-    show maryanne thinking
+    hide regina arms crossed
+    show maryanne think
     pause(.25)
     ma "Everyone calm down. Think, what can we do?"
-    hide maryanne thinking
+    hide maryanne think
     show ethan neutral
     pause(.25)
     e "Yeah, Maryanne's right. [mc], what do you think?"
@@ -1072,11 +1069,11 @@
     kr "Yes~ we do too!"
     mc "And um- well, I don't think we should let this stop us."
     hide kristella smile
-    show regina determined
+    show regina arms crossed
     pause(.25)
     r "Hmph. You're right."
     mc "A-although I don't really have any ideas yet..."
-    hide regina determined
+    hide regina crossed
     show tiffany shy
     pause(.25)
     t "T-that's alright [mc]."
@@ -1090,7 +1087,7 @@
     pause(.25)
     e "Yeah! Let's all start brainstorming. Any ideas to start us off?"
     hide ethan excited
-    show regina evil smile
+    show regina smile
     pause(.25)
     r "Me!"
     mc "Okay, go ahead."
@@ -1100,12 +1097,12 @@
     r "slam the desk," 
     r "and demand that he changes his mind!"
     r "And if that doesn't do it, then we'll have to..."
-    show regina evil laugh
+    show regina angry
     pause(.25)
     r "FORCIBLY REMOVE HIM FROM HIS POSITION!!!" with hpunch
     pause(.5)
     mc "..."
-    hide regina evil laugh
+    hide regina angry
     show ethan annoyed #replace with better expression 
     pause(.25)
     e "Um... Thanks for the input, but I think that may be a little too troublesome."
@@ -1114,10 +1111,10 @@
     pause(.25)
     kr "I agree..."
     hide kristella neutral
-    show regina annoyed
+    show regina stern
     pause(.25)
     r "Grr... fine. Y'all are a bunch of scaredy-cats."
-    hide regina annoyed
+    hide regina stern
     show ethan neutral
     pause(.25)
     e "Anyone else?"
@@ -1127,7 +1124,7 @@
     t "Um, I c-can't think of anything- s-sorry..."
     mc "It's alright, Tiffany. Maryanne, any ideas?"
     hide tiffany looking away
-    show maryanne thinking
+    show maryanne think
     pause(.25)
     ma "Hmm... first, we should establish the conditions for qualifications as an official club."
     show maryanne reading

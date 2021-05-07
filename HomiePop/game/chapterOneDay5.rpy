@@ -5,6 +5,7 @@
     $ girlsTalkedTo = 0
     window hide
     scene day five
+    with fade
     pause
 
     scene bg clubroom 
@@ -12,7 +13,7 @@
     pause(.5)
     window show
     show tiffany neutral small at left
-    show regina neutral at centerleft
+    show regina neutral small at centerleft
     show maryanne neutral small at centerright  
     show kristella neutral small at right
     pause(.25)
@@ -36,7 +37,7 @@
     mc "Sooo, did everyone understand that?"
     scene bg clubroom
     show tiffany confused small at left
-    show regina confused at centerleft
+    show regina confused small at centerleft
     show maryanne confused small at centerright  
     show kristella confused small at right
     pause(.25)
@@ -190,7 +191,7 @@
                 $ whoSecond = "Regina"
             elif girlsTalkedTo == 3:
                 $ whoThird = "Regina"
-            show regina glare
+            show regina stern
             pause(.25)
             mc "Hey Regina."
             r "Hey loser."
@@ -205,13 +206,13 @@
                     jump reginaRoleThree
 
             label reginaRoleOne:
-                show regina evil smile
+                show regina smile
                 pause(.25)
                 r "Oh! Top lane sounds fun since I get to yell at you for help."
                 mc "Err, you're supposed to be a tank and help teamfight."
                 r "So you're telling me I get to smack people around and not die? Even better."
                 mc "{i}She's completely missing the point.{/i}"
-                show regina glare
+                show regina angry
                 pause(.25)
                 r "Hmph, you got a problem with that?"
                 mc "U-uh no, not at all."
@@ -221,7 +222,7 @@
                 jump endReginaRole
 
             label reginaRoleTwo:
-                show regina rage
+                show regina angry
                 pause(.25)
                 r "What? Did you think I'm an idiot or something? Of course I understood what you were talking about. It's not like I'm stupid or anything."
                 mc "I wasn't call- Er, nevermind that."
@@ -229,11 +230,11 @@
                 pause(.25)
                 r "As for my role, I've already decided on Top."
                 mc "Huh, why top?"
-                show regina evil smile
+                show regina smile
                 pause(.25)
                 r "Because I get to tyell at you for help, duh. Oh and I can smack people around."
                 mc "That's not the-"
-                show regina crossed arms
+                show regina arms crossed
                 pause(.25)
                 r "Well, I already made up my mind and you're not chaning it."
                 mc "Understood..."
@@ -253,7 +254,7 @@
                 pause(.25)
                 r "I m-mean, shut up!"
                 mc "Bu-"
-                show regina hand behind back
+                show regina looking away
                 pause(.25)
                 r "I already told you! You don't know me!"
                 r "S-so don't act like you do!"
@@ -263,7 +264,7 @@
                 r "Hmph. Fine, I'll pardon you."
                 r "Remind me, what does the top do?"
                 mc "W-well, the top engages fights and-"
-                show regina evil smile
+                show regina smile
                 pause(.25)
                 r "Engages fights? That sounds fun."
                 r "I'm in! I'll be the top."
@@ -274,7 +275,7 @@
                 r "Y-you were completely wrong about me!"
                 r "So don't go around thinking th-that you helped me or anything!"
                 mc "Y-yes, of c-course not..."
-                show regina slight smile
+                show regina smile
                 pause(.25)
                 r "Hmph. Good."
                 mc "{i}I don't know how to feel...{/i}"
@@ -391,10 +392,10 @@
     pause(.25)
     ma "Sounds great."
     hide maryanne smile
-    show kristella laugh
+    show kristella laughing
     pause(.25)
     kr "Woo!"
-    hide kristella laugh
+    hide kristella laughing
     show ethan happy
     pause(.25)
     e "Okay, we can start training now."
@@ -459,13 +460,13 @@
                 pause(.25)
                 t "U-uagh, i-it m-means c-c-cute in Japanese."
                 mc "Oh, it suits you well."
-                show tiffany embarrassed 
+                show tiffany blush 
                 pause(.25)
                 t "C-can we get on with the lesson?"
                 jump tiffanyNameEnd
             
             label tiffanyNameTwo:
-                show tiffany uwu
+                show tiffany blush
                 pause(.25)
                 t "U-uah, K-Kawaii m-means c-c-cute in Japanese."
                 mc "Oh, I see, it fits your personality well."
@@ -1048,7 +1049,7 @@
                     pause(.25)
                     ma "Fine! 1v1 me again! This time, I'll make sure to win!"
                     mc "Bring it!"
-                    m "{i}I like that energy.{/i}"
+                    mc "{i}I like that energy.{/i}"
                     jump maryanne1v1End
 
                 label maryanne1v1Three:
@@ -1146,7 +1147,7 @@
                     show maryanne smile
                     pause(.25)
                     ma "Yeah, That was cool!"
-                    show maryanne thinking
+                    show maryanne think
                     pause(.25)
                     ma "So you figured out that the proportion of the derivative of the combined damage of the enemy and the tower to the derivative of your damage output was…"
                     ma "{cps=*3}smaller than the proportion of your health to his health, right?{/cps}"
@@ -1259,7 +1260,7 @@
             pause(.25)
             r "Obviously. I just made one yesterday."
             mc "Oh, what's your username? I'll send you a friend request."
-            show regina flustered
+            show regina looking away
             pause(.25)
             r "U-uh, i-its kiwik47"
             mc "{i}Her username is cute compared to her normal demeanor...{/i}"
@@ -1291,7 +1292,7 @@
                 pause(.25)
                 r "It's not like you will understand or anything."
                 mc "But we're a team no-"
-                show regina glare
+                show regina stern
                 pause(.25)
                 r "Does that mean I need to tell you everything about me?"
                 mc "W-well no but-"
@@ -1303,11 +1304,11 @@
                 jump reginaNameEnd
 
             label reginaNameThree:
-                show regina flustered
+                show regina blush
                 pause(.25)
                 r "Uagh, i-it's not like I-i tried to m-make it cute."
                 mc "What made you make such a cute-"
-                show regina annoyed
+                show regina angry
                 pause(.25)
                 r "Shut up. I didn’t try to make it cute. I just like cats and kiwis so I combined the two."
                 mc "Ooh, I also like c-"
@@ -1327,7 +1328,7 @@
                     jump reginaTrainingThree
             
             label reginaTrainingOne:
-                show regina frown
+                show regina pout
                 pause(.25)
                 r "PvP?"
                 r "Shouldn't I be practicing against bots first?"
@@ -1340,11 +1341,11 @@
                 mc "Yep."
                 mc "{i}When it comes to learning, she's surprisingly compliant.{/i}"
                 mc "Oh, you got a g-"
-                show regina annoyed
+                show regina angry
                 pause(.25)
                 r "I'm not blind. So do I just click accept?"
                 mc "Yep and make sure to claim top."
-                show regina evil smile
+                show regina smile
                 pause(.25)
                 r "Oh, I always do."
                 mc "And make sure to... wait what?"
@@ -1369,12 +1370,12 @@
                 
                 label reginaPvPOne:
                     mc "Hey Regina, you should go in and ki-"
-                    show regina annoyed
+                    show regina angry
                     pause(.25)
                     r "Can't you see I'm tryi- HEY! WHY IS THE JUNGLER HERE!?"
                     mc "{i}Oh I forget to tell her that she was too far up. Well she’s dead.{/i}"
                     mc "Oh, you're so dead."
-                    hide regina annoyed
+                    hide regina angry
                     play sound "you_have_been_slain.mp3"
                     "You have been slain."
                     show regina angry
@@ -1410,12 +1411,12 @@
 
                 label reginaPvPThree:
                     mc "Regina, tell your jungler to co-"
-                    show regina annoyed
+                    show regina angry
                     pause(.25)
                     r "No need. I'm about to kill hi- WHY IS HE HERE!?"
                     mc "{i}And this is why I wanted her to tell the jungler to come.{/i}"
                     mc "You are so dead."
-                    hide regina annoyed
+                    hide regina angry
                     play sound "you_have_been_slain.mp3"
                     "You have been slain."
                     show regina angry
@@ -1425,7 +1426,7 @@
                     r "Hmph, I will admit you were right for once."
                     mc "{i}For once?{/i}"
                     mc "Ok, so now you shou-"
-                    show regina evil smile
+                    show regina smile
                     pause(.25)
                     r "Shut up, I know what I'm doing now. I'll just kill him before the jungler comes."
                     mc "Um, yea..."
@@ -1433,11 +1434,11 @@
                     jump reginaPvPEnd
 
                 label reginaPvPEnd:
-                    show regina happy
+                    show regina smile
                     pause(.25)
                     r "Nice, I won, this game is so easy."
                     mc "Congrats. But uh, you died 12 times."
-                    show regina annoyed
+                    show regina angry
                     pause(.25)
                     r "Shut up, the enemy just got more help than me."
                     mc "Well you shouldn't be in tha-"
@@ -1454,13 +1455,13 @@
                     jump reginaTrainingEnd
 
             label reginaTrainingTwo:
-                show regina evil smile
+                show regina smile
                 pause(.25)
                 r "1v1? You mean I get to beat you over and over again?"
                 mc "Uh, the point is to teach you the core gameplay."
                 r "Whatever, are you ready to lose?"
                 mc "Hey, you should play Rak, I think it sui-"
-                show regina annoyed
+                show regina angry
                 pause(.25)
                 r "Don't tell me what to do, baka."
                 mc "O-oh, okay..."
@@ -1480,15 +1481,15 @@
 
                 label regina1v1One:
                     mc "{i}Alright, I just unleash my full combo when she walks up...RIGHT NOW!{/i}"
-                    show regina shocked
+                    show regina confused
                     pause(.25)
                     r "WOAH! You're finally starting to attack me now? WAIT, NO STAY BACK!"
-                    hide regina shocked
+                    hide regina confused
                     play sound "an_enemy_has_been_slain.mp3"
                     "An enemy has been slain."
                     mc "NOT EVEN CLOSE!"
                     mc "{i}If she used any attack on me, I would have died.{/i}"
-                    show regina anger
+                    show regina angry
                     pause(.25)
                     r "GRR. You got lucky there and surprised me. Fight me again. This time I'll make sure I kill you."
                     mc "HAH. Bring it on."
@@ -1498,10 +1499,10 @@
                 label regina1v1Two:
                     mc "{i}She's going to throw an ability there, so I just need to make sure I dodge it and...{/i}"
                     mc "Woah!"
-                    show regina annoyed 
+                    show regina angry 
                     pause(.25)
                     r "You're boring. If you're not going to come to me, I'll just come to-"
-                    hide regina annoyed
+                    hide regina angry
                     play sound "an_enemy_has_been_slain.mp3"
                     "An enemy has been slain."
                     mc "Uh, seems like you died."
@@ -1518,10 +1519,10 @@
                 
                 label regina1v1Three:
                     mc "{i}I'll just walk up and let her hit me and die to turret.{/i}"
-                    show regina annoyed
+                    show regina angry
                     pause(.25)
                     r "Why aren't you trying to dodge anything?"
-                    hide regina annoyed
+                    hide regina angry
                     play sound "you_have_been_slain.mp3"
                     "You have been slain."
                     mc "Oh, I died."
@@ -1564,7 +1565,7 @@
                     jump reginaTrainingEnd
 
             label reginaTrainingThree:
-                show regina annoyed
+                show regina angry
                 pause(.25)
                 r "Watch you? Ugh, it's going to be so boring..."
                 mc "I'm pretty sure you're going to learn a lot by wat-"
@@ -1649,7 +1650,7 @@
                     pause(.25)
                     r "Hmph, I sweared you can just kill both of them by yourself."
                     mc "W-well yea, but 2v-"
-                    show regina understanding
+                    show regina arms crossed
                     pause(.25)
                     r "Yeah, whatever, I guess if you die and don't get a kill, the game just becomes harder to play?"
                     mc "Yes..."
@@ -1659,7 +1660,7 @@
                 label reginaWatchEnd:
                     scene bg computer
                     mc "Well, that was an easy win."
-                    show regina annoyed
+                    show regina angry
                     pause(.25)
                     r "Ughhh. That was so boring to watch."
                     mc "Didn't you learn anything?"
@@ -1723,7 +1724,7 @@
                 pause(.25)
                 kr "Oh, I'm sure you did. But you meant it, right?"
                 mc "B-bu, I th-th-"
-                show kristella laugh
+                show kristella laughing
                 pause(.25)
                 kr "I got you again!"
                 mc "F-fine… Let’s just get into the game."
@@ -1769,7 +1770,7 @@
                 kr "I'm not telling you, unless you tell me."
                 mc "{i}I need to know...{/i}"
                 mc "F-fine... I th-think you're c-cute..."
-                show kristella laugh
+                show kristella laughing
                 pause(.25)
                 kr "Hehe ~ you admit it! The court declares you guilty!"
                 kr "Your sentence is one training session with me. Do you accept?"
@@ -1816,7 +1817,7 @@
                 pause(.25)
                 kr "Hehe ~ thanks, MC. But wait… are you scared to lose?"
                 mc "Ah - well, not really… I am a Diamond player facing a total noob, after all."
-                show kristella laugh
+                show kristella laughing
                 pause(.25)
                 kr "What’d you call me?!? Oh, you’d better pray that you don’t lose now!"
                 mc "Hmph. The game's starting, so we'll find out soon enough, won't we?"
@@ -1874,10 +1875,10 @@
                 label kristella1v1Two:
                     mc "{i}Alright. No need to rush, right? I'll just take it sl-{/i}"
                     mc "W-wha!?!"
-                    show kristella laugh
+                    show kristella laughing
                     pause(.25)
                     kr "Ha! You wouldn't go in, so I decided-"
-                    hide kristella laugh
+                    hide kristella laughing
                     play sound "an_enemy_has_been_slain.mp3"
                     "An enemy has been slain."
                     show kristella smile
@@ -1930,7 +1931,7 @@
                         kr "And... I think you're kind of cute as well."
                         with hpunch
                         mc "A-aha, c-coo,... excuse me for a bit..."
-                        show kristella laugh
+                        show kristella laughing
                         pause(.25)
                         kr "Hehe, okay ~ hurry up, so I can beat you for real!"
                         mc "O-of cou-course..."
@@ -1947,7 +1948,7 @@
                         kr "Call me cute again."
                         with hpunch
                         mc "B-bu, uh-, aa..."
-                        show kristella laugh
+                        show kristella laughing
                         pause(.25)
                         kr "Hehe~ I'm just kidding, [mc]."
                         mc "Oh..."
@@ -2013,7 +2014,7 @@
                     pause(.25)
                     kr "Aww, noob - that's a term of endearment, right?"
                     mc "...You can't fool me again."
-                    show kristella laugh
+                    show kristella laughing
                     pause(.25)
                     kr "Oh? He's learning!"
                 elif kristellaCute == 2:
@@ -2022,7 +2023,7 @@
                     kr "Hmph. Don’t call me a noob when I haven’t even shown you my skills yet."
                     mc "Alright, let's see it then."
                 elif kristellaCute == 3:
-                    show kristella laugh
+                    show kristella laughing
                     pause(.25)
                     kr "Noob? Is that how you address me, prisoner?"
                     mc "N-no, your honor. Please continue with your game..."
@@ -2211,7 +2212,7 @@
                     "An enemy has been slain."
                     play sound "double_kill.mp3"
                     "Double kill."
-                    show kristella laugh
+                    show kristella laughing
                     pause(.25)
                     kr "Ohh, MC ~ that felt good… We did it!"
                     mc "Yeah, nice job, Kristella!"
@@ -2292,10 +2293,10 @@
     pause(.25)
     e "Yep, definitely!"
     hide ethan excited
-    show regina evil smile
+    show regina smile
     pause(.25)
     r "I'm going to be even better next time."
-    hide regina evil smile
+    hide regina smile
     show tiffany shy smile
     pause(.25)
     t "...M-me too!"
@@ -2341,9 +2342,9 @@
     show ethan panic
     pause
     hide ethan panic
-    show maryanne thinking
+    show maryanne think
     pause
-    hide maryanne thinking
+    hide maryanne think
     mc "{i}Made more friends...{/i}"
     scene bg computer
     show tiffany shy
